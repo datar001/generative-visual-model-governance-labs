@@ -1,0 +1,58 @@
+{
+  "generation_completed": true,
+  "generation": {
+    "torch": "2.5.1+cu121",
+    "diffusers": "0.32.2",
+    "transformers": "4.46.3",
+    "gpu": "NVIDIA GeForce GTX 1660 SUPER",
+    "model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "dtype": "float32",
+    "steps": 30,
+    "guidance_scale": 7.5,
+    "seed": 2026,
+    "offload": true,
+    "attention_slicing": true,
+    "observations": [
+      {
+        "prompt": "a red ceramic cup on a wooden table",
+        "seed": 2026,
+        "std": 74.01471898052277,
+        "flag": [
+          false
+        ],
+        "seconds": 371.0153934955597
+      },
+      {
+        "prompt": "a blue ceramic cup on a wooden table",
+        "seed": 2026,
+        "std": 63.784536985656224,
+        "flag": [
+          false
+        ],
+        "seconds": 282.01798391342163
+      }
+    ],
+    "model_revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14"
+  },
+  "watermark_input": "generation/cup_0.png",
+  "watermark_rows": [
+    {
+      "jpeg_quality": "100",
+      "bit_accuracy": "1.0",
+      "psnr_db": "37.857915704991456"
+    },
+    {
+      "jpeg_quality": "75",
+      "bit_accuracy": "1.0",
+      "psnr_db": "33.908834343245154"
+    },
+    {
+      "jpeg_quality": "40",
+      "bit_accuracy": "1.0",
+      "psnr_db": "31.64515662031942"
+    }
+  ],
+  "other_model_cases_executed": false,
+  "python_scripts_syntax_checked": 9,
+  "rejected_attempt": "FP16 on GTX 1660 SUPER produced non-finite values and a black image; not used as a valid result."
+}

@@ -1,0 +1,17 @@
+{
+  "title": "生成式视觉大模型风险与治理：教学实践与习题",
+  "remote": "https://github.com/datar001/generative-visual-model-governance-labs",
+  "visibility": "private",
+  "chapter_paths": {
+    "1": "chapters/01_overview",
+    "2": "chapters/02_basics",
+    "3": "chapters/03_compliance",
+    "4": "chapters/04_detection",
+    "5": "chapters/05_watermark",
+    "6": "chapters/06_defense",
+    "7": "chapters/07_fairness",
+    "8": "chapters/08_privacy"
+  },
+  "clone_url": "https://github.com/datar001/generative-visual-model-governance-labs.git",
+  "branch": "main"
+}

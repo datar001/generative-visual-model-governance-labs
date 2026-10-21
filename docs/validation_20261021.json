@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-21",
+  "chapters": 8,
+  "practices": 9,
+  "printed_scripts": 10,
+  "questions": 96,
+  "answers": 96,
+  "offline_contract_tests": 5,
+  "dry_run_entrypoints": 10,
+  "governance_run_completed": true,
+  "governance_cases": 3,
+  "watermark_rerun_completed": true,
+  "watermark_input": "evidence/generation/cup_0.png",
+  "watermark_scores": [
+    {
+      "jpeg_quality": "100",
+      "bit_accuracy": "1.0",
+      "psnr_db": "37.857915704991456"
+    },
+    {
+      "jpeg_quality": "75",
+      "bit_accuracy": "1.0",
+      "psnr_db": "33.908834343245154"
+    },
+    {
+      "jpeg_quality": "40",
+      "bit_accuracy": "1.0",
+      "psnr_db": "31.64515662031942"
+    }
+  ],
+  "generation_evidence": "historical actual run, not regenerated in this teaching update",
+  "other_model_examples_run": false,
+  "remote": "https://github.com/datar001/generative-visual-model-governance-labs",
+  "visibility": "private"
+}

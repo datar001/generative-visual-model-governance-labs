@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv*/
+results/
+inputs/*
+!inputs/README.md
+.cache/
+*.safetensors
+*.bin
+*.pt
+*.pth
+.env
+.env.*

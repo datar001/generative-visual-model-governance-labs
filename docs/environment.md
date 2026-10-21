@@ -76,3 +76,7 @@ python tools/run.py 03
 ### 第3章伪词目标匹配
 
 沿用过滤器环境。官方CLIP模型首次约600MB下载，后续可用本地缓存；默认CPU，不调用LLM API。运行 `python tools/run.py 03 --case pseudoword`。可选安装 `python -m pip install matplotlib==3.8.4` 后执行 `python chapters/03_compliance/plot_pseudoword.py`，复绘results/pseudoword_cup中的实际轨迹。该实验目标是已提供的无害红杯图，只演示CLIP匹配搜索，不连接真实安全审核或文生图流程。
+
+## 第4章CNNSpot最小环境
+
+Python 3.10下安装torch==2.5.1、torchvision==0.20.1和Pillow==11.0.0即可。可运行 `python -m pip install -r requirements-detection.txt`；CPU构建安装源见上文。无需Transformers、Diffusers或生成模型。随后按[第4章说明](../chapters/04_detection/README.md)下载并校验约282 MB的官方权重，运行检测。默认CPU全图推理，输出分数与哈希，不重新训练模型。

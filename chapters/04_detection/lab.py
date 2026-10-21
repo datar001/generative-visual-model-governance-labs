@@ -1,32 +1,44 @@
 from pathlib import Path
 import csv
+import torch
 from PIL import Image
-from transformers import pipeline
-# 1. 加载鉴伪分类器，保留模型原始类别名称。
-detector = pipeline('image-classification', model='umm-maybe/AI-image-detector')
+from torchvision import models, transforms
+from cnnspot_support import load_weights, save_manifest
+# 1. 空间域 CNN 二分类：ResNet-50 的最后一层只输出一个 logit。
+model = models.resnet50(weights=None, num_classes=1)
+weights = load_weights()
+state = torch.load(weights, map_location='cpu', weights_only=True)
+model.load_state_dict(state['model'], strict=True)
+model.eval()
+# 2. 沿用官方演示的全图预处理，不缩放、不裁剪。
+preprocess = transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Normalize([.485, .456, .406], [.229, .224, .225])])
+fixtures = Path(__file__).parent / 'detection_fixtures'
+inputs = [('real_coffee.png', 'real'), ('generated_cup.png', 'fake')]
 out = Path('results/detection')
 out.mkdir(parents=True, exist_ok=True)
-# 输入为授权真实图与生成图，不能据两张图评估总体性能。
-inputs = ['inputs/real.jpg', 'results/generation/cup_0.png']
 rows = []
-for name in inputs:
-    original = Image.open(name).convert('RGB')
-    # 2. 先记录未重新压缩的输入分数，作为对照基线。
-    scores = detector(original, top_k=None)
-    rows.append({'image': name, 'quality': 'original',
-                 **{x['label']: x['score'] for x in scores}})
-    # 3. 比较三档 JPEG 压缩；质量 100 也会重新编码。
-    for quality in (100, 75, 40):
-        target = out / f'{Path(name).stem}_q{quality}.jpg'
-        original.save(target, quality=quality)
-        scores = detector(Image.open(target), top_k=None)
-        row = {'image': name, 'quality': quality}
-        row.update({x['label']: x['score'] for x in scores})
-        rows.append(row)
-# 4. 保存各类别分数；分类分数不是图像来源的证明。
-fields = list(dict.fromkeys(k for row in rows for k in row))
+for name, source in inputs:
+    original = Image.open(fixtures / name).convert('RGB')
+    # 3. 原图单列，质量 100 仍属于 JPEG 重新编码。
+    for quality in ('original', 100, 75, 40):
+        image = original
+        if quality != 'original':
+            target = out / f'{Path(name).stem}_q{quality}.jpg'
+            original.save(target, quality=quality)
+            image = Image.open(target).convert('RGB')
+        with torch.inference_mode():
+            logit = model(preprocess(image).unsqueeze(0)).item()
+            score = torch.sigmoid(torch.tensor(logit)).item()
+        # 4. sigmoid 分数越大越倾向生成类；0.5 仅作固定教学阈值。
+        rows.append(dict(image=name, source=source, quality=quality,
+                         fake_score=score,
+                         prediction='fake' if score >= .5 else 'real'))
 with (out / 'scores.csv').open('w', newline='', encoding='utf-8') as f:
-    writer = csv.DictWriter(f, fieldnames=fields)
+    writer = csv.DictWriter(f, fieldnames=list(rows[0]))
     writer.writeheader()
     writer.writerows(rows)
+# 5. 保存版本、权重与输入哈希，分数不能代替来源事实。
+save_manifest(out, weights, fixtures, inputs, Path(__file__))
 print(rows)

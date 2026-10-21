@@ -5,7 +5,7 @@
   "printed_scripts": 11,
   "questions": 96,
   "answers": 96,
-  "offline_contract_tests": 16,
+  "offline_contract_tests": 18,
   "dry_run_entrypoints": 11,
   "governance_run_completed": true,
   "governance_cases": 3,
@@ -58,5 +58,16 @@
     "real_safety_filter_tested": false,
     "text_to_image_generation_tested": false,
     "llm_api_calls": 0
+  },
+  "detection": {
+    "method": "CNNSpot/ResNet-50 spatial CNN binary classifier",
+    "samples": 2,
+    "rows": 8,
+    "jpeg_files": 6,
+    "false_negatives_generated_cup": 4,
+    "threshold": 0.5,
+    "cpu_run_completed": true,
+    "evidence": "evidence/detection_20261021/",
+    "not_accuracy_evaluation": true
   }
 }

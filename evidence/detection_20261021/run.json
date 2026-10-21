@@ -1,0 +1,27 @@
+{
+  "run_id": "20261021T125823Z_1ee04c92",
+  "chapter": "04",
+  "case": "lab",
+  "command": [
+    "D:\\anaconda\\envs\\segment\\python.exe",
+    "E:\\ondrive_clone\\paper\\book_revision\\visual-model-governance-labs\\chapters\\04_detection\\lab.py"
+  ],
+  "python": "3.10.6 | packaged by conda-forge | (main, Oct 24 2022, 16:02:16) [MSC v.1916 64 bit (AMD64)]",
+  "packages": {
+    "torch": "2.5.1+cu121",
+    "torchvision": "0.20.1+cu121",
+    "diffusers": null,
+    "transformers": "4.56.1",
+    "accelerate": "1.10.1",
+    "numpy": "2.1.2",
+    "opencv-python": null,
+    "Pillow": "11.0.0",
+    "facenet-pytorch": null
+  },
+  "code_sha256": "4826cb96a2232e94f5ea545f3e7105d0d3c819f68067e296fcfe40e73966af12",
+  "git_commit": "5e65fa2c2ec59090d5ae28caf9344198e645a7e4",
+  "status": "completed",
+  "outputs_root": "results/",
+  "validation": "Process success does not prove model or learning outcomes.",
+  "exit_code": 0
+}

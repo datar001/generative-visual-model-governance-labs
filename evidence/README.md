@@ -8,3 +8,6 @@ model_validation_summary.json记录当时的软件与验证边界。其他模型
 
 
 第3章新增本轮实际审核记录：[三类过滤器对照](filter_comparison_20261021/README.md)。这组证据与历史生成/水印记录分开保存。
+
+
+第4章：[CNNSpot八组实测](detection_20261021/README.md)，包含真实咖啡照片与扩散模型杯子图的原图/JPEG分数，后者四条件均漏检。

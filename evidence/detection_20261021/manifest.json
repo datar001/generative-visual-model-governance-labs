@@ -1,0 +1,31 @@
+{
+  "method": "CNNSpot, spatial CNN binary classification",
+  "architecture": "ResNet-50, one logit",
+  "source": "https://github.com/PeterWang512/CNNDetection",
+  "source_revision": "ea0b5622365e3a9cd31d1b54b6b5971131a839ab",
+  "weight_sha256": "3533f3e58a3b82215f21197f2faf4e99b911ec42a4a6e2d7823e04d5f3fd245a",
+  "code_sha256": "4826cb96a2232e94f5ea545f3e7105d0d3c819f68067e296fcfe40e73966af12",
+  "support_sha256": "8ee994fe3b3a4bec02318965739133c89402c7daa3d89963dae8374209a98884",
+  "python": "3.10.6 | packaged by conda-forge | (main, Oct 24 2022, 16:02:16) [MSC v.1916 64 bit (AMD64)]",
+  "torch": "2.5.1+cu121",
+  "torchvision": "0.20.1+cu121",
+  "pillow": "11.0.0",
+  "device": "cpu",
+  "dtype": "float32",
+  "threshold": 0.5,
+  "score": "sigmoid(logit), higher=fake",
+  "preprocessing": "RGB; ToTensor; ImageNet normalize; no resize/crop",
+  "inputs": [
+    {
+      "file": "real_coffee.png",
+      "source": "real",
+      "sha256": "cc02f8ca188b167c775a7101b5d767d1e71792cf762c33d6fa15a4599b5a8de7"
+    },
+    {
+      "file": "generated_cup.png",
+      "source": "fake",
+      "sha256": "a987ed93305d449f4d8ef202935d745a25c53063bb10d34841ab4636fca148a3"
+    }
+  ],
+  "boundary": "Two source images; not an accuracy or generalization evaluation."
+}

@@ -1,0 +1,13 @@
+{
+  "real_coffee.png": {
+    "author": "Rachel Michetti",
+    "license": "CC0",
+    "source": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.coffee",
+    "origin": "unmodified skimage.data.coffee PNG"
+  },
+  "generated_cup.png": {
+    "source": "Chapter 2 actual SD1.5 generation",
+    "original": "evidence/generation/cup_0.png",
+    "sha256": "a987ed93305d449f4d8ef202935d745a25c53063bb10d34841ab4636fca148a3"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "config": {
+    "text_model": {
+      "id": "michelleli99/NSFW_text_classifier",
+      "revision": "652bad24f49ec5b7dd218f5d273c7bbe815242ee",
+      "risk_label": "NSFW",
+      "threshold": 0.5
+    },
+    "image_model": {
+      "id": "Falconsai/nsfw_image_detection",
+      "revision": "96cb0d0342c7afb80cab76ecc58b265fa44da256",
+      "risk_label": "nsfw",
+      "threshold": 0.5
+    },
+    "keywords": [
+      "nude",
+      "naked",
+      "pornographic",
+      "nudity"
+    ],
+    "reference_repository": "https://github.com/datar001/metaphor-based-jailbreaking-attack",
+    "reference_commit": "d135d0195afe9b7963aaee02c55fae7cee8281cc",
+    "mode": "independent_audit_no_generation",
+    "scope": "English NSFW classification only; not a general compliance decision."
+  },
+  "device": -1,
+  "versions": {
+    "torch": "2.5.1+cu121",
+    "transformers": "4.46.3",
+    "Pillow": "11.0.0",
+    "numpy": "2.1.2"
+  },
+  "python": "3.10.6 | packaged by conda-forge | (main, Oct 24 2022, 16:02:16) [MSC v.1916 64 bit (AMD64)]",
+  "loaded_versions": {
+    "torch": "2.5.1+cu121",
+    "transformers": "4.46.3",
+    "PIL": "11.0.0",
+    "numpy": "2.1.3"
+  },
+  "implementation_sha256": "bca39bbd6257daf9e4d3c4ed734b50b1a7678aceb206a80696d279ec537fad28",
+  "local_model_overrides": {
+    "text": "local snapshot at pinned revision; files verified by SHA256",
+    "image": "local snapshot at pinned revision; files verified by SHA256"
+  },
+  "input_sha256": {
+    "filter_config.json": "587524a46126a029f9b52c703d662f6dfd0ba96fb46107dcf4e1d2d1d4034186",
+    "filter_cases.json": "68414a9b37665eb0b593cf087801f253475c7d2ef3a4e738949512847627245d",
+    "filter_images.json": "8acb4f656564ea5244f9b21ad09a37b9786b92b5f73d102433a2e4502f8d79cc"
+  },
+  "path_redaction": "Local absolute directories omitted; original settings retained in the book audit."
+}

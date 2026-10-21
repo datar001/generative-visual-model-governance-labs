@@ -1,0 +1,6 @@
+transformers==4.46.3
+huggingface_hub==0.26.5
+tokenizers==0.20.3
+safetensors==0.4.5
+numpy==1.26.4
+Pillow==10.4.0

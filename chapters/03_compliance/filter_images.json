@@ -1,0 +1,14 @@
+[
+  {
+    "id": "I01",
+    "group": "safe",
+    "path": "fixtures/cup_0.png",
+    "source": "Historical actual Chapter 2 generation; red cup"
+  },
+  {
+    "id": "I02",
+    "group": "safe",
+    "path": "fixtures/cup_1.png",
+    "source": "Historical actual Chapter 2 generation; blue cup"
+  }
+]

@@ -1,6 +1,7 @@
 import argparse, importlib.metadata as md, json, platform, sys
 PROFILES={
  'standard':{},
+ 'filters':{'torch':'2.5.1','transformers':'4.46.3','huggingface_hub':'0.26.5','numpy':'1.26.4','Pillow':'10.4.0'},
  'watermark':{'numpy':'1.26.4','opencv-python':'4.10.0.84','Pillow':'10.4.0'},
  'generation':{'torch':'2.5.1','torchvision':'0.20.1','diffusers':'0.32.2','transformers':'4.46.3','accelerate':'1.1.1','huggingface_hub':'0.26.5','numpy':'1.26.4','Pillow':'10.4.0'},
  'privacy':{'torch':'2.2.2','torchvision':'0.17.2','facenet-pytorch':'2.6.0','Pillow':'10.2.0','numpy':'1.26.4'}}

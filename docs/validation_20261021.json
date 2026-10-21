@@ -5,7 +5,7 @@
   "printed_scripts": 10,
   "questions": 96,
   "answers": 96,
-  "offline_contract_tests": 5,
+  "offline_contract_tests": 11,
   "dry_run_entrypoints": 10,
   "governance_run_completed": true,
   "governance_cases": 3,
@@ -31,5 +31,19 @@
   "generation_evidence": "historical actual run, not regenerated in this teaching update",
   "other_model_examples_run": false,
   "remote": "https://github.com/datar001/generative-visual-model-governance-labs",
-  "visibility": "private"
+  "visibility": "private",
+  "filter_comparison": {
+    "text_samples": 8,
+    "image_samples": 2,
+    "keyword_blocked": 5,
+    "text_blocked": 6,
+    "image_blocked": 0,
+    "text_scored": 8,
+    "image_scored": 2,
+    "failures": 0,
+    "keyword_only": false,
+    "image_positive_control_present": false,
+    "boundary": "Independent audit; group labels are teaching annotations. Clear does not prove safety."
+  },
+  "filter_evidence": "evidence/filter_comparison_20261021/"
 }

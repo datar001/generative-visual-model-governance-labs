@@ -1,0 +1,13 @@
+{
+  "text_samples": 8,
+  "image_samples": 2,
+  "keyword_blocked": 5,
+  "text_blocked": 6,
+  "image_blocked": 0,
+  "text_scored": 8,
+  "image_scored": 2,
+  "failures": 0,
+  "keyword_only": false,
+  "image_positive_control_present": false,
+  "boundary": "Independent audit; group labels are teaching annotations. Clear does not prove safety."
+}

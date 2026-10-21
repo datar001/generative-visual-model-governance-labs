@@ -12,4 +12,4 @@
 python chapters/07_fairness/summarize.py path/to/reviewed.csv
 ```
 
-evidence/保存首轮真实实测证据，不作为本次新运行结果。模型实验未完成的章节不能因代码通过语法检查就被标记为已实测。
+evidence/分别保存有日期的历史真实证据与后续新运行结果；第3章filter_comparison_20261021为本轮实际审核。引用时注明对应运行。模型实验未完成的章节不能因代码通过语法检查就被标记为已实测。

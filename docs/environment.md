@@ -13,7 +13,7 @@ python tools/run.py 01
 
 macOS/Linux激活方式为 `source .venv-standard/bin/activate`。若系统禁止PowerShell激活脚本，可直接调用虚拟环境中的python.exe，无须修改系统执行策略。
 
-## 第2、3、4、6、7章与第8章定制阶段
+## 第2、4、6、7章与第8章定制阶段
 
 ```powershell
 python -m venv .venv-generation
@@ -56,3 +56,18 @@ python tools/run.py 08 --case features
 先运行各章的 --dry-run 确认脚本入口，再按对应环境执行。run.py为每次运行保存stdout、stderr、退出码、软件版本和代码哈希；模型下载、显存与数值失败也应保留。进程退出码0仅说明脚本执行结束，学习目标和输出质量仍需按章复核。
 
 参考：[PyTorch 2.5.1固定版本](https://pytorch.org/get-started/previous-versions/#v251)、[Diffusers 0.32.2加载接口](https://huggingface.co/docs/diffusers/v0.32.2/en/using-diffusers/loading)、[SLD固定接口](https://huggingface.co/docs/diffusers/v0.32.2/en/api/pipelines/stable_diffusion/stable_diffusion_safe)。
+
+## 第3章：独立过滤器环境
+
+本章不需要图像生成模型或显卡。关键词模式只用Python标准库；完整对照使用两个固定版本的英文NSFW分类模型。
+
+```powershell
+python -m venv .venv-filters
+.venv-filters\Scripts\Activate.ps1
+python -m pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+python -m pip install -r requirements-filters.txt
+python tools/check_environment.py --profile filters --with-torch
+python tools/run.py 03
+```
+
+离线词表练习：`python chapters/03_compliance/lab.py --keyword-only`。模型首次需下载约六百MB权重；之后可以使用本地缓存。模型修订号、阈值和词表保存在章节filter_config.json，不与第2章图像生成安全检查器混用。模型加载或推理失败将保留unavailable并返回非零退出码，不当作审核通过。默认使用CPU。

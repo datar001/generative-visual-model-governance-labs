@@ -1,0 +1,3 @@
+﻿id,group,path,source,sha256,image_status,nsfw_score,threshold,error
+I01,safe,fixtures/cup_0.png,Historical actual Chapter 2 generation; red cup,a987ed93305d449f4d8ef202935d745a25c53063bb10d34841ab4636fca148a3,clear,0.013276591897010803,0.5,
+I02,safe,fixtures/cup_1.png,Historical actual Chapter 2 generation; blue cup,7990d46746a857774239446c20db0ad8e8baeba7d576875c09b9b1706b049b8d,clear,0.010891616344451904,0.5,

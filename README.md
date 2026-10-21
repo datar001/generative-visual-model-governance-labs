@@ -30,7 +30,7 @@ python tools/run.py 01
 
 ## 实测状态
 
-历史真实验证：第2章红杯/蓝杯生成、第5章在红杯图上的水印压缩对照。记录和图像在[evidence](evidence/README.md)。本轮第1章离线执行、10个程序入口检查、5项离线测试和第5章水印复测通过，详见docs/validation_20261021.json。第3、4、6、7、8章模型实验未完成实测，不把预期输出当作测得结论。
+历史真实验证：第2章红杯/蓝杯生成、第5章在红杯图上的水印压缩对照。记录和图像在[evidence](evidence/README.md)。本轮第1章离线执行、10个程序入口检查、5项离线测试和第5章水印复测通过，详见docs/validation_20261021.json。第3章已完成8条文本与2张安全图的过滤器实测，详见[evidence](evidence/filter_comparison_20261021/README.md)；风险图像阳性对照未测。第4、6、7、8章模型实验未完成实测，不把预期输出当作测得结论。
 
 [实验记录与提交物](docs/experiment_record.md) · [维护与同步](docs/maintenance.md) · [接口依据](docs/sources.md)
 

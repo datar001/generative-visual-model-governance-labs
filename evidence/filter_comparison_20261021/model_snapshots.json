@@ -1,0 +1,71 @@
+[
+  {
+    "kind": "text",
+    "model": {
+      "id": "michelleli99/NSFW_text_classifier",
+      "revision": "652bad24f49ec5b7dd218f5d273c7bbe815242ee",
+      "risk_label": "NSFW",
+      "threshold": 0.5
+    },
+    "downloaded_revision": "652bad24f49ec5b7dd218f5d273c7bbe815242ee",
+    "files": [
+      {
+        "file": "config.json",
+        "bytes": 728,
+        "sha256": "1bc8a7338633e0d721490f0ffbb9937cc04d3b0d25e54911910df9a05f7a7a45"
+      },
+      {
+        "file": "special_tokens_map.json",
+        "bytes": 125,
+        "sha256": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3"
+      },
+      {
+        "file": "tokenizer.json",
+        "bytes": 711649,
+        "sha256": "91f1def9b9391fdabe028cd3f3fcc4efd34e5d1f08c3bf2de513ebb5911a1854"
+      },
+      {
+        "file": "tokenizer_config.json",
+        "bytes": 360,
+        "sha256": "1a6acd3261769a08abd6fa132a83c8b8a2f3ae30f15fe5c0154dbb2a2bc9e4b3"
+      },
+      {
+        "file": "vocab.txt",
+        "bytes": 231508,
+        "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      },
+      {
+        "file": "pytorch_model.bin",
+        "bytes": 267855533,
+        "sha256": "80d26f8d631ca24eac50200b5b4e06fe970d5228f395f323cd9265b550a8621a"
+      }
+    ]
+  },
+  {
+    "kind": "image",
+    "model": {
+      "id": "Falconsai/nsfw_image_detection",
+      "revision": "96cb0d0342c7afb80cab76ecc58b265fa44da256",
+      "risk_label": "nsfw",
+      "threshold": 0.5
+    },
+    "downloaded_revision": "96cb0d0342c7afb80cab76ecc58b265fa44da256",
+    "files": [
+      {
+        "file": "config.json",
+        "bytes": 724,
+        "sha256": "cd8c0a19566f199b5c64da402f1d6a9daf80d094fe6536befb060a2cc59449c2"
+      },
+      {
+        "file": "preprocessor_config.json",
+        "bytes": 325,
+        "sha256": "a34861a24e781942424ad790b82bc99348404a2e64ea882de88c40905851698d"
+      },
+      {
+        "file": "model.safetensors",
+        "bytes": 343223968,
+        "sha256": "97b2ce64ec146884b37f98ee7944ca4891aa72f6827dc0cb10684a1cbecd5830"
+      }
+    ]
+  }
+]

@@ -23,7 +23,7 @@ prompts = ['a red ceramic cup on a wooden table',
 for i, prompt in enumerate(prompts):
     # 每次重置同一种子，控制随机起点。
     rng = torch.Generator(device=device).manual_seed(2026)
-    # 采样 30 步；引导强度 7.5，输出为 512×512 像素。
+    # 采样 30 步；引导强度 7.5，输出为 512 乘 512 像素。
     result = pipe(prompt, generator=rng, num_inference_steps=30,
                   guidance_scale=7.5, height=512, width=512)
     result.images[0].save(out / f'cup_{i}.png')

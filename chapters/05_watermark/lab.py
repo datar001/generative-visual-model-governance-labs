@@ -9,7 +9,7 @@ if not path.exists():
 else:
     image = cv2.imread(str(path))
 image = cv2.resize(image, (512, 512)); cv2.imwrite(str(out/'input.png'), image)
-# 2. 转到亮度通道，在每个 8×8 块中嵌入水印。
+# 2. 转到亮度通道，在每个 8 乘 8 块中嵌入水印。
 ycc = cv2.cvtColor(image, cv2.COLOR_BGR2YCrCb).astype('float32')
 # 固定种子生成 16 位消息；强度控制系数差的幅度。
 bits = np.random.default_rng(2026).integers(0, 2, 16); strength = 24

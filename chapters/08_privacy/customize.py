@@ -3,6 +3,7 @@ import torch
 from PIL import Image
 from diffusers import StableDiffusionXLPipeline
 from transformers import CLIPVisionModelWithProjection
+# 1. 本例需要 CUDA；加载 SDXL 与人脸图像适配器。
 device = 'cuda'
 encoder = CLIPVisionModelWithProjection.from_pretrained(
     'h94/IP-Adapter', subfolder='models/image_encoder', torch_dtype=torch.float16)
@@ -11,12 +12,16 @@ pipe = StableDiffusionXLPipeline.from_pretrained(
     torch_dtype=torch.float16)
 pipe.load_ip_adapter('h94/IP-Adapter', subfolder='sdxl_models',
                      weight_name='ip-adapter-plus-face_sdxl_vit-h.safetensors')
+# 适配器强度固定为 0.7，保持各输入的比较条件一致。
 pipe.set_ip_adapter_scale(0.7)
 pipe.enable_model_cpu_offload()
 out = Path('results/privacy')
+# 2. 比较原图、防护图及防护图的 JPEG 副本。
 for name in ('original.png', 'protected.png', 'protected_q75.jpg'):
     image = Image.open(out/name).convert('RGB')
+    # 提示词、步数与种子相同，仅替换人脸参考图。
     result = pipe('a portrait photo of a person in a garden',
                   ip_adapter_image=image, num_inference_steps=30,
                   generator=torch.Generator(device).manual_seed(2026))
+    # 3. 保存定制结果；需结合相似度与画质人工评估。
     result.images[0].save(out/f'custom_{Path(name).stem}.png')

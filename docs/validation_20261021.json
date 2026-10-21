@@ -69,5 +69,16 @@
     "cpu_run_completed": true,
     "evidence": "evidence/detection_20261021/",
     "not_accuracy_evaluation": true
+  },
+  "watermark_decoding": {
+    "source_message": "1001000010111110",
+    "conditions": [
+      "png",
+      "100",
+      "75",
+      "40"
+    ],
+    "all_correct_bits": 16,
+    "previous_images_and_scores_unchanged": true
   }
 }

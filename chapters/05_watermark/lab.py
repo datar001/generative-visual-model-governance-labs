@@ -1,4 +1,4 @@
-from pathlib import Path; import csv; import cv2
+from pathlib import Path; import csv; import json; import cv2
 import numpy as np
 out = Path('results/watermark'); out.mkdir(parents=True, exist_ok=True)
 # 1. 优先读取生成图；缺失时改用程序合成测试图。
@@ -21,16 +21,30 @@ for k, (r, c) in enumerate((r,c) for r in range(0,512,8) for c in range(0,512,8)
     ycc[r:r+8,c:c+8,0] = cv2.idct(block)
 watermarked = cv2.cvtColor(np.clip(ycc,0,255).astype('uint8'), cv2.COLOR_YCrCb2BGR)
 cv2.imwrite(str(out/'marked.png'), watermarked); rows = []
-# 3. 对带水印图重新压缩，检验消息能否恢复。
-for quality in (100, 75, 40):
-    cv2.imwrite(str(out/f'q{quality}.jpg'),watermarked,[cv2.IMWRITE_JPEG_QUALITY,quality])
-    test = cv2.imread(str(out/f'q{quality}.jpg')); lum=cv2.cvtColor(test,cv2.COLOR_BGR2YCrCb)[:,:,0]
+# 3. 保存原始消息，解码未压缩水印图及三档 JPEG 副本。
+record = {'source_bits': ''.join(str(int(b)) for b in bits), 'cases': []}
+for quality in ('png', 100, 75, 40):
+    test = watermarked
+    if quality != 'png':
+        target = out/f'q{quality}.jpg'
+        cv2.imwrite(str(target), watermarked, [cv2.IMWRITE_JPEG_QUALITY, quality])
+        test = cv2.imread(str(target))
+    lum = cv2.cvtColor(test, cv2.COLOR_BGR2YCrCb)[:,:,0]
     # 对重复嵌入的同一位累加系数差，再按正负判决。
     votes = np.zeros(16)
     for k,(r,c) in enumerate((r,c) for r in range(0,512,8) for c in range(0,512,8)):
         d=cv2.dct(lum[r:r+8,c:c+8].astype('float32')); votes[k%16] += d[2,3]-d[3,2]
-    # 记录位恢复率与 PSNR；后者同时反映水印和压缩影响。
-    rows.append((quality,float(np.mean((votes>0)==bits)),float(cv2.PSNR(image,test))))
+    recovered = (votes > 0).astype(int)
+    accuracy = float(np.mean(recovered == bits))
+    record['cases'].append(dict(condition=str(quality),
+        decoded_bits=''.join(str(int(b)) for b in recovered),
+        correct_bits=int(np.sum(recovered == bits)), bit_accuracy=accuracy))
+    # 原有 CSV 保留三档 JPEG 指标，另用 JSON 保存逐位解码证据。
+    if quality != 'png':
+        rows.append((quality, accuracy, float(cv2.PSNR(image, test))))
 # 4. 保存结果；单张图的恢复率不能代表通用性能。
 with (out/'scores.csv').open('w',newline='') as f:
     w=csv.writer(f); w.writerows([['jpeg_quality','bit_accuracy','psnr_db'], *rows])
+
+(out/'decoding.json').write_text(json.dumps(record, indent=2), encoding='utf-8')
+print(json.dumps(record, indent=2))

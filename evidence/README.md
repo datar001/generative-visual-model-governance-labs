@@ -11,3 +11,6 @@ model_validation_summary.json记录当时的软件与验证边界。其他模型
 
 
 第4章：[CNNSpot八组实测](detection_20261021/README.md)，包含真实咖啡照片与扩散模型杯子图的原图/JPEG分数，后者四条件均漏检。
+
+
+第5章新增[逐位解码消息](watermark/decoding.json)：原始16位消息与含水印PNG、JPEG100/75/40的恢复串均保留。该解码不重建无水印原图；单张图结果不代表总体性能。

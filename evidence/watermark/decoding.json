@@ -1,0 +1,29 @@
+{
+  "source_bits": "1001000010111110",
+  "cases": [
+    {
+      "condition": "png",
+      "decoded_bits": "1001000010111110",
+      "correct_bits": 16,
+      "bit_accuracy": 1.0
+    },
+    {
+      "condition": "100",
+      "decoded_bits": "1001000010111110",
+      "correct_bits": 16,
+      "bit_accuracy": 1.0
+    },
+    {
+      "condition": "75",
+      "decoded_bits": "1001000010111110",
+      "correct_bits": 16,
+      "bit_accuracy": 1.0
+    },
+    {
+      "condition": "40",
+      "decoded_bits": "1001000010111110",
+      "correct_bits": 16,
+      "bit_accuracy": 1.0
+    }
+  ]
+}

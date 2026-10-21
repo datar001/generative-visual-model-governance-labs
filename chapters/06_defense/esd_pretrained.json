@@ -1,0 +1,10 @@
+{
+  "base_model": "CompVis/stable-diffusion-v1-4",
+  "base_revision": "133a221b8aa7292a167afc5127cb63fb5005638b",
+  "filename": "diffusers-VanGogh-ESDx1-UNET.pt",
+  "url": "https://erasing.baulab.info/weights/esd_models/art/diffusers-VanGogh-ESDx1-UNET.pt",
+  "sha256": "8881d70b1bd376c5532e933f60c5a78fc76eb63e153edfbfaaf6d649106b167e",
+  "reference": "https://erasing.baulab.info/weights/esd_models/README.txt",
+  "format": "full Diffusers UNet state_dict; ESD-x; not LoRA",
+  "bytes": 3438307109
+}

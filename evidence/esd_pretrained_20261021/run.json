@@ -1,0 +1,27 @@
+{
+  "run_id": "20261021T142614Z_6f1a3bce",
+  "chapter": "06",
+  "case": "esd",
+  "command": [
+    "D:\\anaconda\\envs\\segment\\python.exe",
+    "E:\\ondrive_clone\\paper\\book_revision\\visual-model-governance-labs\\chapters\\06_defense\\esd.py"
+  ],
+  "python": "3.10.6 | packaged by conda-forge | (main, Oct 24 2022, 16:02:16) [MSC v.1916 64 bit (AMD64)]",
+  "packages": {
+    "torch": "2.5.1+cu121",
+    "torchvision": "0.20.1+cu121",
+    "diffusers": "0.32.2",
+    "transformers": "4.46.3",
+    "accelerate": "1.1.1",
+    "numpy": "2.1.2",
+    "opencv-python": null,
+    "Pillow": "11.0.0",
+    "facenet-pytorch": null
+  },
+  "code_sha256": "e066de4b3d46e2c907ecd17234ba0e87ea93118094e278faa90c122d94a03d17",
+  "git_commit": "934bf853bdb649e0094885c95559428becfba6dd",
+  "status": "completed",
+  "outputs_root": "results/",
+  "validation": "Process success does not prove model or learning outcomes.",
+  "exit_code": 0
+}

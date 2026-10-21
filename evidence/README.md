@@ -14,3 +14,6 @@ model_validation_summary.json记录当时的软件与验证边界。其他模型
 
 
 第5章新增[逐位解码消息](watermark/decoding.json)：原始16位消息与含水印PNG、JPEG100/75/40的恢复串均保留。该解码不重建无水印原图；单张图结果不代表总体性能。
+
+
+第6章：[ESD官方预训练权重CPU最小流程检查](esd_pretrained_20261021/README.md)，包含4条件输出和完整标志，仅验证程序路径，默认课堂效果未测。

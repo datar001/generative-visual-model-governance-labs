@@ -30,7 +30,7 @@ python tools/run.py 01
 
 ## 实测状态
 
-历史真实验证：第2章红杯/蓝杯生成、第5章在红杯图上的水印压缩对照。记录和图像在[evidence](evidence/README.md)。本轮第1章离线执行、11个程序入口检查、18项离线测试和第5章水印复测通过，详见docs/validation_20261021.json。第3章已完成8条文本与2张安全图的过滤器实测，详见[evidence](evidence/filter_comparison_20261021/README.md)；风险图像阳性对照未测。第4章CNNSpot已完成两图四条件共8组实测，含生成图漏检记录，见[第4章说明](chapters/04_detection/README.md)。第6、7、8章模型实验未完成实测，不把预期输出当作测得结论。
+历史真实验证：第2章红杯/蓝杯生成、第5章在红杯图上的水印压缩对照。记录和图像在[evidence](evidence/README.md)。本轮第1章离线执行、11个程序入口检查、18项离线测试和第5章水印复测通过，详见docs/validation_20261021.json。第3章已完成8条文本与2张安全图的过滤器实测，详见[evidence](evidence/filter_comparison_20261021/README.md)；风险图像阳性对照未测。第4章CNNSpot已完成两图四条件共8组实测，含生成图漏检记录，见[第4章说明](chapters/04_detection/README.md)。第6章ESD已完成官方权重匹配及CPU低分辨率单步流程检查，见[记录](evidence/esd_pretrained_20261021/README.md)，默认课堂效果未测；SLD、第7、8章模型效果实验未完成实测，不把预期输出当作测得结论。
 
 [实验记录与提交物](docs/experiment_record.md) · [维护与同步](docs/maintenance.md) · [接口依据](docs/sources.md)
 

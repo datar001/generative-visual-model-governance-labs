@@ -23,7 +23,7 @@ python -m pip install -r requirements-generation.txt
 python tools/check_environment.py --profile generation --with-torch
 ```
 
-上面是CPU安装命令，适用于配置检查、CPU检测及能够接受慢速推理的示例。CUDA设备可将PyTorch安装源替换为官方兼容构建，例如cu121；先核对驱动与设备，再确认torch.cuda.is_available()。单独安装CUDA工具包不能证明PyTorch可用GPU。本书已有GTX 1660 SUPER单精度生成记录；当前代码对GTX 16系列使用float32及CPU卸载。ESD当前实现同时保留教师、学生和优化状态，本机6GB显存不足；第8章SDXL定制也需要额外资源。CPU安装环境不能直接运行代码中明确要求CUDA的ESD/定制阶段。
+上面是CPU安装命令，适用于配置检查、CPU检测及能够接受慢速推理的示例。CUDA设备可将PyTorch安装源替换为官方兼容构建，例如cu121；先核对驱动与设备，再确认torch.cuda.is_available()。单独安装CUDA工具包不能证明PyTorch可用GPU。本书已有GTX 1660 SUPER单精度生成记录；当前代码对GTX 16系列使用float32及CPU卸载。ESD现改为加载官方预训练权重，仅需推理资源；第8章SDXL定制也需要额外资源。CPU安装环境不能直接运行代码中明确要求CUDA的定制阶段。
 
 首次模型下载需要网络、权重存储空间和相应访问许可。模型缓存可通过HF_HOME配置，不放入本仓库。模型标识符、分支/修订号和软件版本应写入实验记录。
 
@@ -80,3 +80,7 @@ python tools/run.py 03
 ## 第4章CNNSpot最小环境
 
 Python 3.10下安装torch==2.5.1、torchvision==0.20.1和Pillow==11.0.0即可。可运行 `python -m pip install -r requirements-detection.txt`；CPU构建安装源见上文。无需Transformers、Diffusers或生成模型。随后按[第4章说明](../chapters/04_detection/README.md)下载并校验约282 MB的官方权重，运行检测。默认CPU全图推理，输出分数与哈希，不重新训练模型。
+
+## 第6章ESD预训练推理
+
+不运行ESD训练，按[第6章说明](../chapters/06_defense/README.md)下载与SD 1.4配套的官方Van Gogh ESD-x完整UNet文件。推理环境沿用固定PyTorch/Diffusers组合，下载辅助程序还需requests。基础模型与权重均不随配套包分发。CPU可运行但较慢，CUDA低显存使用单精度与CPU卸载，保留输出检查器。

@@ -1,0 +1,4 @@
+Generating base 0
+0_base.png [True]
+Generating base 1
+1_base.png [False]

@@ -80,5 +80,16 @@
     ],
     "all_correct_bits": 16,
     "previous_images_and_scores_unchanged": true
+  },
+  "esd_pretrained": {
+    "weight_sha256": "8881d70b1bd376c5532e933f60c5a78fc76eb63e153edfbfaaf6d649106b167e",
+    "base_model": "CompVis/stable-diffusion-v1-4",
+    "strict_key_shape_validation": true,
+    "cpu_smoke_completed": true,
+    "cpu_smoke_steps": 1,
+    "cpu_smoke_size": 64,
+    "rows": 4,
+    "output_replacements": 2,
+    "default_classroom_effect_tested": false
   }
 }

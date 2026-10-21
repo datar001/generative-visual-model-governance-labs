@@ -1,12 +1,12 @@
 {
   "date": "2026-10-21",
   "chapters": 8,
-  "practices": 9,
-  "printed_scripts": 10,
+  "practices": 10,
+  "printed_scripts": 11,
   "questions": 96,
   "answers": 96,
-  "offline_contract_tests": 11,
-  "dry_run_entrypoints": 10,
+  "offline_contract_tests": 16,
+  "dry_run_entrypoints": 11,
   "governance_run_completed": true,
   "governance_cases": 3,
   "watermark_rerun_completed": true,
@@ -45,5 +45,18 @@
     "image_positive_control_present": false,
     "boundary": "Independent audit; group labels are teaching annotations. Clear does not prove safety."
   },
-  "filter_evidence": "evidence/filter_comparison_20261021/"
+  "filter_evidence": "evidence/filter_comparison_20261021/",
+  "pseudoword_cup": {
+    "runs": 12,
+    "logical_queries": 480,
+    "unique_text_encodings": 379,
+    "natural_description_score": 0.3244136571884155,
+    "natural_description_passes_classroom_gate": false,
+    "all_candidates_pass_classroom_gate": true,
+    "seconds": 26.156636599975172,
+    "scope": "Benign red-cup CLIP matching in a closed teaching vocabulary. No real safety-filter objective, no text-to-image generation, no claim of real jailbreak success.",
+    "real_safety_filter_tested": false,
+    "text_to_image_generation_tested": false,
+    "llm_api_calls": 0
+  }
 }

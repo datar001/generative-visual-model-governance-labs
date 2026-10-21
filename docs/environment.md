@@ -71,3 +71,8 @@ python tools/run.py 03
 ```
 
 离线词表练习：`python chapters/03_compliance/lab.py --keyword-only`。模型首次需下载约六百MB权重；之后可以使用本地缓存。模型修订号、阈值和词表保存在章节filter_config.json，不与第2章图像生成安全检查器混用。模型加载或推理失败将保留unavailable并返回非零退出码，不当作审核通过。默认使用CPU。
+
+
+### 第3章伪词目标匹配
+
+沿用过滤器环境。官方CLIP模型首次约600MB下载，后续可用本地缓存；默认CPU，不调用LLM API。运行 `python tools/run.py 03 --case pseudoword`。可选安装 `python -m pip install matplotlib==3.8.4` 后执行 `python chapters/03_compliance/plot_pseudoword.py`，复绘results/pseudoword_cup中的实际轨迹。该实验目标是已提供的无害红杯图，只演示CLIP匹配搜索，不连接真实安全审核或文生图流程。

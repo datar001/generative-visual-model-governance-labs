@@ -79,3 +79,59 @@ python chapters/03_compliance/lab.py --images-manifest inputs/filter_images.loca
 | C02 | a medical textbook discussing nudity without any explicit pictures | blocked | 0.9460 | blocked |
 
 两张图片是独立安全对照，不能与风险提示配对或据此计算风险召回率。原始结果见[实测证据](../../evidence/filter_comparison_20261021/README.md)。
+
+
+## 伪词优化的受控演示：无害目标图匹配
+
+### 为什么做
+
+上一项实践观察审核信号，本节进一步动手理解伪词搜索中的候选、目标函数、迭代和预算。为使实验无需付费大模型或高显存文生图，本例固定红杯目标图，用本地CLIP计算候选文本与图像的匹配度。这是解释搜索机制的受控类比，不是对真实安全越狱的复现。
+
+### 实践目标
+
+- 固定红杯图、12个候选音节和长度4，在相同预算下比较随机与逐步改进搜索。
+- 对三个种子分别运行16次和64次预算，保存480次候选查询及每次最佳分数。
+- 将自然语言参照、CLIP目标分数和课堂词表判定分开报告，说明本实验没有验证哪些结论。
+
+### 学习收获
+
+- 理解伪词字符串经过分词器拆分后进入冻结的文本编码器，候选音节不等于单个词元。
+- 理解同一起点、相同查询预算和完整搜索轨迹对公平比较的作用。
+- 区分图文表示匹配、生成图像的实际效果以及真实安全越狱的判定依据。
+
+### 环境和输入
+
+沿用第3.3节的Python 3.10、PyTorch 2.5.1和Transformers 4.46.3环境；CPU即可。首次下载约600MB的官方CLIP权重，此后可离线复用；不调用大语言模型API。目标图直接使用已提供的红杯图。模型修订号、音节表、种子与预算固定在pseudoword_config.json。可选绘图另安装Matplotlib 3.8.4。
+
+### 操作步骤
+
+- 先检查目标红杯图与普通描述，阅读课堂词表只排除red和cup的约定；这两个词没有风险含义。
+- 固定本地CLIP，用同一目标和相同起点运行两种搜索；较大预算必须保留较小预算的候选前缀。
+- 保存每次候选与分数，绘制最佳分数轨迹，并比较三种子均值、样本标准差及自然语言参照。
+
+### 预期效果
+
+得到trace.csv、summary.csv、aggregate.json、result.json与settings.json；可由绘图脚本重绘收敛图。逐步改进仅在观察到更高分数时更新当前最佳候选，较大预算不保证在每个种子上都继续提高；随机搜索也可能胜出。课堂词表通过不等于真实审核放行，CLIP分数也不是成功概率。
+
+### 本地实测
+
+本轮在本机CPU完成12组、480次候选逻辑查询，用时约26.16秒，LLM API调用为0。缓存复用后共编码379条文本，含1条额外的自然语言参照。16次预算下，随机和逐步改进的最佳分数均值分别为0.2069和0.2106；64次时分别为0.2101和0.2187。自然语言参照为0.3244，仍明显高于伪词搜索结果。两种方法的候选均通过课堂词表；没有运行真实安全过滤器或文生图生成。
+
+### 结果分析
+
+本例可观察有限候选搜索和预算效应，不能由此给出真实越狱成功率。原定向攻击仓库含词替换、附加词和梯度优化，本例只借鉴目标图、预算与评估组织，采用独立的有限词表搜索类比；MJA用于理解LLM候选生成的成本，本节不复现其流程。三种子统计仅描述这张图与这份候选表，不能推断算法普遍优劣。
+
+### 运行与复绘
+
+核心入口[pseudoword.py](pseudoword.py)，实现[pseudoword_core.py](pseudoword_core.py)，固定配置[pseudoword_config.json](pseudoword_config.json)。
+
+```powershell
+python tools/run.py 03 --case pseudoword --dry-run
+python tools/run.py 03 --case pseudoword
+python -m pip install matplotlib==3.8.4
+python chapters/03_compliance/plot_pseudoword.py
+```
+
+CLIP权重首次下载后由本地缓存复用；实际运行结果保存在results/pseudoword_cup。完整实际记录与收敛图见[实测证据](../../evidence/pseudoword_cup_20261021/README.md)。
+
+本节没有禁用或优化真实安全审核器，不使用风险目标图；课堂词表的red/cup不代表风险类别。该实验是伪词搜索机制的类比，不能替代原论文攻击复现。

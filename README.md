@@ -10,7 +10,7 @@
 |---|---|---|---|
 | 1 | [风险与治理概述](chapters/01_overview/README.md) | 1个小节 | [12题](chapters/01_overview/exercises.md) / [参考答案](chapters/01_overview/answers.md) |
 | 2 | [生成式视觉大模型基础](chapters/02_basics/README.md) | 1个小节 | [12题](chapters/02_basics/exercises.md) / [参考答案](chapters/02_basics/answers.md) |
-| 3 | [内容合规性漏洞](chapters/03_compliance/README.md) | 1个小节 | [12题](chapters/03_compliance/exercises.md) / [参考答案](chapters/03_compliance/answers.md) |
+| 3 | [内容合规性漏洞](chapters/03_compliance/README.md) | 2个小节 | [12题](chapters/03_compliance/exercises.md) / [参考答案](chapters/03_compliance/answers.md) |
 | 4 | [生成图像鉴伪](chapters/04_detection/README.md) | 1个小节 | [12题](chapters/04_detection/exercises.md) / [参考答案](chapters/04_detection/answers.md) |
 | 5 | [图像水印](chapters/05_watermark/README.md) | 1个小节 | [12题](chapters/05_watermark/exercises.md) / [参考答案](chapters/05_watermark/answers.md) |
 | 6 | [安全防御](chapters/06_defense/README.md) | 2个小节 | [12题](chapters/06_defense/exercises.md) / [参考答案](chapters/06_defense/answers.md) |
@@ -35,3 +35,6 @@ python tools/run.py 01
 [实验记录与提交物](docs/experiment_record.md) · [维护与同步](docs/maintenance.md) · [接口依据](docs/sources.md)
 
 本仓库不分发模型权重、授权人脸、令牌或整书PDF。初始远端为私有，学生访问需作者授权；是否公开由作者决定。
+
+
+第3章另增无害红杯目标的伪词搜索教学类比：本机CPU已完成12组、480次候选查询，约26秒、无LLM API调用。见[实际轨迹与统计](evidence/pseudoword_cup_20261021/README.md)。这组实验没有测试真实安全过滤或文生图，不能据此给出真实越狱成功率。

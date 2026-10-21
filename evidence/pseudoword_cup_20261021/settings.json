@@ -1,0 +1,46 @@
+{
+  "config": {
+    "model": "openai/clip-vit-base-patch32",
+    "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+    "target": "fixtures/cup_0.png",
+    "target_description": "a red ceramic cup on a wooden table",
+    "syllables": [
+      "baflo",
+      "vemri",
+      "nuvak",
+      "torli",
+      "pemvo",
+      "sarvi",
+      "lubra",
+      "kivon",
+      "dazmi",
+      "fonza",
+      "melku",
+      "wexin"
+    ],
+    "length": 4,
+    "budgets": [
+      16,
+      64
+    ],
+    "seeds": [
+      2026,
+      2027,
+      2028
+    ],
+    "classroom_excluded_words": [
+      "red",
+      "cup"
+    ],
+    "scope": "Benign red-cup CLIP matching in a closed teaching vocabulary. No real safety-filter objective, no text-to-image generation, no claim of real jailbreak success."
+  },
+  "target_sha256": "a987ed93305d449f4d8ef202935d745a25c53063bb10d34841ab4636fca148a3",
+  "implementation_sha256": "5345866054817b90cdd03632d79322feb3da31e7d434133b50c26f8b83962d8c",
+  "python": "3.10.6 | packaged by conda-forge | (main, Oct 24 2022, 16:02:16) [MSC v.1916 64 bit (AMD64)]",
+  "loaded_versions": {
+    "torch": "2.5.1+cu121",
+    "transformers": "4.46.3",
+    "PIL": "11.0.0",
+    "numpy": "2.1.3"
+  }
+}

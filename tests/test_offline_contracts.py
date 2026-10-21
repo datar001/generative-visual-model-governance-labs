@@ -26,7 +26,7 @@ class Contracts(unittest.TestCase):
    self.assertEqual(risks,{'authenticity','source','compliance','fairness','privacy'})
    self.assertTrue(all(row['review_status']=='pending' for row in rows))
  def test_dry_run_does_not_import_model_libraries(self):
-  for chapter,case in [('01',None),('02',None),('03',None),('04',None),('05',None),
+  for chapter,case in [('01',None),('02',None),('03',None),('03','pseudoword'),('04',None),('05',None),
     ('06','sld'),('06','esd'),('07',None),('08','features'),('08','customize')]:
    command=[sys.executable,str(ROOT/'tools/run.py'),chapter,'--dry-run']
    if case:command.extend(['--case',case])

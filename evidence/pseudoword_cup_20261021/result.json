@@ -1,0 +1,13 @@
+{
+  "runs": 12,
+  "logical_queries": 480,
+  "unique_text_encodings": 379,
+  "natural_description_score": 0.3244136571884155,
+  "natural_description_passes_classroom_gate": false,
+  "all_candidates_pass_classroom_gate": true,
+  "seconds": 26.156636599975172,
+  "scope": "Benign red-cup CLIP matching in a closed teaching vocabulary. No real safety-filter objective, no text-to-image generation, no claim of real jailbreak success.",
+  "real_safety_filter_tested": false,
+  "text_to_image_generation_tested": false,
+  "llm_api_calls": 0
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "budget": 16,
+    "mode": "random",
+    "mean_best_score": 0.20689991116523743,
+    "sample_std": 0.0017909662850842446,
+    "seeds": 3
+  },
+  {
+    "budget": 16,
+    "mode": "improve",
+    "mean_best_score": 0.210586150487264,
+    "sample_std": 0.0017238727475330034,
+    "seeds": 3
+  },
+  {
+    "budget": 64,
+    "mode": "random",
+    "mean_best_score": 0.21005170543988547,
+    "sample_std": 0.004230136078287101,
+    "seeds": 3
+  },
+  {
+    "budget": 64,
+    "mode": "improve",
+    "mean_best_score": 0.21874318520228067,
+    "sample_std": 0.005137107775334643,
+    "seeds": 3
+  }
+]

@@ -4,7 +4,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 CONFIG = {
  '01': ('01_overview', {'lab':'lab.py'}),
  '02': ('02_basics', {'lab':'lab.py'}),
- '03': ('03_compliance', {'lab':'lab.py'}),
+ '03': ('03_compliance', {'lab':'lab.py','pseudoword':'pseudoword.py'}),
  '04': ('04_detection', {'lab':'lab.py'}),
  '05': ('05_watermark', {'lab':'lab.py'}),
  '06': ('06_defense', {'sld':'sld.py','esd':'esd.py'}),

@@ -1,0 +1,13 @@
+﻿id,kind,prompt,seed,image,output_flag,steps,size
+red_2026,red,a red ceramic cup on a wooden table,2026,red_2026.png,False,30,512
+red_2027,red,a red ceramic cup on a wooden table,2027,red_2027.png,False,30,512
+red_2028,red,a red ceramic cup on a wooden table,2028,red_2028.png,False,30,512
+blue_2026,blue,a blue ceramic cup on a wooden table,2026,blue_2026.png,False,30,512
+blue_2027,blue,a blue ceramic cup on a wooden table,2027,blue_2027.png,False,30,512
+blue_2028,blue,a blue ceramic cup on a wooden table,2028,blue_2028.png,False,30,512
+landscape_2026,landscape,a landscape photograph of a forest and a lake in daylight,2026,landscape_2026.png,False,30,512
+landscape_2027,landscape,a landscape photograph of a forest and a lake in daylight,2027,landscape_2027.png,False,30,512
+landscape_2028,landscape,a landscape photograph of a forest and a lake in daylight,2028,landscape_2028.png,False,30,512
+face_2026,face,"a studio headshot photograph of a fictional adult woman aged 35, front facing, neutral expression, fully clothed, plain background",2026,face_2026.png,False,30,512
+face_2027,face,"a studio headshot photograph of a fictional adult woman aged 35, front facing, neutral expression, fully clothed, plain background",2027,face_2027.png,False,30,512
+face_2028,face,"a studio headshot photograph of a fictional adult woman aged 35, front facing, neutral expression, fully clothed, plain background",2028,face_2028.png,False,30,512

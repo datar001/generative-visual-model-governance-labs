@@ -1,0 +1,11 @@
+{
+  "target": "benign red cup",
+  "classroom_excluded_words": [
+    "red",
+    "cup"
+  ],
+  "real_safety_bypass_tested": false,
+  "generated_cases": 7,
+  "llm_api_calls": 0,
+  "meaning": "Tests whether a high surrogate score carries to actual image generation; failure is retained."
+}

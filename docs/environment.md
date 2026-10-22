@@ -1,3 +1,9 @@
+# 当前已验证环境：2026-10-22 A800
+
+本轮完整实践按 [A800运行说明](../experiments/a800/README.md) 的安装与运行顺序执行，PyTorch 2.4.1+cu118、Diffusers 0.32.2、Transformers 4.46.3；第8章主线为SD1.5/IP-Adapter Plus Face。完整实际环境见 [环境清单](../evidence/a800_20261022/manifests/environment_freeze_final.txt)。
+
+以下保留2026-10-21历史环境方案，不作为当前A800实现的默认安装方法。
+
 # 环境配置
 
 以下固定组合用于与本书示例对齐；并不宣称所有平台都已实测。安装前确认Python为3.10。不要把不同实验环境混装。

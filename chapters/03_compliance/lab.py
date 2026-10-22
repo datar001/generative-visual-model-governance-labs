@@ -1,23 +1,11 @@
+"""统一入口：调用已实测实现，完整参数、图像与记录保存到 LAB_ROOT。"""
 from pathlib import Path
-import argparse
-import json
-from filter_core import compare
-
-# 1. 同一套配置固定词表、模型修订号与阈值。
-folder = Path(__file__).resolve().parent
-parser = argparse.ArgumentParser(description='Compare keyword, text and image filters.')
-parser.add_argument('--keyword-only', action='store_true')
-parser.add_argument('--images-manifest', type=Path)
-parser.add_argument('--device', type=int, default=-1)
-parser.add_argument('--out', type=Path, default=Path('results/filter'))
-args = parser.parse_args()
-
-# 2. 独立审核风险与安全文本，保留两个过滤器的不同判断。
-# 图像另表记录，不把风险提示与任意安全图片强行配对。
-summary = compare(folder, args.out, keyword_only=args.keyword_only,
-                  image_manifest=args.images_manifest, device=args.device)
-
-# 3. 保存逐样本分数、命中词、失败状态和模型配置。
-# 模型未加载或推理失败记为不可用，不能当作未触发。
-print(json.dumps(summary, ensure_ascii=False, indent=2))
-raise SystemExit(1 if summary['failures'] else 0)
+import sys
+# 同时支持教学仓库和随书工程，避免维护两份实验逻辑。
+candidates=[p/relative for p in Path(__file__).resolve().parents
+            for relative in ('experiments/a800','practice/a800')]
+folder=next((p for p in candidates if (p/'common.py').is_file()),None)
+if folder is None:raise SystemExit('缺少配套实验实现，请使用完整教学仓库或随书工程。')
+sys.path.insert(0,str(folder))
+from filters import main
+if __name__=="__main__":main()

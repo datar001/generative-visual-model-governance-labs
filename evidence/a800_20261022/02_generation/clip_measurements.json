@@ -1,0 +1,54 @@
+{
+  "scope": "Descriptive CLIP cosine only; not calibrated quality, identity, risk or style-erasure success probability.",
+  "model_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "samples": [
+    {
+      "id": "red_2026",
+      "prompt_cosine": 0.32085251808166504
+    },
+    {
+      "id": "red_2027",
+      "prompt_cosine": 0.33891811966896057
+    },
+    {
+      "id": "red_2028",
+      "prompt_cosine": 0.3401736319065094
+    },
+    {
+      "id": "blue_2026",
+      "prompt_cosine": 0.36330366134643555
+    },
+    {
+      "id": "blue_2027",
+      "prompt_cosine": 0.38361719250679016
+    },
+    {
+      "id": "blue_2028",
+      "prompt_cosine": 0.33374911546707153
+    },
+    {
+      "id": "landscape_2026",
+      "prompt_cosine": 0.2944340705871582
+    },
+    {
+      "id": "landscape_2027",
+      "prompt_cosine": 0.29447317123413086
+    },
+    {
+      "id": "landscape_2028",
+      "prompt_cosine": 0.2981567978858948
+    },
+    {
+      "id": "face_2026",
+      "prompt_cosine": 0.3318428099155426
+    },
+    {
+      "id": "face_2027",
+      "prompt_cosine": 0.3047921061515808
+    },
+    {
+      "id": "face_2028",
+      "prompt_cosine": 0.34506916999816895
+    }
+  ]
+}

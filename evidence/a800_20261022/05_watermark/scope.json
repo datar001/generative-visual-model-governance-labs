@@ -1,0 +1,13 @@
+{
+  "algorithm": "Educational block-DCT coefficient-difference watermark with repeated 16-bit message; not TreeRing/HiDDeN",
+  "independent_images": 9,
+  "strengths": [
+    8,
+    16,
+    24
+  ],
+  "conditions": 8,
+  "expected_rows": 216,
+  "decoding_recovers": "message only, not pre-embedding image",
+  "negative_controls": "All unmarked copies are included; repeated strengths share the same unmarked input."
+}

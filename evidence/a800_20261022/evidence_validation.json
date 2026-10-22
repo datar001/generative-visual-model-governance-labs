@@ -1,0 +1,328 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "01_governance.complete",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "01_governance.recorded_hashes",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "mismatch": []
+      }
+    },
+    {
+      "name": "02_generation.complete",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "02_generation.recorded_hashes",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "mismatch": []
+      }
+    },
+    {
+      "name": "02_generation.sample_count",
+      "passed": true,
+      "detail": {
+        "expected": 12,
+        "actual": 12
+      }
+    },
+    {
+      "name": "02_generation.unique_ids",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "02_generation.image_files",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "02_generation.explicit_output_flags",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "03_filters.complete",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "03_filters.recorded_hashes",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "mismatch": []
+      }
+    },
+    {
+      "name": "03_pseudoword.complete",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "03_pseudoword.recorded_hashes",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "mismatch": []
+      }
+    },
+    {
+      "name": "03_pseudoword.sample_count",
+      "passed": true,
+      "detail": {
+        "expected": 7,
+        "actual": 7
+      }
+    },
+    {
+      "name": "03_pseudoword.unique_ids",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "03_pseudoword.image_files",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "03_pseudoword.explicit_output_flags",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "04_detection.complete",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "04_detection.recorded_hashes",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "mismatch": []
+      }
+    },
+    {
+      "name": "05_watermark.complete",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "05_watermark.recorded_hashes",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "mismatch": []
+      }
+    },
+    {
+      "name": "05_watermark.sample_count",
+      "passed": true,
+      "detail": {
+        "expected": 216,
+        "actual": 216
+      }
+    },
+    {
+      "name": "05_watermark.decoded_bit_records",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "05_watermark.negative_controls",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "06_sld.complete",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "06_sld.recorded_hashes",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "mismatch": []
+      }
+    },
+    {
+      "name": "06_sld.sample_count",
+      "passed": true,
+      "detail": {
+        "expected": 18,
+        "actual": 18
+      }
+    },
+    {
+      "name": "06_sld.unique_ids",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "06_sld.image_files",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "06_sld.explicit_output_flags",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "06_sld.complete_pairs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "06_esd.complete",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "06_esd.recorded_hashes",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "mismatch": []
+      }
+    },
+    {
+      "name": "06_esd.sample_count",
+      "passed": true,
+      "detail": {
+        "expected": 24,
+        "actual": 24
+      }
+    },
+    {
+      "name": "06_esd.unique_ids",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "06_esd.image_files",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "06_esd.explicit_output_flags",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "06_esd.complete_pairs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "07_fairness.complete",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "07_fairness.recorded_hashes",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "mismatch": []
+      }
+    },
+    {
+      "name": "07_fairness.sample_count",
+      "passed": true,
+      "detail": {
+        "expected": 400,
+        "actual": 400
+      }
+    },
+    {
+      "name": "07_fairness.unique_ids",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "07_fairness.image_files",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "07_fairness.explicit_output_flags",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "07_fairness.full_groups",
+      "passed": true,
+      "detail": {
+        "groups": 20
+      }
+    },
+    {
+      "name": "07_fairness.classifiers_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "07_fairness.review_status_separate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "08_privacy.complete",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "08_privacy.recorded_hashes",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "mismatch": []
+      }
+    },
+    {
+      "name": "08_privacy.references",
+      "passed": true,
+      "detail": 3
+    },
+    {
+      "name": "08_privacy.feature_variants",
+      "passed": true,
+      "detail": 9
+    },
+    {
+      "name": "08_privacy.customization_samples",
+      "passed": true,
+      "detail": 27
+    },
+    {
+      "name": "08_privacy.baseline_evaluable",
+      "passed": true,
+      "detail": {
+        "scorable": 9,
+        "total": 9
+      }
+    },
+    {
+      "name": "08_privacy.serialized_linf_bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "08_privacy.saved_custom_images",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

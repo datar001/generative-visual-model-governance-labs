@@ -1,0 +1,39 @@
+{
+  "chapter": "01_governance",
+  "status": "complete",
+  "start_utc": "2026-10-22T08:36:26Z",
+  "python": "3.10.6",
+  "gpu": "NVIDIA A800 80GB PCIe",
+  "cuda_visible_devices": "0",
+  "versions": {
+    "torch": "2.4.1+cu118",
+    "torchvision": "0.19.1+cu118",
+    "diffusers": "0.32.2",
+    "transformers": "4.46.3",
+    "accelerate": "1.1.1",
+    "numpy": "1.26.4",
+    "Pillow": "10.4.0",
+    "facenet-pytorch": "2.6.0"
+  },
+  "scripts": {
+    "prepare_sd15.py": "0f66787fb1d805dffafead7d72e940f4106ae7eec752ace5cf9b2ade324a2685",
+    "common.py": "552f9f466d81df1f17ab3cee171e08710604cd3f4659a4db502310c0713ac414",
+    "esd.py": "b38eff35d123b3ed936492d5ba2983b1cc5c4eefdd20a403c1c2bb91986ef443",
+    "pseudoword.py": "dec979621afcd71e885fee283339d6fade38957d1a1bae4e722e08da66320af2",
+    "sld.py": "50ea4cce5383e5ef32116a26c2339c47cb60219e5d1231958ed336cefada3481",
+    "governance.py": "bb7a5384d62950c7184022c4868d64ea18eb541f62c55a51641b174078508a3d",
+    "detection.py": "a3d63020cc714d950c205eace75b3ea0b6bba2e234192e860915a86c0b768a44",
+    "run_queue.py": "dd38a8a13316ebb22e4f5c9fc3f9d27c9c094ea58dadc1a9ce62cfef61e5030a",
+    "generation.py": "32d01575d13d9b4c5d44e8d7ec8b34bae5175fee3549f9c7b7e8396d56ad1f82",
+    "download_models.py": "13375eef707451439fa961e32317580b2616dd9a0c5b363a5371aa60752ee9a4",
+    "register_caches.py": "2d84310c3f22e64a7b2f3c8d36b01bacd1a74f2cb06ad5bd28d6538248e5b697",
+    "fairness.py": "eeaa15d25539d6bcf7cde7db0912f381c1aa709921773f2c6d8c21017c8a1cad",
+    "watermark.py": "80dd96f045e13112e5a3c48be2fb3983d632b856c40c2b429c5955ae044eeb80"
+  },
+  "elapsed_seconds": 0.03099603857845068,
+  "outputs": {
+    "risk_register.csv": "1a04f149880bff8fb8d90fe05ce60592297a6ddbc3e5f4529e63791937d63157",
+    "stdout.txt": "05f6f84f75530b478459072fff1da1c0b303da8bdc981335012e4bc9407cae51",
+    "summary.json": "66f1f8ee63104db607e7489b8cb136e9ad4c092e569c0734c0366986848f778c"
+  }
+}

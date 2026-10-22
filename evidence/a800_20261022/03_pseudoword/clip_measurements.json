@@ -1,0 +1,41 @@
+{
+  "scope": "Descriptive CLIP cosine only; not calibrated quality, identity, risk or style-erasure success probability.",
+  "model_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "samples": [
+    {
+      "id": "case_00",
+      "prompt_cosine": 0.1884632706642151,
+      "red_cup_text_cosine": 0.16447041928768158
+    },
+    {
+      "id": "case_01",
+      "prompt_cosine": 0.21773280203342438,
+      "red_cup_text_cosine": 0.08252077549695969
+    },
+    {
+      "id": "case_02",
+      "prompt_cosine": 0.20170149207115173,
+      "red_cup_text_cosine": 0.1878211498260498
+    },
+    {
+      "id": "case_03",
+      "prompt_cosine": 0.20518448948860168,
+      "red_cup_text_cosine": 0.10000442713499069
+    },
+    {
+      "id": "case_04",
+      "prompt_cosine": 0.22887961566448212,
+      "red_cup_text_cosine": 0.11622903496026993
+    },
+    {
+      "id": "case_05",
+      "prompt_cosine": 0.22101034224033356,
+      "red_cup_text_cosine": 0.14270420372486115
+    },
+    {
+      "id": "case_06",
+      "prompt_cosine": 0.32085251808166504,
+      "red_cup_text_cosine": 0.32085251808166504
+    }
+  ]
+}

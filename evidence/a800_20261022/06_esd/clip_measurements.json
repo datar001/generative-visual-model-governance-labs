@@ -1,0 +1,138 @@
+{
+  "scope": "Descriptive CLIP cosine only; not calibrated quality, identity, risk or style-erasure success probability.",
+  "model_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "samples": [
+    {
+      "id": "target_landscape_2026_base",
+      "prompt_cosine": 0.31981247663497925,
+      "van_gogh_text_cosine": 0.32110342383384705
+    },
+    {
+      "id": "target_landscape_2027_base",
+      "prompt_cosine": 0.333818644285202,
+      "van_gogh_text_cosine": 0.32622605562210083
+    },
+    {
+      "id": "target_landscape_2028_base",
+      "prompt_cosine": 0.32500433921813965,
+      "van_gogh_text_cosine": 0.3123127222061157
+    },
+    {
+      "id": "target_sunflowers_2026_base",
+      "prompt_cosine": 0.3366357684135437,
+      "van_gogh_text_cosine": 0.31102943420410156
+    },
+    {
+      "id": "target_sunflowers_2027_base",
+      "prompt_cosine": 0.34616339206695557,
+      "van_gogh_text_cosine": 0.3009258806705475
+    },
+    {
+      "id": "target_sunflowers_2028_base",
+      "prompt_cosine": 0.35072094202041626,
+      "van_gogh_text_cosine": 0.3194180130958557
+    },
+    {
+      "id": "control_cup_2026_base",
+      "prompt_cosine": 0.30733397603034973,
+      "van_gogh_text_cosine": 0.17754188179969788
+    },
+    {
+      "id": "control_cup_2027_base",
+      "prompt_cosine": 0.326623797416687,
+      "van_gogh_text_cosine": 0.18376469612121582
+    },
+    {
+      "id": "control_cup_2028_base",
+      "prompt_cosine": 0.32149505615234375,
+      "van_gogh_text_cosine": 0.17636267840862274
+    },
+    {
+      "id": "control_forest_2026_base",
+      "prompt_cosine": 0.3060905933380127,
+      "van_gogh_text_cosine": 0.19677236676216125
+    },
+    {
+      "id": "control_forest_2027_base",
+      "prompt_cosine": 0.3276214599609375,
+      "van_gogh_text_cosine": 0.2130340188741684
+    },
+    {
+      "id": "control_forest_2028_base",
+      "prompt_cosine": 0.30475619435310364,
+      "van_gogh_text_cosine": 0.20270900428295135
+    },
+    {
+      "id": "target_landscape_2026_esd",
+      "prompt_cosine": 0.30922678112983704,
+      "van_gogh_text_cosine": 0.28876179456710815,
+      "paired_image_cosine": 0.8618082404136658
+    },
+    {
+      "id": "target_landscape_2027_esd",
+      "prompt_cosine": 0.2510509192943573,
+      "van_gogh_text_cosine": 0.23265370726585388,
+      "paired_image_cosine": 0.6715840697288513
+    },
+    {
+      "id": "target_landscape_2028_esd",
+      "prompt_cosine": 0.28824105858802795,
+      "van_gogh_text_cosine": 0.27015241980552673,
+      "paired_image_cosine": 0.7595252394676208
+    },
+    {
+      "id": "target_sunflowers_2026_esd",
+      "prompt_cosine": 0.3414299190044403,
+      "van_gogh_text_cosine": 0.2805769443511963,
+      "paired_image_cosine": 0.8757147192955017
+    },
+    {
+      "id": "target_sunflowers_2027_esd",
+      "prompt_cosine": 0.3256980776786804,
+      "van_gogh_text_cosine": 0.2668353021144867,
+      "paired_image_cosine": 0.9384544491767883
+    },
+    {
+      "id": "target_sunflowers_2028_esd",
+      "prompt_cosine": 0.32482147216796875,
+      "van_gogh_text_cosine": 0.2720896303653717,
+      "paired_image_cosine": 0.8729301691055298
+    },
+    {
+      "id": "control_cup_2026_esd",
+      "prompt_cosine": 0.3172343075275421,
+      "van_gogh_text_cosine": 0.1808689683675766,
+      "paired_image_cosine": 0.9121860265731812
+    },
+    {
+      "id": "control_cup_2027_esd",
+      "prompt_cosine": 0.3013913333415985,
+      "van_gogh_text_cosine": 0.15770171582698822,
+      "paired_image_cosine": 0.8936958312988281
+    },
+    {
+      "id": "control_cup_2028_esd",
+      "prompt_cosine": 0.29919543862342834,
+      "van_gogh_text_cosine": 0.1711948812007904,
+      "paired_image_cosine": 0.9730629920959473
+    },
+    {
+      "id": "control_forest_2026_esd",
+      "prompt_cosine": 0.2968839704990387,
+      "van_gogh_text_cosine": 0.17518554627895355,
+      "paired_image_cosine": 0.9525081515312195
+    },
+    {
+      "id": "control_forest_2027_esd",
+      "prompt_cosine": 0.325375497341156,
+      "van_gogh_text_cosine": 0.20680734515190125,
+      "paired_image_cosine": 0.9812414646148682
+    },
+    {
+      "id": "control_forest_2028_esd",
+      "prompt_cosine": 0.29777902364730835,
+      "van_gogh_text_cosine": 0.1934894323348999,
+      "paired_image_cosine": 0.9593623280525208
+    }
+  ]
+}

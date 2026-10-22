@@ -1,0 +1,9 @@
+{
+  "text_samples": 18,
+  "image_samples": 31,
+  "threshold": 0.5,
+  "image_risky_positive_control": false,
+  "image_recall_estimated": false,
+  "normal_contexts_counted_separately": true,
+  "explicit_text_is_classification_only": true
+}

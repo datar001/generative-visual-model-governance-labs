@@ -1,15 +1,11 @@
+"""统一入口：调用已实测实现，完整参数、图像与记录保存到 LAB_ROOT。"""
 from pathlib import Path
-import json
-from pseudoword_core import run
-
-# 1. 使用已提供的红杯图与固定伪词音节，设置种子和查询预算。
-folder = Path(__file__).resolve().parent
-out = Path('results/pseudoword_cup')
-
-# 2. 固定本地CLIP，比较等预算随机搜索与逐步改进搜索。
-# 每次候选查询均写入日志，缓存命中也计入逻辑预算。
-result = run(folder, out)
-
-# 3. 分开报告图文分数、课堂词表结果和实际验证范围。
-# 本例没有运行真实安全过滤或文生图，分数提高不代表越狱成功。
-print(json.dumps(result, ensure_ascii=False, indent=2))
+import sys
+# 同时支持教学仓库和随书工程，避免维护两份实验逻辑。
+candidates=[p/relative for p in Path(__file__).resolve().parents
+            for relative in ('experiments/a800','practice/a800')]
+folder=next((p for p in candidates if (p/'common.py').is_file()),None)
+if folder is None:raise SystemExit('缺少配套实验实现，请使用完整教学仓库或随书工程。')
+sys.path.insert(0,str(folder))
+from pseudoword import main
+if __name__=="__main__":main()

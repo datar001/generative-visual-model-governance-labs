@@ -1,0 +1,63 @@
+{
+  "chapter": "02_generation",
+  "status": "complete",
+  "start_utc": "2026-10-22T09:26:19Z",
+  "python": "3.10.6",
+  "gpu": "NVIDIA A800 80GB PCIe",
+  "gpu_total_bytes": 84990623744,
+  "cuda_runtime": "11.8",
+  "compute_capability": [
+    8,
+    0
+  ],
+  "cuda_visible_devices": "0",
+  "versions": {
+    "torch": "2.4.1+cu118",
+    "torchvision": "0.19.1+cu118",
+    "diffusers": "0.32.2",
+    "transformers": "4.46.3",
+    "accelerate": "1.1.1",
+    "numpy": "1.26.4",
+    "Pillow": "10.4.0",
+    "facenet-pytorch": "2.6.0"
+  },
+  "scripts": {
+    "make_figures.py": "fafde99faf01bef2081b3096829f1cd5e8a0d6da7cf894f1938e36ff330444fe",
+    "analyse.py": "6e3eefff33881c6bdae11811dbf72ff2bb617e5badd3c336519e176955d19108",
+    "measure_clip.py": "b79bc43b55468cb7fc7632b5d47e9fb783d68b3c963be57a592a8f40bb8c61f9",
+    "prepare_sd15.py": "0f66787fb1d805dffafead7d72e940f4106ae7eec752ace5cf9b2ade324a2685",
+    "validate_evidence.py": "4b39de843b7a89718970c86ae5568ac3c1194488dd24565052052ea754f9c503",
+    "common.py": "55c83f8089787db992ee3b0f180712774feec6440cd1cb08abdeb08456cdd6b8",
+    "esd.py": "b38eff35d123b3ed936492d5ba2983b1cc5c4eefdd20a403c1c2bb91986ef443",
+    "prepare_sld.py": "6be1a2d5b0046507a1257983c32c5ec286edaf13ea93492cc599a854dc25b5eb",
+    "pseudoword.py": "dec979621afcd71e885fee283339d6fade38957d1a1bae4e722e08da66320af2",
+    "filters.py": "52bb2a42a8eea3b65ba567a53387dadde9ac7d388059ade10daec4e5434924ff",
+    "privacy.py": "2e2565a27781dd521a460e7f74e526758264caef429a5723d23d9b5a980a457a",
+    "sld.py": "50ea4cce5383e5ef32116a26c2339c47cb60219e5d1231958ed336cefada3481",
+    "governance.py": "bb7a5384d62950c7184022c4868d64ea18eb541f62c55a51641b174078508a3d",
+    "detection.py": "a3d63020cc714d950c205eace75b3ea0b6bba2e234192e860915a86c0b768a44",
+    "run_queue.py": "fa7f08a0d75e3175efab3752ed731b28339dcc20d8094b5c7937a33b66d2cb36",
+    "generation.py": "32d01575d13d9b4c5d44e8d7ec8b34bae5175fee3549f9c7b7e8396d56ad1f82",
+    "download_models.py": "13375eef707451439fa961e32317580b2616dd9a0c5b363a5371aa60752ee9a4",
+    "download_remaining.py": "02810590bac8786effa91ce120e4debbfec11f690d79c11e6b936ff2c6aedb2a",
+    "register_caches.py": "2d84310c3f22e64a7b2f3c8d36b01bacd1a74f2cb06ad5bd28d6538248e5b697",
+    "fairness.py": "067f53134ab2809649e9b4225db2c7ab7e0d9990802dd387d65e683b6c8d16a7",
+    "watermark.py": "80dd96f045e13112e5a3c48be2fb3983d632b856c40c2b429c5955ae044eeb80"
+  },
+  "elapsed_seconds": 19.332221603021026,
+  "outputs": {
+    "blue_2026.png": "849aefc09bf0ae5790a2dcf9236f3e32201cbcab01abe4d1b2b1196eb339645b",
+    "blue_2027.png": "ee218f1997c5a02bf1e57a5d42fdeea30c65e52006f485cc4430c96dcb6109c1",
+    "blue_2028.png": "336ffee86efe0714d858915f52036a2dea5777679faa11fbbffdcd87dd816c05",
+    "face_2026.png": "80b93eaee8e8f805c8d694226cb827908937fe2c680f92afff392c338a86bc6c",
+    "face_2027.png": "3f4978e7970b7109cc98224385138e302bb0ecf50c26154ae0c6ff3891467e59",
+    "face_2028.png": "bf819bead0ebc05cc859f451276d8d4f46fd33cdfad3184065d6d1e0ec264d09",
+    "landscape_2026.png": "0eae23dec6ab342b262efd0cd31bb5c0f631961b0e92439c60a66956e5c1d1e4",
+    "landscape_2027.png": "5d3ffd34782789512bedf9600c522043deeaf147ebf5472faa66f55e3bdb0b08",
+    "landscape_2028.png": "3649dd7ba9825375166e33a22df757749a5dde92867beaac1692e82dc0422b68",
+    "red_2026.png": "b1eb33a1aa04741365c97951e58d7643081a7862c033836ebd56988dbca58dfa",
+    "red_2027.png": "e7aeecb4d7e07522b77b7ffe9370d72c3f1c713cf9e1bf934b003082f2aadba9",
+    "red_2028.png": "5e053a1210a7e4962f98e998dd1c8a5f3cd5dcd68733fa3fc529ddddfc027ca8",
+    "samples.json": "8e7f808dca88d06b0f654119c6c83bbda8c41538eece777c29c0c5b296003ed4"
+  }
+}

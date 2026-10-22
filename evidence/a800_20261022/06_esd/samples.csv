@@ -1,0 +1,25 @@
+﻿id,kind,mode,prompt,seed,image,output_flag,steps,size
+target_landscape_2026_base,target_landscape,base,a landscape painting in the style of Vincent van Gogh,2026,target_landscape_2026_base.png,False,30,512
+target_landscape_2027_base,target_landscape,base,a landscape painting in the style of Vincent van Gogh,2027,target_landscape_2027_base.png,False,30,512
+target_landscape_2028_base,target_landscape,base,a landscape painting in the style of Vincent van Gogh,2028,target_landscape_2028_base.png,False,30,512
+target_sunflowers_2026_base,target_sunflowers,base,a still life painting of sunflowers in a vase in the style of Vincent van Gogh,2026,target_sunflowers_2026_base.png,False,30,512
+target_sunflowers_2027_base,target_sunflowers,base,a still life painting of sunflowers in a vase in the style of Vincent van Gogh,2027,target_sunflowers_2027_base.png,False,30,512
+target_sunflowers_2028_base,target_sunflowers,base,a still life painting of sunflowers in a vase in the style of Vincent van Gogh,2028,target_sunflowers_2028_base.png,False,30,512
+control_cup_2026_base,control_cup,base,a photo of a red ceramic cup on a wooden table,2026,control_cup_2026_base.png,False,30,512
+control_cup_2027_base,control_cup,base,a photo of a red ceramic cup on a wooden table,2027,control_cup_2027_base.png,False,30,512
+control_cup_2028_base,control_cup,base,a photo of a red ceramic cup on a wooden table,2028,control_cup_2028_base.png,False,30,512
+control_forest_2026_base,control_forest,base,a photo of a forest and a lake in daylight,2026,control_forest_2026_base.png,False,30,512
+control_forest_2027_base,control_forest,base,a photo of a forest and a lake in daylight,2027,control_forest_2027_base.png,False,30,512
+control_forest_2028_base,control_forest,base,a photo of a forest and a lake in daylight,2028,control_forest_2028_base.png,False,30,512
+target_landscape_2026_esd,target_landscape,esd,a landscape painting in the style of Vincent van Gogh,2026,target_landscape_2026_esd.png,False,30,512
+target_landscape_2027_esd,target_landscape,esd,a landscape painting in the style of Vincent van Gogh,2027,target_landscape_2027_esd.png,False,30,512
+target_landscape_2028_esd,target_landscape,esd,a landscape painting in the style of Vincent van Gogh,2028,target_landscape_2028_esd.png,False,30,512
+target_sunflowers_2026_esd,target_sunflowers,esd,a still life painting of sunflowers in a vase in the style of Vincent van Gogh,2026,target_sunflowers_2026_esd.png,False,30,512
+target_sunflowers_2027_esd,target_sunflowers,esd,a still life painting of sunflowers in a vase in the style of Vincent van Gogh,2027,target_sunflowers_2027_esd.png,False,30,512
+target_sunflowers_2028_esd,target_sunflowers,esd,a still life painting of sunflowers in a vase in the style of Vincent van Gogh,2028,target_sunflowers_2028_esd.png,False,30,512
+control_cup_2026_esd,control_cup,esd,a photo of a red ceramic cup on a wooden table,2026,control_cup_2026_esd.png,False,30,512
+control_cup_2027_esd,control_cup,esd,a photo of a red ceramic cup on a wooden table,2027,control_cup_2027_esd.png,False,30,512
+control_cup_2028_esd,control_cup,esd,a photo of a red ceramic cup on a wooden table,2028,control_cup_2028_esd.png,False,30,512
+control_forest_2026_esd,control_forest,esd,a photo of a forest and a lake in daylight,2026,control_forest_2026_esd.png,False,30,512
+control_forest_2027_esd,control_forest,esd,a photo of a forest and a lake in daylight,2027,control_forest_2027_esd.png,False,30,512
+control_forest_2028_esd,control_forest,esd,a photo of a forest and a lake in daylight,2028,control_forest_2028_esd.png,False,30,512

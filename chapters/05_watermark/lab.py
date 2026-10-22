@@ -1,50 +1,11 @@
-from pathlib import Path; import csv; import json; import cv2
-import numpy as np
-out = Path('results/watermark'); out.mkdir(parents=True, exist_ok=True)
-# 1. 优先读取生成图；缺失时改用程序合成测试图。
-path = Path('results/generation/cup_0.png')
-if not path.exists():
-    y, x = np.mgrid[:512, :512]
-    image = np.stack([(x+y)%256, x%256, y%256], axis=2).astype('uint8')
-else:
-    image = cv2.imread(str(path))
-image = cv2.resize(image, (512, 512)); cv2.imwrite(str(out/'input.png'), image)
-# 2. 转到亮度通道，在每个 8 乘 8 块中嵌入水印。
-ycc = cv2.cvtColor(image, cv2.COLOR_BGR2YCrCb).astype('float32')
-# 固定种子生成 16 位消息；强度控制系数差的幅度。
-bits = np.random.default_rng(2026).integers(0, 2, 16); strength = 24
-for k, (r, c) in enumerate((r,c) for r in range(0,512,8) for c in range(0,512,8)):
-    block = cv2.dct(ycc[r:r+8,c:c+8,0]); a, b = block[2,3], block[3,2]
-    # 调整两个 DCT 系数，使差值正负表示消息位。
-    delta = (2*bits[k%16]-1)*strength - (a-b)
-    block[2,3] += delta/2; block[3,2] -= delta/2
-    ycc[r:r+8,c:c+8,0] = cv2.idct(block)
-watermarked = cv2.cvtColor(np.clip(ycc,0,255).astype('uint8'), cv2.COLOR_YCrCb2BGR)
-cv2.imwrite(str(out/'marked.png'), watermarked); rows = []
-# 3. 保存原始消息，解码未压缩水印图及三档 JPEG 副本。
-record = {'source_bits': ''.join(str(int(b)) for b in bits), 'cases': []}
-for quality in ('png', 100, 75, 40):
-    test = watermarked
-    if quality != 'png':
-        target = out/f'q{quality}.jpg'
-        cv2.imwrite(str(target), watermarked, [cv2.IMWRITE_JPEG_QUALITY, quality])
-        test = cv2.imread(str(target))
-    lum = cv2.cvtColor(test, cv2.COLOR_BGR2YCrCb)[:,:,0]
-    # 对重复嵌入的同一位累加系数差，再按正负判决。
-    votes = np.zeros(16)
-    for k,(r,c) in enumerate((r,c) for r in range(0,512,8) for c in range(0,512,8)):
-        d=cv2.dct(lum[r:r+8,c:c+8].astype('float32')); votes[k%16] += d[2,3]-d[3,2]
-    recovered = (votes > 0).astype(int)
-    accuracy = float(np.mean(recovered == bits))
-    record['cases'].append(dict(condition=str(quality),
-        decoded_bits=''.join(str(int(b)) for b in recovered),
-        correct_bits=int(np.sum(recovered == bits)), bit_accuracy=accuracy))
-    # 原有 CSV 保留三档 JPEG 指标，另用 JSON 保存逐位解码证据。
-    if quality != 'png':
-        rows.append((quality, accuracy, float(cv2.PSNR(image, test))))
-# 4. 保存结果；单张图的恢复率不能代表通用性能。
-with (out/'scores.csv').open('w',newline='') as f:
-    w=csv.writer(f); w.writerows([['jpeg_quality','bit_accuracy','psnr_db'], *rows])
-
-(out/'decoding.json').write_text(json.dumps(record, indent=2), encoding='utf-8')
-print(json.dumps(record, indent=2))
+"""统一入口：调用已实测实现，完整参数、图像与记录保存到 LAB_ROOT。"""
+from pathlib import Path
+import sys
+# 同时支持教学仓库和随书工程，避免维护两份实验逻辑。
+candidates=[p/relative for p in Path(__file__).resolve().parents
+            for relative in ('experiments/a800','practice/a800')]
+folder=next((p for p in candidates if (p/'common.py').is_file()),None)
+if folder is None:raise SystemExit('缺少配套实验实现，请使用完整教学仓库或随书工程。')
+sys.path.insert(0,str(folder))
+from watermark import main
+if __name__=="__main__":main()

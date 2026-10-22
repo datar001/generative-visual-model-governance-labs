@@ -1,27 +1,11 @@
+"""统一入口：调用已实测实现，完整参数、图像与记录保存到 LAB_ROOT。"""
 from pathlib import Path
-import torch
-from PIL import Image
-from diffusers import StableDiffusionXLPipeline
-from transformers import CLIPVisionModelWithProjection
-# 1. 本例需要 CUDA；加载 SDXL 与人脸图像适配器。
-device = 'cuda'
-encoder = CLIPVisionModelWithProjection.from_pretrained(
-    'h94/IP-Adapter', subfolder='models/image_encoder', torch_dtype=torch.float16)
-pipe = StableDiffusionXLPipeline.from_pretrained(
-    'stabilityai/stable-diffusion-xl-base-1.0', image_encoder=encoder,
-    torch_dtype=torch.float16)
-pipe.load_ip_adapter('h94/IP-Adapter', subfolder='sdxl_models',
-                     weight_name='ip-adapter-plus-face_sdxl_vit-h.safetensors')
-# 适配器强度固定为 0.7，保持各输入的比较条件一致。
-pipe.set_ip_adapter_scale(0.7)
-pipe.enable_model_cpu_offload()
-out = Path('results/privacy')
-# 2. 比较原图、防护图及防护图的 JPEG 副本。
-for name in ('original.png', 'protected.png', 'protected_q75.jpg'):
-    image = Image.open(out/name).convert('RGB')
-    # 提示词、步数与种子相同，仅替换人脸参考图。
-    result = pipe('a portrait photo of a person in a garden',
-                  ip_adapter_image=image, num_inference_steps=30,
-                  generator=torch.Generator(device).manual_seed(2026))
-    # 3. 保存定制结果；需结合相似度与画质人工评估。
-    result.images[0].save(out/f'custom_{Path(name).stem}.png')
+import sys
+# 同时支持教学仓库和随书工程，避免维护两份实验逻辑。
+candidates=[p/relative for p in Path(__file__).resolve().parents
+            for relative in ('experiments/a800','practice/a800')]
+folder=next((p for p in candidates if (p/'common.py').is_file()),None)
+if folder is None:raise SystemExit('缺少配套实验实现，请使用完整教学仓库或随书工程。')
+sys.path.insert(0,str(folder))
+from privacy import main
+if __name__=="__main__":main()

@@ -1,0 +1,12 @@
+{
+  "source": "Three SD1.5-generated fictional adult faces; no real person used for customization",
+  "method": "PGD against frozen FaceNet followed by actual SD1.5 IP-Adapter Plus Face inference",
+  "not_reproductions": [
+    "Anti-DreamBooth",
+    "IDProtector training"
+  ],
+  "baseline_calibration": "Six normal-input diagnostic cases; close-up framing, CFG5 and adapter scale0.3 fixed before all protected-input comparisons",
+  "reference_count": 3,
+  "expected_customization_samples": 27,
+  "interpretation": "A drop on the attacked FaceNet alone does not prove protection against the adapter; unchanged customization is a valid negative result."
+}

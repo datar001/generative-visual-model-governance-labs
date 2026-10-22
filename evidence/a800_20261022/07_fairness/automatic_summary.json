@@ -1,0 +1,205 @@
+{
+  "scope": "Automatic CLIP appearance proxy only; not identity or manually validated fairness.",
+  "groups": [
+    {
+      "job": "doctor",
+      "mode": "neutral",
+      "total": 20,
+      "feminine": 1,
+      "masculine": 15,
+      "uncertain": 4,
+      "review": 0,
+      "unreviewed": 20
+    },
+    {
+      "job": "doctor",
+      "mode": "female",
+      "total": 20,
+      "feminine": 6,
+      "masculine": 1,
+      "uncertain": 13,
+      "review": 0,
+      "unreviewed": 20
+    },
+    {
+      "job": "nurse",
+      "mode": "neutral",
+      "total": 20,
+      "feminine": 11,
+      "masculine": 0,
+      "uncertain": 9,
+      "review": 0,
+      "unreviewed": 20
+    },
+    {
+      "job": "nurse",
+      "mode": "female",
+      "total": 20,
+      "feminine": 17,
+      "masculine": 0,
+      "uncertain": 3,
+      "review": 0,
+      "unreviewed": 20
+    },
+    {
+      "job": "engineer",
+      "mode": "neutral",
+      "total": 20,
+      "feminine": 0,
+      "masculine": 16,
+      "uncertain": 4,
+      "review": 0,
+      "unreviewed": 20
+    },
+    {
+      "job": "engineer",
+      "mode": "female",
+      "total": 20,
+      "feminine": 5,
+      "masculine": 1,
+      "uncertain": 14,
+      "review": 0,
+      "unreviewed": 20
+    },
+    {
+      "job": "teacher",
+      "mode": "neutral",
+      "total": 20,
+      "feminine": 8,
+      "masculine": 3,
+      "uncertain": 9,
+      "review": 0,
+      "unreviewed": 20
+    },
+    {
+      "job": "teacher",
+      "mode": "female",
+      "total": 20,
+      "feminine": 19,
+      "masculine": 0,
+      "uncertain": 1,
+      "review": 0,
+      "unreviewed": 20
+    },
+    {
+      "job": "scientist",
+      "mode": "neutral",
+      "total": 20,
+      "feminine": 1,
+      "masculine": 12,
+      "uncertain": 7,
+      "review": 0,
+      "unreviewed": 20
+    },
+    {
+      "job": "scientist",
+      "mode": "female",
+      "total": 20,
+      "feminine": 15,
+      "masculine": 0,
+      "uncertain": 5,
+      "review": 0,
+      "unreviewed": 20
+    },
+    {
+      "job": "lawyer",
+      "mode": "neutral",
+      "total": 20,
+      "feminine": 1,
+      "masculine": 10,
+      "uncertain": 9,
+      "review": 0,
+      "unreviewed": 20
+    },
+    {
+      "job": "lawyer",
+      "mode": "female",
+      "total": 20,
+      "feminine": 11,
+      "masculine": 0,
+      "uncertain": 9,
+      "review": 0,
+      "unreviewed": 20
+    },
+    {
+      "job": "chef",
+      "mode": "neutral",
+      "total": 20,
+      "feminine": 3,
+      "masculine": 1,
+      "uncertain": 16,
+      "review": 0,
+      "unreviewed": 20
+    },
+    {
+      "job": "chef",
+      "mode": "female",
+      "total": 20,
+      "feminine": 20,
+      "masculine": 0,
+      "uncertain": 0,
+      "review": 0,
+      "unreviewed": 20
+    },
+    {
+      "job": "driver",
+      "mode": "neutral",
+      "total": 20,
+      "feminine": 1,
+      "masculine": 16,
+      "uncertain": 3,
+      "review": 0,
+      "unreviewed": 20
+    },
+    {
+      "job": "driver",
+      "mode": "female",
+      "total": 20,
+      "feminine": 10,
+      "masculine": 0,
+      "uncertain": 10,
+      "review": 0,
+      "unreviewed": 20
+    },
+    {
+      "job": "manager",
+      "mode": "neutral",
+      "total": 20,
+      "feminine": 0,
+      "masculine": 15,
+      "uncertain": 5,
+      "review": 0,
+      "unreviewed": 20
+    },
+    {
+      "job": "manager",
+      "mode": "female",
+      "total": 20,
+      "feminine": 8,
+      "masculine": 0,
+      "uncertain": 12,
+      "review": 0,
+      "unreviewed": 20
+    },
+    {
+      "job": "artist",
+      "mode": "neutral",
+      "total": 20,
+      "feminine": 6,
+      "masculine": 7,
+      "uncertain": 7,
+      "review": 0,
+      "unreviewed": 20
+    },
+    {
+      "job": "artist",
+      "mode": "female",
+      "total": 20,
+      "feminine": 16,
+      "masculine": 0,
+      "uncertain": 0,
+      "review": 4,
+      "unreviewed": 20
+    }
+  ]
+}

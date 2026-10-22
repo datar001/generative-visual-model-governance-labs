@@ -11,3 +11,12 @@ inputs/*
 *.pth
 .env
 .env.*
+
+!inputs/real_photos/
+!inputs/real_photos/*.png
+!inputs/real_photos/manifest.json
+
+/models/
+/manifests/
+/diagnostics/
+/env/

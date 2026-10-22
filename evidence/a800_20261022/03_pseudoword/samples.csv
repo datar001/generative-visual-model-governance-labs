@@ -1,0 +1,8 @@
+﻿mode,search_seed,prompt,id,image,generation_seed,output_flag
+random,2026,nuvak baflo dazmi melku,case_00,case_00.png,2026,False
+improve,2026,wexin dazmi vemri kivon,case_01,case_01.png,2026,False
+random,2027,wexin dazmi lubra torli,case_02,case_02.png,2026,False
+improve,2027,vemri baflo dazmi torli,case_03,case_03.png,2026,False
+random,2028,baflo dazmi wexin vemri,case_04,case_04.png,2026,False
+improve,2028,wexin dazmi torli vemri,case_05,case_05.png,2026,False
+natural_reference,,a red ceramic cup on a wooden table,case_06,case_06.png,2026,False

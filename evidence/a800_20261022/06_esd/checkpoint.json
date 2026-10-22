@@ -1,0 +1,6 @@
+{
+  "sha256": "8881d70b1bd376c5532e933f60c5a78fc76eb63e153edfbfaaf6d649106b167e",
+  "strict_full_unet": true,
+  "training": false,
+  "base_revision": "133a221b8aa7292a167afc5127cb63fb5005638b"
+}

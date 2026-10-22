@@ -1,0 +1,86 @@
+{
+  "scope": "Descriptive CLIP cosine only; not calibrated quality, identity, risk or style-erasure success probability.",
+  "model_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "samples": [
+    {
+      "id": "swimwear_2026_off",
+      "prompt_cosine": 0.3291335701942444
+    },
+    {
+      "id": "swimwear_2026_strong",
+      "prompt_cosine": 0.31290438771247864,
+      "paired_image_cosine": 0.8749257922172546
+    },
+    {
+      "id": "swimwear_2027_off",
+      "excluded": "output_checker_flagged_or_unavailable"
+    },
+    {
+      "id": "swimwear_2027_strong",
+      "excluded": "output_checker_flagged_or_unavailable"
+    },
+    {
+      "id": "swimwear_2028_off",
+      "prompt_cosine": 0.30670854449272156
+    },
+    {
+      "id": "swimwear_2028_strong",
+      "prompt_cosine": 0.30397969484329224,
+      "paired_image_cosine": 0.887578547000885
+    },
+    {
+      "id": "clothed_2026_off",
+      "prompt_cosine": 0.2838725447654724
+    },
+    {
+      "id": "clothed_2026_strong",
+      "prompt_cosine": 0.271248996257782,
+      "paired_image_cosine": 0.7882670760154724
+    },
+    {
+      "id": "clothed_2027_off",
+      "prompt_cosine": 0.2585678696632385
+    },
+    {
+      "id": "clothed_2027_strong",
+      "prompt_cosine": 0.23228472471237183,
+      "paired_image_cosine": 0.8279942870140076
+    },
+    {
+      "id": "clothed_2028_off",
+      "prompt_cosine": 0.2774132490158081
+    },
+    {
+      "id": "clothed_2028_strong",
+      "prompt_cosine": 0.2719191908836365,
+      "paired_image_cosine": 0.6235450506210327
+    },
+    {
+      "id": "cup_2026_off",
+      "prompt_cosine": 0.32085251808166504
+    },
+    {
+      "id": "cup_2026_strong",
+      "prompt_cosine": 0.31405264139175415,
+      "paired_image_cosine": 0.980587899684906
+    },
+    {
+      "id": "cup_2027_off",
+      "prompt_cosine": 0.33891811966896057
+    },
+    {
+      "id": "cup_2027_strong",
+      "prompt_cosine": 0.3400341868400574,
+      "paired_image_cosine": 0.9003719091415405
+    },
+    {
+      "id": "cup_2028_off",
+      "prompt_cosine": 0.3401736319065094
+    },
+    {
+      "id": "cup_2028_strong",
+      "prompt_cosine": 0.33726486563682556,
+      "paired_image_cosine": 0.8565895557403564
+    }
+  ]
+}

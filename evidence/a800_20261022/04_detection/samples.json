@@ -1,0 +1,542 @@
+[
+  {
+    "id": "coffee",
+    "source": "real",
+    "source_sha256": "1b334876bab6bccddc821520b67fad5bceaaf3c454885b75cdc126b7ebfe9576",
+    "condition": "original",
+    "fake_score": 6.260655549539251e-09,
+    "prediction": "real",
+    "image": "coffee_original.png"
+  },
+  {
+    "id": "coffee",
+    "source": "real",
+    "source_sha256": "1b334876bab6bccddc821520b67fad5bceaaf3c454885b75cdc126b7ebfe9576",
+    "condition": "100",
+    "fake_score": 8.346502156086899e-09,
+    "prediction": "real",
+    "image": "coffee_100.jpg"
+  },
+  {
+    "id": "coffee",
+    "source": "real",
+    "source_sha256": "1b334876bab6bccddc821520b67fad5bceaaf3c454885b75cdc126b7ebfe9576",
+    "condition": "75",
+    "fake_score": 1.6256926360647128e-10,
+    "prediction": "real",
+    "image": "coffee_75.jpg"
+  },
+  {
+    "id": "coffee",
+    "source": "real",
+    "source_sha256": "1b334876bab6bccddc821520b67fad5bceaaf3c454885b75cdc126b7ebfe9576",
+    "condition": "40",
+    "fake_score": 4.4964552081694364e-09,
+    "prediction": "real",
+    "image": "coffee_40.jpg"
+  },
+  {
+    "id": "astronaut",
+    "source": "real",
+    "source_sha256": "2418889d0d83962d51facc3832b55cf1849690018a1e873d1c551146555cd02f",
+    "condition": "original",
+    "fake_score": 1.9474191410937675e-13,
+    "prediction": "real",
+    "image": "astronaut_original.png"
+  },
+  {
+    "id": "astronaut",
+    "source": "real",
+    "source_sha256": "2418889d0d83962d51facc3832b55cf1849690018a1e873d1c551146555cd02f",
+    "condition": "100",
+    "fake_score": 9.256862583319897e-14,
+    "prediction": "real",
+    "image": "astronaut_100.jpg"
+  },
+  {
+    "id": "astronaut",
+    "source": "real",
+    "source_sha256": "2418889d0d83962d51facc3832b55cf1849690018a1e873d1c551146555cd02f",
+    "condition": "75",
+    "fake_score": 1.305997139860321e-13,
+    "prediction": "real",
+    "image": "astronaut_75.jpg"
+  },
+  {
+    "id": "astronaut",
+    "source": "real",
+    "source_sha256": "2418889d0d83962d51facc3832b55cf1849690018a1e873d1c551146555cd02f",
+    "condition": "40",
+    "fake_score": 1.7669668354348966e-13,
+    "prediction": "real",
+    "image": "astronaut_40.jpg"
+  },
+  {
+    "id": "rocket",
+    "source": "real",
+    "source_sha256": "7a88c634b209f0edd7aa95dc8cd5a9f2cb8d09dd3fb176669dd389572846819c",
+    "condition": "original",
+    "fake_score": 3.774610222366352e-14,
+    "prediction": "real",
+    "image": "rocket_original.png"
+  },
+  {
+    "id": "rocket",
+    "source": "real",
+    "source_sha256": "7a88c634b209f0edd7aa95dc8cd5a9f2cb8d09dd3fb176669dd389572846819c",
+    "condition": "100",
+    "fake_score": 6.227769087105775e-14,
+    "prediction": "real",
+    "image": "rocket_100.jpg"
+  },
+  {
+    "id": "rocket",
+    "source": "real",
+    "source_sha256": "7a88c634b209f0edd7aa95dc8cd5a9f2cb8d09dd3fb176669dd389572846819c",
+    "condition": "75",
+    "fake_score": 3.481833961774261e-14,
+    "prediction": "real",
+    "image": "rocket_75.jpg"
+  },
+  {
+    "id": "rocket",
+    "source": "real",
+    "source_sha256": "7a88c634b209f0edd7aa95dc8cd5a9f2cb8d09dd3fb176669dd389572846819c",
+    "condition": "40",
+    "fake_score": 4.940257404550952e-12,
+    "prediction": "real",
+    "image": "rocket_40.jpg"
+  },
+  {
+    "id": "red_2026",
+    "source": "fake",
+    "source_sha256": "b1eb33a1aa04741365c97951e58d7643081a7862c033836ebd56988dbca58dfa",
+    "condition": "original",
+    "fake_score": 9.412034160050098e-06,
+    "prediction": "real",
+    "image": "red_2026_original.png"
+  },
+  {
+    "id": "red_2026",
+    "source": "fake",
+    "source_sha256": "b1eb33a1aa04741365c97951e58d7643081a7862c033836ebd56988dbca58dfa",
+    "condition": "100",
+    "fake_score": 1.3053092516202014e-05,
+    "prediction": "real",
+    "image": "red_2026_100.jpg"
+  },
+  {
+    "id": "red_2026",
+    "source": "fake",
+    "source_sha256": "b1eb33a1aa04741365c97951e58d7643081a7862c033836ebd56988dbca58dfa",
+    "condition": "75",
+    "fake_score": 1.2053455975546967e-05,
+    "prediction": "real",
+    "image": "red_2026_75.jpg"
+  },
+  {
+    "id": "red_2026",
+    "source": "fake",
+    "source_sha256": "b1eb33a1aa04741365c97951e58d7643081a7862c033836ebd56988dbca58dfa",
+    "condition": "40",
+    "fake_score": 5.3292962547857314e-05,
+    "prediction": "real",
+    "image": "red_2026_40.jpg"
+  },
+  {
+    "id": "red_2027",
+    "source": "fake",
+    "source_sha256": "e7aeecb4d7e07522b77b7ffe9370d72c3f1c713cf9e1bf934b003082f2aadba9",
+    "condition": "original",
+    "fake_score": 6.21836250047636e-07,
+    "prediction": "real",
+    "image": "red_2027_original.png"
+  },
+  {
+    "id": "red_2027",
+    "source": "fake",
+    "source_sha256": "e7aeecb4d7e07522b77b7ffe9370d72c3f1c713cf9e1bf934b003082f2aadba9",
+    "condition": "100",
+    "fake_score": 5.429756129160523e-07,
+    "prediction": "real",
+    "image": "red_2027_100.jpg"
+  },
+  {
+    "id": "red_2027",
+    "source": "fake",
+    "source_sha256": "e7aeecb4d7e07522b77b7ffe9370d72c3f1c713cf9e1bf934b003082f2aadba9",
+    "condition": "75",
+    "fake_score": 3.641217745098402e-07,
+    "prediction": "real",
+    "image": "red_2027_75.jpg"
+  },
+  {
+    "id": "red_2027",
+    "source": "fake",
+    "source_sha256": "e7aeecb4d7e07522b77b7ffe9370d72c3f1c713cf9e1bf934b003082f2aadba9",
+    "condition": "40",
+    "fake_score": 8.052054909057915e-06,
+    "prediction": "real",
+    "image": "red_2027_40.jpg"
+  },
+  {
+    "id": "red_2028",
+    "source": "fake",
+    "source_sha256": "5e053a1210a7e4962f98e998dd1c8a5f3cd5dcd68733fa3fc529ddddfc027ca8",
+    "condition": "original",
+    "fake_score": 4.952943055691605e-10,
+    "prediction": "real",
+    "image": "red_2028_original.png"
+  },
+  {
+    "id": "red_2028",
+    "source": "fake",
+    "source_sha256": "5e053a1210a7e4962f98e998dd1c8a5f3cd5dcd68733fa3fc529ddddfc027ca8",
+    "condition": "100",
+    "fake_score": 3.7291766896707657e-10,
+    "prediction": "real",
+    "image": "red_2028_100.jpg"
+  },
+  {
+    "id": "red_2028",
+    "source": "fake",
+    "source_sha256": "5e053a1210a7e4962f98e998dd1c8a5f3cd5dcd68733fa3fc529ddddfc027ca8",
+    "condition": "75",
+    "fake_score": 1.8298665360738653e-10,
+    "prediction": "real",
+    "image": "red_2028_75.jpg"
+  },
+  {
+    "id": "red_2028",
+    "source": "fake",
+    "source_sha256": "5e053a1210a7e4962f98e998dd1c8a5f3cd5dcd68733fa3fc529ddddfc027ca8",
+    "condition": "40",
+    "fake_score": 8.859037592401364e-08,
+    "prediction": "real",
+    "image": "red_2028_40.jpg"
+  },
+  {
+    "id": "blue_2026",
+    "source": "fake",
+    "source_sha256": "849aefc09bf0ae5790a2dcf9236f3e32201cbcab01abe4d1b2b1196eb339645b",
+    "condition": "original",
+    "fake_score": 3.53738882630239e-09,
+    "prediction": "real",
+    "image": "blue_2026_original.png"
+  },
+  {
+    "id": "blue_2026",
+    "source": "fake",
+    "source_sha256": "849aefc09bf0ae5790a2dcf9236f3e32201cbcab01abe4d1b2b1196eb339645b",
+    "condition": "100",
+    "fake_score": 7.522093170564403e-09,
+    "prediction": "real",
+    "image": "blue_2026_100.jpg"
+  },
+  {
+    "id": "blue_2026",
+    "source": "fake",
+    "source_sha256": "849aefc09bf0ae5790a2dcf9236f3e32201cbcab01abe4d1b2b1196eb339645b",
+    "condition": "75",
+    "fake_score": 3.4884632960086037e-09,
+    "prediction": "real",
+    "image": "blue_2026_75.jpg"
+  },
+  {
+    "id": "blue_2026",
+    "source": "fake",
+    "source_sha256": "849aefc09bf0ae5790a2dcf9236f3e32201cbcab01abe4d1b2b1196eb339645b",
+    "condition": "40",
+    "fake_score": 2.4537661147405743e-07,
+    "prediction": "real",
+    "image": "blue_2026_40.jpg"
+  },
+  {
+    "id": "blue_2027",
+    "source": "fake",
+    "source_sha256": "ee218f1997c5a02bf1e57a5d42fdeea30c65e52006f485cc4430c96dcb6109c1",
+    "condition": "original",
+    "fake_score": 1.0535152341617504e-06,
+    "prediction": "real",
+    "image": "blue_2027_original.png"
+  },
+  {
+    "id": "blue_2027",
+    "source": "fake",
+    "source_sha256": "ee218f1997c5a02bf1e57a5d42fdeea30c65e52006f485cc4430c96dcb6109c1",
+    "condition": "100",
+    "fake_score": 1.6651694068059442e-06,
+    "prediction": "real",
+    "image": "blue_2027_100.jpg"
+  },
+  {
+    "id": "blue_2027",
+    "source": "fake",
+    "source_sha256": "ee218f1997c5a02bf1e57a5d42fdeea30c65e52006f485cc4430c96dcb6109c1",
+    "condition": "75",
+    "fake_score": 4.3670030436260276e-07,
+    "prediction": "real",
+    "image": "blue_2027_75.jpg"
+  },
+  {
+    "id": "blue_2027",
+    "source": "fake",
+    "source_sha256": "ee218f1997c5a02bf1e57a5d42fdeea30c65e52006f485cc4430c96dcb6109c1",
+    "condition": "40",
+    "fake_score": 3.870360160362907e-05,
+    "prediction": "real",
+    "image": "blue_2027_40.jpg"
+  },
+  {
+    "id": "blue_2028",
+    "source": "fake",
+    "source_sha256": "336ffee86efe0714d858915f52036a2dea5777679faa11fbbffdcd87dd816c05",
+    "condition": "original",
+    "fake_score": 9.627451618143823e-06,
+    "prediction": "real",
+    "image": "blue_2028_original.png"
+  },
+  {
+    "id": "blue_2028",
+    "source": "fake",
+    "source_sha256": "336ffee86efe0714d858915f52036a2dea5777679faa11fbbffdcd87dd816c05",
+    "condition": "100",
+    "fake_score": 8.224909834098071e-06,
+    "prediction": "real",
+    "image": "blue_2028_100.jpg"
+  },
+  {
+    "id": "blue_2028",
+    "source": "fake",
+    "source_sha256": "336ffee86efe0714d858915f52036a2dea5777679faa11fbbffdcd87dd816c05",
+    "condition": "75",
+    "fake_score": 1.0227995517197996e-05,
+    "prediction": "real",
+    "image": "blue_2028_75.jpg"
+  },
+  {
+    "id": "blue_2028",
+    "source": "fake",
+    "source_sha256": "336ffee86efe0714d858915f52036a2dea5777679faa11fbbffdcd87dd816c05",
+    "condition": "40",
+    "fake_score": 0.000988238607533276,
+    "prediction": "real",
+    "image": "blue_2028_40.jpg"
+  },
+  {
+    "id": "landscape_2026",
+    "source": "fake",
+    "source_sha256": "0eae23dec6ab342b262efd0cd31bb5c0f631961b0e92439c60a66956e5c1d1e4",
+    "condition": "original",
+    "fake_score": 0.007895318791270256,
+    "prediction": "real",
+    "image": "landscape_2026_original.png"
+  },
+  {
+    "id": "landscape_2026",
+    "source": "fake",
+    "source_sha256": "0eae23dec6ab342b262efd0cd31bb5c0f631961b0e92439c60a66956e5c1d1e4",
+    "condition": "100",
+    "fake_score": 0.00555382901802659,
+    "prediction": "real",
+    "image": "landscape_2026_100.jpg"
+  },
+  {
+    "id": "landscape_2026",
+    "source": "fake",
+    "source_sha256": "0eae23dec6ab342b262efd0cd31bb5c0f631961b0e92439c60a66956e5c1d1e4",
+    "condition": "75",
+    "fake_score": 0.01737859472632408,
+    "prediction": "real",
+    "image": "landscape_2026_75.jpg"
+  },
+  {
+    "id": "landscape_2026",
+    "source": "fake",
+    "source_sha256": "0eae23dec6ab342b262efd0cd31bb5c0f631961b0e92439c60a66956e5c1d1e4",
+    "condition": "40",
+    "fake_score": 0.10782724618911743,
+    "prediction": "real",
+    "image": "landscape_2026_40.jpg"
+  },
+  {
+    "id": "landscape_2027",
+    "source": "fake",
+    "source_sha256": "5d3ffd34782789512bedf9600c522043deeaf147ebf5472faa66f55e3bdb0b08",
+    "condition": "original",
+    "fake_score": 6.018058775225654e-05,
+    "prediction": "real",
+    "image": "landscape_2027_original.png"
+  },
+  {
+    "id": "landscape_2027",
+    "source": "fake",
+    "source_sha256": "5d3ffd34782789512bedf9600c522043deeaf147ebf5472faa66f55e3bdb0b08",
+    "condition": "100",
+    "fake_score": 1.2039543435093947e-05,
+    "prediction": "real",
+    "image": "landscape_2027_100.jpg"
+  },
+  {
+    "id": "landscape_2027",
+    "source": "fake",
+    "source_sha256": "5d3ffd34782789512bedf9600c522043deeaf147ebf5472faa66f55e3bdb0b08",
+    "condition": "75",
+    "fake_score": 0.0001587027800269425,
+    "prediction": "real",
+    "image": "landscape_2027_75.jpg"
+  },
+  {
+    "id": "landscape_2027",
+    "source": "fake",
+    "source_sha256": "5d3ffd34782789512bedf9600c522043deeaf147ebf5472faa66f55e3bdb0b08",
+    "condition": "40",
+    "fake_score": 0.0010278308764100075,
+    "prediction": "real",
+    "image": "landscape_2027_40.jpg"
+  },
+  {
+    "id": "landscape_2028",
+    "source": "fake",
+    "source_sha256": "3649dd7ba9825375166e33a22df757749a5dde92867beaac1692e82dc0422b68",
+    "condition": "original",
+    "fake_score": 5.097948587717838e-07,
+    "prediction": "real",
+    "image": "landscape_2028_original.png"
+  },
+  {
+    "id": "landscape_2028",
+    "source": "fake",
+    "source_sha256": "3649dd7ba9825375166e33a22df757749a5dde92867beaac1692e82dc0422b68",
+    "condition": "100",
+    "fake_score": 6.151316824798414e-07,
+    "prediction": "real",
+    "image": "landscape_2028_100.jpg"
+  },
+  {
+    "id": "landscape_2028",
+    "source": "fake",
+    "source_sha256": "3649dd7ba9825375166e33a22df757749a5dde92867beaac1692e82dc0422b68",
+    "condition": "75",
+    "fake_score": 3.533749577400158e-07,
+    "prediction": "real",
+    "image": "landscape_2028_75.jpg"
+  },
+  {
+    "id": "landscape_2028",
+    "source": "fake",
+    "source_sha256": "3649dd7ba9825375166e33a22df757749a5dde92867beaac1692e82dc0422b68",
+    "condition": "40",
+    "fake_score": 2.2253587303566746e-05,
+    "prediction": "real",
+    "image": "landscape_2028_40.jpg"
+  },
+  {
+    "id": "face_2026",
+    "source": "fake",
+    "source_sha256": "80b93eaee8e8f805c8d694226cb827908937fe2c680f92afff392c338a86bc6c",
+    "condition": "original",
+    "fake_score": 2.1899879811826395e-06,
+    "prediction": "real",
+    "image": "face_2026_original.png"
+  },
+  {
+    "id": "face_2026",
+    "source": "fake",
+    "source_sha256": "80b93eaee8e8f805c8d694226cb827908937fe2c680f92afff392c338a86bc6c",
+    "condition": "100",
+    "fake_score": 2.163732915505534e-06,
+    "prediction": "real",
+    "image": "face_2026_100.jpg"
+  },
+  {
+    "id": "face_2026",
+    "source": "fake",
+    "source_sha256": "80b93eaee8e8f805c8d694226cb827908937fe2c680f92afff392c338a86bc6c",
+    "condition": "75",
+    "fake_score": 2.1236526492884877e-07,
+    "prediction": "real",
+    "image": "face_2026_75.jpg"
+  },
+  {
+    "id": "face_2026",
+    "source": "fake",
+    "source_sha256": "80b93eaee8e8f805c8d694226cb827908937fe2c680f92afff392c338a86bc6c",
+    "condition": "40",
+    "fake_score": 3.617448601289652e-05,
+    "prediction": "real",
+    "image": "face_2026_40.jpg"
+  },
+  {
+    "id": "face_2027",
+    "source": "fake",
+    "source_sha256": "3f4978e7970b7109cc98224385138e302bb0ecf50c26154ae0c6ff3891467e59",
+    "condition": "original",
+    "fake_score": 1.0971460142172873e-05,
+    "prediction": "real",
+    "image": "face_2027_original.png"
+  },
+  {
+    "id": "face_2027",
+    "source": "fake",
+    "source_sha256": "3f4978e7970b7109cc98224385138e302bb0ecf50c26154ae0c6ff3891467e59",
+    "condition": "100",
+    "fake_score": 7.964282531247591e-07,
+    "prediction": "real",
+    "image": "face_2027_100.jpg"
+  },
+  {
+    "id": "face_2027",
+    "source": "fake",
+    "source_sha256": "3f4978e7970b7109cc98224385138e302bb0ecf50c26154ae0c6ff3891467e59",
+    "condition": "75",
+    "fake_score": 1.2741888610889873e-07,
+    "prediction": "real",
+    "image": "face_2027_75.jpg"
+  },
+  {
+    "id": "face_2027",
+    "source": "fake",
+    "source_sha256": "3f4978e7970b7109cc98224385138e302bb0ecf50c26154ae0c6ff3891467e59",
+    "condition": "40",
+    "fake_score": 1.7188731362693943e-06,
+    "prediction": "real",
+    "image": "face_2027_40.jpg"
+  },
+  {
+    "id": "face_2028",
+    "source": "fake",
+    "source_sha256": "bf819bead0ebc05cc859f451276d8d4f46fd33cdfad3184065d6d1e0ec264d09",
+    "condition": "original",
+    "fake_score": 0.00017807474068831652,
+    "prediction": "real",
+    "image": "face_2028_original.png"
+  },
+  {
+    "id": "face_2028",
+    "source": "fake",
+    "source_sha256": "bf819bead0ebc05cc859f451276d8d4f46fd33cdfad3184065d6d1e0ec264d09",
+    "condition": "100",
+    "fake_score": 5.1410192099865526e-05,
+    "prediction": "real",
+    "image": "face_2028_100.jpg"
+  },
+  {
+    "id": "face_2028",
+    "source": "fake",
+    "source_sha256": "bf819bead0ebc05cc859f451276d8d4f46fd33cdfad3184065d6d1e0ec264d09",
+    "condition": "75",
+    "fake_score": 4.2387182475067675e-06,
+    "prediction": "real",
+    "image": "face_2028_75.jpg"
+  },
+  {
+    "id": "face_2028",
+    "source": "fake",
+    "source_sha256": "bf819bead0ebc05cc859f451276d8d4f46fd33cdfad3184065d6d1e0ec264d09",
+    "condition": "40",
+    "fake_score": 0.00013974729517940432,
+    "prediction": "real",
+    "image": "face_2028_40.jpg"
+  }
+]

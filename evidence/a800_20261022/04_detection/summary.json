@@ -1,0 +1,7 @@
+{
+  "threshold": 0.5,
+  "independent_real_sources": 3,
+  "generated_outputs": 12,
+  "evaluations": 60,
+  "scope": "Small heterogeneous teaching set, not a benchmark or independent population accuracy estimate."
+}

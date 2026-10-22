@@ -1,0 +1,10 @@
+{
+  "cases": 3,
+  "risk_mentions": {
+    "authenticity": 2,
+    "source": 1,
+    "compliance": 1,
+    "privacy": 1,
+    "fairness": 1
+  }
+}

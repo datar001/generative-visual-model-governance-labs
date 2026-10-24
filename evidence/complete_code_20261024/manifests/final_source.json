@@ -1,0 +1,6 @@
+{
+  "commit": "f14fe5e40af3d8ec25b18f532a0889fa2dc7e33d",
+  "python_files": 24,
+  "archive_sha256": "6846dd780483bf27854c333a6c0f7ba02549d9d09be7ba2c95af82c55be7959a",
+  "gpu": "CUDA_VISIBLE_DEVICES=0"
+}

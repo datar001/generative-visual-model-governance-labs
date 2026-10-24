@@ -1,0 +1,26 @@
+test_scalar_and_vector_flags_keep_the_same_meaning (test_a800_output_flags.OutputCheckerFlags.test_scalar_and_vector_flags_keep_the_same_meaning) ... ok
+test_unavailable_is_not_clear (test_a800_output_flags.OutputCheckerFlags.test_unavailable_is_not_clear) ... ok
+test_wrong_batch_and_unknown_scalar_are_rejected (test_a800_output_flags.OutputCheckerFlags.test_wrong_batch_and_unknown_scalar_are_rejected) ... ok
+test_missing_weights_stop_without_download (test_detection_contracts.WeightTrust.test_missing_weights_stop_without_download) ... ok
+test_wrong_checkpoint_rejected (test_detection_contracts.WeightTrust.test_wrong_checkpoint_rejected) ... ok
+test_audit_still_scores_text_after_keyword_match (test_filter_contracts.FilterContracts.test_audit_still_scores_text_after_keyword_match) ... ok
+test_keyword_normalization_and_context_false_positive (test_filter_contracts.FilterContracts.test_keyword_normalization_and_context_false_positive) ... ok
+test_keyword_only_never_loads_models (test_filter_contracts.FilterContracts.test_keyword_only_never_loads_models) ... ok
+test_missing_or_invalid_risk_score_is_rejected (test_filter_contracts.FilterContracts.test_missing_or_invalid_risk_score_is_rejected) ... ok
+test_model_loading_error_remains_unavailable (test_filter_contracts.FilterContracts.test_model_loading_error_remains_unavailable) ... ok
+test_risk_score_is_not_the_top_safe_score (test_filter_contracts.FilterContracts.test_risk_score_is_not_the_top_safe_score) ... ok
+test_dry_run_does_not_import_model_libraries (test_offline_contracts.Contracts.test_dry_run_does_not_import_model_libraries) ... ok
+test_governance_can_run_outside_repository (test_offline_contracts.Contracts.test_governance_can_run_outside_repository) ... ok
+test_no_decidable_labels_is_not_zero_ratio (test_offline_contracts.Contracts.test_no_decidable_labels_is_not_zero_ratio) ... ok
+test_undecidable_rows_remain_in_denominator (test_offline_contracts.Contracts.test_undecidable_rows_remain_in_denominator) ... ok
+test_unknown_reviewed_label_is_rejected (test_offline_contracts.Contracts.test_unknown_reviewed_label_is_rejected) ... ok
+test_classroom_gate_is_a_benign_literal_rule (test_pseudoword_contracts.PseudowordContracts.test_classroom_gate_is_a_benign_literal_rule) ... ok
+test_invalid_scores_and_excessive_budget_are_not_ranked (test_pseudoword_contracts.PseudowordContracts.test_invalid_scores_and_excessive_budget_are_not_ranked) ... ok
+test_larger_budget_preserves_the_same_search_prefix (test_pseudoword_contracts.PseudowordContracts.test_larger_budget_preserves_the_same_search_prefix) ... ok
+test_running_best_is_monotone_and_matches_observed_scores (test_pseudoword_contracts.PseudowordContracts.test_running_best_is_monotone_and_matches_observed_scores) ... ok
+test_strategies_use_equal_unique_query_budgets (test_pseudoword_contracts.PseudowordContracts.test_strategies_use_equal_unique_query_budgets) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 1.611s
+
+OK

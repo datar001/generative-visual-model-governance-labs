@@ -4,3 +4,9 @@
 *.json text eol=lf
 *.png binary
 *.jpg binary
+
+# Preserve raw evidence CSV bytes for recorded hashes.
+evidence/complete_code_20261024/**/*.csv -text whitespace=cr-at-eol
+
+# Keep the exact byte stream executed and printed in the book.
+examples/book/*.py -text whitespace=cr-at-eol

@@ -1,3 +1,7 @@
+> 2026-10-24：书中代码已补成完整单文件，导入、必要函数和模型加载都已给出。
+> 运行 `python examples/book/04_detection.py`；[完整代码](../../examples/book/04_detection.py)。
+> 环境、明确的输入依赖和执行顺序见[书内完整示例说明](../../examples/book/README.md)。下方保留原审计实验入口，勿把局部摘录当成完整程序。
+
 # 第4章：生成图像鉴伪
 
 完整环境和数据准备见 [全章运行说明](../../experiments/a800/README.md)。运行前设置独立的 `LAB_ROOT`，实际结果保存于其 `results/`；书中只展示固定样例，完整原图保留在实测结果包。

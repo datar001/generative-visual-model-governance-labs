@@ -1,0 +1,303 @@
+{
+  "all_requirements_passed": true,
+  "strict_pixel_comparison_all_passed": false,
+  "variation": "Only PGD protected inputs and their customizations differ. An independent run of the identical final script also matches only 12 of 36 images; fixed seeds do not guarantee bitwise-repeatable GPU gradient updates. All strict mismatches are retained.",
+  "checks": [
+    {
+      "name": "ten_complete_scripts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_gpu_visibility_zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ten_complete_files_run",
+      "passed": true,
+      "detail": [
+        {
+          "example": "01_governance",
+          "status": "complete",
+          "script_sha256": "5696c8b1f55eaa493c798d89cd73c5fbb2b15e1326c050c207f919b23cb985aa",
+          "start_utc": "2026-10-24T14:33:29Z",
+          "cuda_visible_devices": "0",
+          "isolated_workdir": true,
+          "returncode": 0,
+          "elapsed_seconds": 0.04718017578125
+        },
+        {
+          "example": "02_generation",
+          "status": "complete",
+          "script_sha256": "c0f9a6ccba63d8d70b19f74cc08a0d5f58b5b2ba56f0f3173445b854a3436552",
+          "start_utc": "2026-10-24T14:33:29Z",
+          "cuda_visible_devices": "0",
+          "isolated_workdir": true,
+          "returncode": 0,
+          "elapsed_seconds": 31.482722759246826
+        },
+        {
+          "example": "03_pseudoword",
+          "status": "complete",
+          "script_sha256": "2683ff31d301fd3a227f7e53ad9f696da041a2cd75284daefe20d302c7caaf11",
+          "start_utc": "2026-10-24T14:34:00Z",
+          "cuda_visible_devices": "0",
+          "isolated_workdir": true,
+          "returncode": 0,
+          "elapsed_seconds": 22.186971187591553
+        },
+        {
+          "example": "04_detection",
+          "status": "complete",
+          "script_sha256": "8e93be204eabb8921b2a2c4333403b049aef77dea7df90f71797c8e557b93197",
+          "start_utc": "2026-10-24T14:34:23Z",
+          "cuda_visible_devices": "0",
+          "isolated_workdir": true,
+          "returncode": 0,
+          "elapsed_seconds": 10.875705480575562
+        },
+        {
+          "example": "05_watermark",
+          "status": "complete",
+          "script_sha256": "de7de7a309b41f53daacf6ae78c207290039dad928b86220fca61b894c40b332",
+          "start_utc": "2026-10-24T14:34:34Z",
+          "cuda_visible_devices": "0",
+          "isolated_workdir": true,
+          "returncode": 0,
+          "elapsed_seconds": 9.806633472442627
+        },
+        {
+          "example": "06_sld",
+          "status": "complete",
+          "script_sha256": "e6c3056e0649ab61f82b3faff9efe7899d937b9fcb7ca2879c303c67b0cb1281",
+          "start_utc": "2026-10-24T14:34:43Z",
+          "cuda_visible_devices": "0",
+          "isolated_workdir": true,
+          "returncode": 0,
+          "elapsed_seconds": 35.48351788520813
+        },
+        {
+          "example": "06_esd",
+          "status": "complete",
+          "script_sha256": "663d3258a57ed8fbab5feaedeb2d6547f31e4a4907375fbe9b14bf65c4f4d595",
+          "start_utc": "2026-10-24T14:35:19Z",
+          "cuda_visible_devices": "0",
+          "isolated_workdir": true,
+          "returncode": 0,
+          "elapsed_seconds": 45.15699863433838
+        },
+        {
+          "example": "07_fairness",
+          "status": "complete",
+          "script_sha256": "32408791985bc9031144112f335f928ab6a8946663d6990aa5cab3380f3dfb19",
+          "start_utc": "2026-10-24T14:36:04Z",
+          "cuda_visible_devices": "0",
+          "isolated_workdir": true,
+          "returncode": 0,
+          "elapsed_seconds": 380.6582956314087
+        },
+        {
+          "example": "08_privacy",
+          "status": "complete",
+          "script_sha256": "d09168163186d3a0cb34155cc4ccd41f73b282bbd3e448894b45386f661e7152",
+          "start_utc": "2026-10-24T14:42:25Z",
+          "cuda_visible_devices": "0",
+          "isolated_workdir": true,
+          "returncode": 0,
+          "elapsed_seconds": 56.84992504119873
+        },
+        {
+          "example": "03_filters",
+          "status": "complete",
+          "script_sha256": "6ade827b1e28925b9a9e77ae002970cd12d762ca7beb2416e5ef312307c0ab5d",
+          "start_utc": "2026-10-24T14:43:22Z",
+          "cuda_visible_devices": "0",
+          "isolated_workdir": true,
+          "returncode": 0,
+          "elapsed_seconds": 11.57429575920105
+        }
+      ]
+    },
+    {
+      "name": "02_generation.rows",
+      "passed": true,
+      "detail": {
+        "old": 12,
+        "new": 12,
+        "expected": 12
+      }
+    },
+    {
+      "name": "02_generation.reproduces_original",
+      "passed": true,
+      "detail": {
+        "compared_images": 12,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "03_pseudoword.rows",
+      "passed": true,
+      "detail": {
+        "old": 7,
+        "new": 7,
+        "expected": 7
+      }
+    },
+    {
+      "name": "03_pseudoword.reproduces_original",
+      "passed": true,
+      "detail": {
+        "compared_images": 7,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "04_detection.rows",
+      "passed": true,
+      "detail": {
+        "old": 60,
+        "new": 60,
+        "expected": 60
+      }
+    },
+    {
+      "name": "04_detection.reproduces_original",
+      "passed": true,
+      "detail": {
+        "compared_images": 60,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "05_watermark.rows",
+      "passed": true,
+      "detail": {
+        "old": 216,
+        "new": 216,
+        "expected": 216
+      }
+    },
+    {
+      "name": "05_watermark.reproduces_original",
+      "passed": true,
+      "detail": {
+        "compared_images": 216,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "06_sld.rows",
+      "passed": true,
+      "detail": {
+        "old": 18,
+        "new": 18,
+        "expected": 18
+      }
+    },
+    {
+      "name": "06_sld.reproduces_original",
+      "passed": true,
+      "detail": {
+        "compared_images": 18,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "06_esd.rows",
+      "passed": true,
+      "detail": {
+        "old": 24,
+        "new": 24,
+        "expected": 24
+      }
+    },
+    {
+      "name": "06_esd.reproduces_original",
+      "passed": true,
+      "detail": {
+        "compared_images": 24,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "07_fairness.rows",
+      "passed": true,
+      "detail": {
+        "old": 400,
+        "new": 400,
+        "expected": 400
+      }
+    },
+    {
+      "name": "07_fairness.reproduces_original",
+      "passed": true,
+      "detail": {
+        "compared_images": 400,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "08_privacy.rows",
+      "passed": true,
+      "detail": {
+        "old": 45,
+        "new": 45,
+        "expected": 45
+      }
+    },
+    {
+      "name": "03_filters.rows",
+      "passed": true,
+      "detail": {
+        "old": 49,
+        "new": 49,
+        "expected": 49
+      }
+    },
+    {
+      "name": "03_filters.reproduces_original",
+      "passed": true,
+      "detail": {
+        "compared_images": 0,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "03_pseudoword.trace.csv",
+      "passed": true,
+      "detail": "trace.csv"
+    },
+    {
+      "name": "03_pseudoword.summary.csv",
+      "passed": true,
+      "detail": "summary.csv"
+    },
+    {
+      "name": "01_governance.csv",
+      "passed": true,
+      "detail": "same three scenarios, seven fields"
+    },
+    {
+      "name": "privacy.bounded_png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "privacy.27_valid_outputs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "privacy.three_conditions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "privacy.same_code_repeat_executed",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

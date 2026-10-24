@@ -1,0 +1,128 @@
+{
+  "examples": 10,
+  "checks": [
+    {
+      "script": "05_watermark.py",
+      "sha256": "de7de7a309b41f53daacf6ae78c207290039dad928b86220fca61b894c40b332",
+      "all_lines_printed": true,
+      "book_repo_identical": true,
+      "imports_explicit": true,
+      "no_project_python_dependencies": true
+    },
+    {
+      "script": "07_fairness.py",
+      "sha256": "32408791985bc9031144112f335f928ab6a8946663d6990aa5cab3380f3dfb19",
+      "all_lines_printed": true,
+      "book_repo_identical": true,
+      "imports_explicit": true,
+      "no_project_python_dependencies": true
+    },
+    {
+      "script": "02_generation.py",
+      "sha256": "c0f9a6ccba63d8d70b19f74cc08a0d5f58b5b2ba56f0f3173445b854a3436552",
+      "all_lines_printed": true,
+      "book_repo_identical": true,
+      "imports_explicit": true,
+      "no_project_python_dependencies": true
+    },
+    {
+      "script": "06_sld.py",
+      "sha256": "e6c3056e0649ab61f82b3faff9efe7899d937b9fcb7ca2879c303c67b0cb1281",
+      "all_lines_printed": true,
+      "book_repo_identical": true,
+      "imports_explicit": true,
+      "no_project_python_dependencies": true
+    },
+    {
+      "script": "06_esd.py",
+      "sha256": "663d3258a57ed8fbab5feaedeb2d6547f31e4a4907375fbe9b14bf65c4f4d595",
+      "all_lines_printed": true,
+      "book_repo_identical": true,
+      "imports_explicit": true,
+      "no_project_python_dependencies": true
+    },
+    {
+      "script": "03_filters.py",
+      "sha256": "6ade827b1e28925b9a9e77ae002970cd12d762ca7beb2416e5ef312307c0ab5d",
+      "all_lines_printed": true,
+      "book_repo_identical": true,
+      "imports_explicit": true,
+      "no_project_python_dependencies": true
+    },
+    {
+      "script": "03_pseudoword.py",
+      "sha256": "2683ff31d301fd3a227f7e53ad9f696da041a2cd75284daefe20d302c7caaf11",
+      "all_lines_printed": true,
+      "book_repo_identical": true,
+      "imports_explicit": true,
+      "no_project_python_dependencies": true
+    },
+    {
+      "script": "01_governance.py",
+      "sha256": "5696c8b1f55eaa493c798d89cd73c5fbb2b15e1326c050c207f919b23cb985aa",
+      "all_lines_printed": true,
+      "book_repo_identical": true,
+      "imports_explicit": true,
+      "no_project_python_dependencies": true
+    },
+    {
+      "script": "04_detection.py",
+      "sha256": "8e93be204eabb8921b2a2c4333403b049aef77dea7df90f71797c8e557b93197",
+      "all_lines_printed": true,
+      "book_repo_identical": true,
+      "imports_explicit": true,
+      "no_project_python_dependencies": true
+    },
+    {
+      "script": "08_privacy.py",
+      "sha256": "d09168163186d3a0cb34155cc4ccd41f73b282bbd3e448894b45386f661e7152",
+      "all_lines_printed": true,
+      "book_repo_identical": true,
+      "imports_explicit": true,
+      "no_project_python_dependencies": true
+    }
+  ],
+  "scope": [
+    {
+      "file": "水印--张晨宇--0329.tex",
+      "outside_practice_words_unchanged": true,
+      "layout_only_change": null
+    },
+    {
+      "file": "生成式视觉大模型公平性去偏--睿东_v3.tex",
+      "outside_practice_words_unchanged": true,
+      "layout_only_change": null
+    },
+    {
+      "file": "生成式视觉大模型基础--张晨宇.tex",
+      "outside_practice_words_unchanged": true,
+      "layout_only_change": null
+    },
+    {
+      "file": "生成式视觉大模型安全防御--睿东_v3.tex",
+      "outside_practice_words_unchanged": true,
+      "layout_only_change": null
+    },
+    {
+      "file": "生成式视觉大模型越狱攻击--晨宇_0328.tex",
+      "outside_practice_words_unchanged": true,
+      "layout_only_change": null
+    },
+    {
+      "file": "生成式视觉大模型风险与治理概述.tex",
+      "outside_practice_words_unchanged": true,
+      "layout_only_change": null
+    },
+    {
+      "file": "鉴伪--陈宇.tex",
+      "outside_practice_words_unchanged": true,
+      "layout_only_change": null
+    },
+    {
+      "file": "隐私保护--陈宇.tex",
+      "outside_practice_words_unchanged": true,
+      "layout_only_change": "one paragraph stretch"
+    }
+  ],
+  "static_checker": "pyflakes: zero diagnostics"
+}

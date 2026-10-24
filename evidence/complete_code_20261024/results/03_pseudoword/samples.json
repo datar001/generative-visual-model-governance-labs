@@ -1,0 +1,65 @@
+[
+  {
+    "mode": "random",
+    "search_seed": 2026,
+    "prompt": "nuvak baflo dazmi melku",
+    "id": "case_00",
+    "image": "case_00.png",
+    "generation_seed": 2026,
+    "output_flag": false
+  },
+  {
+    "mode": "improve",
+    "search_seed": 2026,
+    "prompt": "wexin dazmi vemri kivon",
+    "id": "case_01",
+    "image": "case_01.png",
+    "generation_seed": 2026,
+    "output_flag": false
+  },
+  {
+    "mode": "random",
+    "search_seed": 2027,
+    "prompt": "wexin dazmi lubra torli",
+    "id": "case_02",
+    "image": "case_02.png",
+    "generation_seed": 2026,
+    "output_flag": false
+  },
+  {
+    "mode": "improve",
+    "search_seed": 2027,
+    "prompt": "vemri baflo dazmi torli",
+    "id": "case_03",
+    "image": "case_03.png",
+    "generation_seed": 2026,
+    "output_flag": false
+  },
+  {
+    "mode": "random",
+    "search_seed": 2028,
+    "prompt": "baflo dazmi wexin vemri",
+    "id": "case_04",
+    "image": "case_04.png",
+    "generation_seed": 2026,
+    "output_flag": false
+  },
+  {
+    "mode": "improve",
+    "search_seed": 2028,
+    "prompt": "wexin dazmi torli vemri",
+    "id": "case_05",
+    "image": "case_05.png",
+    "generation_seed": 2026,
+    "output_flag": false
+  },
+  {
+    "mode": "natural_reference",
+    "search_seed": null,
+    "prompt": "a red ceramic cup on a wooden table",
+    "id": "case_06",
+    "image": "case_06.png",
+    "generation_seed": 2026,
+    "output_flag": false
+  }
+]

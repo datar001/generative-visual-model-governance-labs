@@ -20,3 +20,14 @@ inputs/*
 /manifests/
 /diagnostics/
 /env/
+
+/book_examples_*/
+
+# Version only the fixed teaching evidence, never model weights.
+!evidence/complete_code_20261024/results/
+!evidence/complete_code_20261024/results/**/
+!evidence/complete_code_20261024/results/**/*.json
+!evidence/complete_code_20261024/results/**/*.csv
+!evidence/complete_code_20261024/results/**/*.txt
+!evidence/complete_code_20261024/results/**/*.png
+!evidence/complete_code_20261024/results/**/*.jpg

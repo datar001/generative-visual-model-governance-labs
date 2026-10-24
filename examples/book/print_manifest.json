@@ -1,0 +1,318 @@
+[
+  {
+    "practice": "watermark",
+    "script": "05_watermark.py",
+    "lines": 125,
+    "ranges": [
+      [
+        1,
+        37
+      ],
+      [
+        38,
+        74
+      ],
+      [
+        75,
+        111
+      ],
+      [
+        112,
+        125
+      ]
+    ],
+    "sha256": "de7de7a309b41f53daacf6ae78c207290039dad928b86220fca61b894c40b332",
+    "all_lines_printed": true,
+    "local_python_dependencies": []
+  },
+  {
+    "practice": "fairness",
+    "script": "07_fairness.py",
+    "lines": 205,
+    "ranges": [
+      [
+        1,
+        37
+      ],
+      [
+        38,
+        74
+      ],
+      [
+        75,
+        111
+      ],
+      [
+        112,
+        148
+      ],
+      [
+        149,
+        185
+      ],
+      [
+        186,
+        205
+      ]
+    ],
+    "sha256": "32408791985bc9031144112f335f928ab6a8946663d6990aa5cab3380f3dfb19",
+    "all_lines_printed": true,
+    "local_python_dependencies": []
+  },
+  {
+    "practice": "generation",
+    "script": "02_generation.py",
+    "lines": 126,
+    "ranges": [
+      [
+        1,
+        37
+      ],
+      [
+        38,
+        73
+      ],
+      [
+        74,
+        109
+      ],
+      [
+        110,
+        126
+      ]
+    ],
+    "sha256": "c0f9a6ccba63d8d70b19f74cc08a0d5f58b5b2ba56f0f3173445b854a3436552",
+    "all_lines_printed": true,
+    "local_python_dependencies": []
+  },
+  {
+    "practice": "sld",
+    "script": "06_sld.py",
+    "lines": 147,
+    "ranges": [
+      [
+        1,
+        37
+      ],
+      [
+        38,
+        73
+      ],
+      [
+        74,
+        110
+      ],
+      [
+        111,
+        147
+      ]
+    ],
+    "sha256": "e6c3056e0649ab61f82b3faff9efe7899d937b9fcb7ca2879c303c67b0cb1281",
+    "all_lines_printed": true,
+    "local_python_dependencies": []
+  },
+  {
+    "practice": "esd",
+    "script": "06_esd.py",
+    "lines": 157,
+    "ranges": [
+      [
+        1,
+        37
+      ],
+      [
+        38,
+        73
+      ],
+      [
+        74,
+        110
+      ],
+      [
+        111,
+        147
+      ],
+      [
+        148,
+        157
+      ]
+    ],
+    "sha256": "663d3258a57ed8fbab5feaedeb2d6547f31e4a4907375fbe9b14bf65c4f4d595",
+    "all_lines_printed": true,
+    "local_python_dependencies": []
+  },
+  {
+    "practice": "filter",
+    "script": "03_filters.py",
+    "lines": 209,
+    "ranges": [
+      [
+        1,
+        37
+      ],
+      [
+        38,
+        74
+      ],
+      [
+        75,
+        111
+      ],
+      [
+        112,
+        148
+      ],
+      [
+        149,
+        185
+      ],
+      [
+        186,
+        209
+      ]
+    ],
+    "sha256": "6ade827b1e28925b9a9e77ae002970cd12d762ca7beb2416e5ef312307c0ab5d",
+    "all_lines_printed": true,
+    "local_python_dependencies": []
+  },
+  {
+    "practice": "pseudoword",
+    "script": "03_pseudoword.py",
+    "lines": 303,
+    "ranges": [
+      [
+        1,
+        37
+      ],
+      [
+        38,
+        73
+      ],
+      [
+        74,
+        110
+      ],
+      [
+        111,
+        147
+      ],
+      [
+        148,
+        184
+      ],
+      [
+        185,
+        221
+      ],
+      [
+        222,
+        258
+      ],
+      [
+        259,
+        295
+      ],
+      [
+        296,
+        303
+      ]
+    ],
+    "sha256": "2683ff31d301fd3a227f7e53ad9f696da041a2cd75284daefe20d302c7caaf11",
+    "all_lines_printed": true,
+    "local_python_dependencies": []
+  },
+  {
+    "practice": "overview",
+    "script": "01_governance.py",
+    "lines": 81,
+    "ranges": [
+      [
+        1,
+        37
+      ],
+      [
+        38,
+        74
+      ],
+      [
+        75,
+        81
+      ]
+    ],
+    "sha256": "5696c8b1f55eaa493c798d89cd73c5fbb2b15e1326c050c207f919b23cb985aa",
+    "all_lines_printed": true,
+    "local_python_dependencies": []
+  },
+  {
+    "practice": "detection",
+    "script": "04_detection.py",
+    "lines": 113,
+    "ranges": [
+      [
+        1,
+        37
+      ],
+      [
+        38,
+        74
+      ],
+      [
+        75,
+        110
+      ],
+      [
+        111,
+        113
+      ]
+    ],
+    "sha256": "8e93be204eabb8921b2a2c4333403b049aef77dea7df90f71797c8e557b93197",
+    "all_lines_printed": true,
+    "local_python_dependencies": []
+  },
+  {
+    "practice": "privacy",
+    "script": "08_privacy.py",
+    "lines": 320,
+    "ranges": [
+      [
+        1,
+        37
+      ],
+      [
+        38,
+        73
+      ],
+      [
+        74,
+        110
+      ],
+      [
+        111,
+        147
+      ],
+      [
+        148,
+        184
+      ],
+      [
+        185,
+        220
+      ],
+      [
+        221,
+        256
+      ],
+      [
+        257,
+        289
+      ],
+      [
+        290,
+        320
+      ]
+    ],
+    "sha256": "d09168163186d3a0cb34155cc4ccd41f73b282bbd3e448894b45386f661e7152",
+    "all_lines_printed": true,
+    "local_python_dependencies": []
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "red_2026",
+    "kind": "red",
+    "prompt": "a red ceramic cup on a wooden table",
+    "seed": 2026,
+    "image": "red_2026.png",
+    "output_flag": false,
+    "steps": 30,
+    "size": 512
+  },
+  {
+    "id": "red_2027",
+    "kind": "red",
+    "prompt": "a red ceramic cup on a wooden table",
+    "seed": 2027,
+    "image": "red_2027.png",
+    "output_flag": false,
+    "steps": 30,
+    "size": 512
+  },
+  {
+    "id": "red_2028",
+    "kind": "red",
+    "prompt": "a red ceramic cup on a wooden table",
+    "seed": 2028,
+    "image": "red_2028.png",
+    "output_flag": false,
+    "steps": 30,
+    "size": 512
+  },
+  {
+    "id": "blue_2026",
+    "kind": "blue",
+    "prompt": "a blue ceramic cup on a wooden table",
+    "seed": 2026,
+    "image": "blue_2026.png",
+    "output_flag": false,
+    "steps": 30,
+    "size": 512
+  },
+  {
+    "id": "blue_2027",
+    "kind": "blue",
+    "prompt": "a blue ceramic cup on a wooden table",
+    "seed": 2027,
+    "image": "blue_2027.png",
+    "output_flag": false,
+    "steps": 30,
+    "size": 512
+  },
+  {
+    "id": "blue_2028",
+    "kind": "blue",
+    "prompt": "a blue ceramic cup on a wooden table",
+    "seed": 2028,
+    "image": "blue_2028.png",
+    "output_flag": false,
+    "steps": 30,
+    "size": 512
+  },
+  {
+    "id": "landscape_2026",
+    "kind": "landscape",
+    "prompt": "a landscape photograph of a forest and a lake in daylight",
+    "seed": 2026,
+    "image": "landscape_2026.png",
+    "output_flag": false,
+    "steps": 30,
+    "size": 512
+  },
+  {
+    "id": "landscape_2027",
+    "kind": "landscape",
+    "prompt": "a landscape photograph of a forest and a lake in daylight",
+    "seed": 2027,
+    "image": "landscape_2027.png",
+    "output_flag": false,
+    "steps": 30,
+    "size": 512
+  },
+  {
+    "id": "landscape_2028",
+    "kind": "landscape",
+    "prompt": "a landscape photograph of a forest and a lake in daylight",
+    "seed": 2028,
+    "image": "landscape_2028.png",
+    "output_flag": false,
+    "steps": 30,
+    "size": 512
+  },
+  {
+    "id": "face_2026",
+    "kind": "face",
+    "prompt": "a studio headshot photograph of a fictional adult woman aged 35, front facing, neutral expression, fully clothed, plain background",
+    "seed": 2026,
+    "image": "face_2026.png",
+    "output_flag": false,
+    "steps": 30,
+    "size": 512
+  },
+  {
+    "id": "face_2027",
+    "kind": "face",
+    "prompt": "a studio headshot photograph of a fictional adult woman aged 35, front facing, neutral expression, fully clothed, plain background",
+    "seed": 2027,
+    "image": "face_2027.png",
+    "output_flag": false,
+    "steps": 30,
+    "size": 512
+  },
+  {
+    "id": "face_2028",
+    "kind": "face",
+    "prompt": "a studio headshot photograph of a fictional adult woman aged 35, front facing, neutral expression, fully clothed, plain background",
+    "seed": 2028,
+    "image": "face_2028.png",
+    "output_flag": false,
+    "steps": 30,
+    "size": 512
+  }
+]

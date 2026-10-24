@@ -1,0 +1,154 @@
+{
+  "returncode": 0,
+  "elapsed_seconds": 54.46938967704773,
+  "script_sha256": "d09168163186d3a0cb34155cc4ccd41f73b282bbd3e448894b45386f661e7152",
+  "cuda_visible_devices": "0",
+  "images": 36,
+  "identical_images": 12,
+  "pairs": [
+    {
+      "file": "face_2026/custom_original_2026.png",
+      "same": true
+    },
+    {
+      "file": "face_2026/custom_original_2027.png",
+      "same": true
+    },
+    {
+      "file": "face_2026/custom_original_2028.png",
+      "same": true
+    },
+    {
+      "file": "face_2026/custom_protected_2026.png",
+      "same": false
+    },
+    {
+      "file": "face_2026/custom_protected_2027.png",
+      "same": false
+    },
+    {
+      "file": "face_2026/custom_protected_2028.png",
+      "same": false
+    },
+    {
+      "file": "face_2026/custom_protected_q75_2026.png",
+      "same": false
+    },
+    {
+      "file": "face_2026/custom_protected_q75_2027.png",
+      "same": false
+    },
+    {
+      "file": "face_2026/custom_protected_q75_2028.png",
+      "same": false
+    },
+    {
+      "file": "face_2026/original.png",
+      "same": true
+    },
+    {
+      "file": "face_2026/protected.png",
+      "same": false
+    },
+    {
+      "file": "face_2026/protected_q75.jpg",
+      "same": false
+    },
+    {
+      "file": "face_2027/custom_original_2026.png",
+      "same": true
+    },
+    {
+      "file": "face_2027/custom_original_2027.png",
+      "same": true
+    },
+    {
+      "file": "face_2027/custom_original_2028.png",
+      "same": true
+    },
+    {
+      "file": "face_2027/custom_protected_2026.png",
+      "same": false
+    },
+    {
+      "file": "face_2027/custom_protected_2027.png",
+      "same": false
+    },
+    {
+      "file": "face_2027/custom_protected_2028.png",
+      "same": false
+    },
+    {
+      "file": "face_2027/custom_protected_q75_2026.png",
+      "same": false
+    },
+    {
+      "file": "face_2027/custom_protected_q75_2027.png",
+      "same": false
+    },
+    {
+      "file": "face_2027/custom_protected_q75_2028.png",
+      "same": false
+    },
+    {
+      "file": "face_2027/original.png",
+      "same": true
+    },
+    {
+      "file": "face_2027/protected.png",
+      "same": false
+    },
+    {
+      "file": "face_2027/protected_q75.jpg",
+      "same": false
+    },
+    {
+      "file": "face_2028/custom_original_2026.png",
+      "same": true
+    },
+    {
+      "file": "face_2028/custom_original_2027.png",
+      "same": true
+    },
+    {
+      "file": "face_2028/custom_original_2028.png",
+      "same": true
+    },
+    {
+      "file": "face_2028/custom_protected_2026.png",
+      "same": false
+    },
+    {
+      "file": "face_2028/custom_protected_2027.png",
+      "same": false
+    },
+    {
+      "file": "face_2028/custom_protected_2028.png",
+      "same": false
+    },
+    {
+      "file": "face_2028/custom_protected_q75_2026.png",
+      "same": false
+    },
+    {
+      "file": "face_2028/custom_protected_q75_2027.png",
+      "same": false
+    },
+    {
+      "file": "face_2028/custom_protected_q75_2028.png",
+      "same": false
+    },
+    {
+      "file": "face_2028/original.png",
+      "same": true
+    },
+    {
+      "file": "face_2028/protected.png",
+      "same": false
+    },
+    {
+      "file": "face_2028/protected_q75.jpg",
+      "same": false
+    }
+  ]
+}

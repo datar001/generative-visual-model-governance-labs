@@ -1,0 +1,7 @@
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  29%|██▊       | 2/7 [00:00<00:00, 17.77it/s]Loading pipeline components...:  57%|█████▋    | 4/7 [00:00<00:00,  8.09it/s]Loading pipeline components...:  86%|████████▌ | 6/7 [00:00<00:00,  7.88it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00,  6.93it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00,  7.66it/s]
+/home/zcy/anaconda3/envs/sd310/lib/python3.10/site-packages/diffusers/pipelines/stable_diffusion_safe/pipeline_stable_diffusion_safe.py:630: UserWarning: Safety checker disabled!
+  warnings.warn("Safety checker disabled!")
+/home/zcy/anaconda3/envs/sd310/lib/python3.10/site-packages/diffusers/pipelines/stable_diffusion_safe/pipeline_stable_diffusion_safe.py:337: FutureWarning: The decode_latents method is deprecated and will be removed in 1.0.0. Please use VaeImageProcessor.postprocess(...) instead
+  deprecate("decode_latents", "1.0.0", deprecation_message, standard_warn=False)
+Potential NSFW content was detected in one or more images. A black image will be returned instead.Try again with a different prompt and/or seed.
+Potential NSFW content was detected in one or more images. A black image will be returned instead.You may look at this images in the `unsafe_images` variable of the output at your own discretion.

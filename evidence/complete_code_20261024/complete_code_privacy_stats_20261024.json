@@ -1,0 +1,26 @@
+{
+  "means": {
+    "original": {
+      "feature": 1.00000003973643,
+      "adapter_input_feature": 0.9999999602635702,
+      "customization": 0.6327203445964389,
+      "psnr": null
+    },
+    "protected": {
+      "feature": -0.8339544336001078,
+      "adapter_input_feature": 0.589210569858551,
+      "customization": 0.5465102427535586,
+      "psnr": 32.189132683657775
+    },
+    "protected_q75": {
+      "feature": -0.532053808371226,
+      "adapter_input_feature": 0.5635964870452881,
+      "customization": 0.45219910475942826,
+      "psnr": 32.19450475916969
+    }
+  },
+  "pgd_update_ast_unchanged": true,
+  "repeat_identical_images": 12,
+  "repeat_total_images": 36,
+  "book_run": "2026-10-24 first full standalone run"
+}

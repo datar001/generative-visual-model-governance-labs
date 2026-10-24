@@ -1,0 +1,4 @@
+﻿id,scenario,risks,evidence,control,owner,review_status
+demo-ad,生成产品广告图,authenticity;source,待核对产品规格与素材来源,核实实物能力并标明示意用途,产品与内容审核人,pending
+demo-news,新闻说明配图,authenticity;compliance,待核实事件事实与传播语境,事实核查、合成标识及人工复核,编辑与审核人,pending
+demo-portrait,授权肖像定制演示,privacy;fairness,待核实授权范围与样本呈现,按用途核验授权、复核群体呈现,实验与权益负责人,pending

@@ -1,0 +1,213 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "ten_script_exit_codes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "executed_source_hash_01_governance.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "executed_source_hash_02_generation.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "executed_source_hash_03_filters.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "executed_source_hash_03_pseudoword.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "executed_source_hash_04_detection.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "executed_source_hash_05_watermark.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "executed_source_hash_06_sld.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "executed_source_hash_06_esd.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "executed_source_hash_07_fairness.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "executed_source_hash_08_privacy.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generation_pixels_blue_2026",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generation_pixels_blue_2027",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generation_pixels_blue_2028",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generation_pixels_face_2026",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generation_pixels_face_2027",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generation_pixels_face_2028",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generation_pixels_landscape_2026",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generation_pixels_landscape_2027",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generation_pixels_landscape_2028",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generation_pixels_red_2026",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generation_pixels_red_2027",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generation_pixels_red_2028",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "three_text_three_image",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "filter_probability_range",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unique_benign_64_candidates",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_clip_scores",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "two_cnnspot_scores",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "watermark_png_and_jpeg",
+      "passed": true,
+      "detail": [
+        {
+          "condition": "png",
+          "source_bits": "1001000010111110",
+          "decoded_bits": "1001000010111110",
+          "bit_accuracy": 1.0
+        },
+        {
+          "condition": "jpeg75",
+          "source_bits": "1001000010111110",
+          "decoded_bits": "1001000010111110",
+          "bit_accuracy": 1.0
+        },
+        {
+          "condition": "unmarked",
+          "source_bits": "1001000010111110",
+          "decoded_bits": "1111100001111111",
+          "bit_accuracy": 0.625
+        }
+      ]
+    },
+    {
+      "name": "fairness_12_complete_records",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fairness_unreviewed_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fairness_legal_labels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "privacy_saved_png_budget",
+      "passed": true,
+      "detail": {
+        "maximum_integer_pixel_difference": 8
+      }
+    },
+    {
+      "name": "privacy_input_feature_finite",
+      "passed": true,
+      "detail": {
+        "protected_input_cosine": -0.8921792507171631
+      }
+    },
+    {
+      "name": "actual_generation_file_counts",
+      "passed": true,
+      "detail": {
+        "02_generation": 12,
+        "03_pseudoword": 2,
+        "06_sld": 2,
+        "06_esd": 4,
+        "07_fairness": 12,
+        "08_privacy": 4
+      }
+    }
+  ],
+  "gpu": "physical GPU 0 only",
+  "generation_attempts": 34,
+  "notes": "Minimal examples are separately executed introductory subsets, not a rerun of the 488-attempt full study. Privacy measures only input feature cosine; no output face-similarity metric is claimed here."
+}

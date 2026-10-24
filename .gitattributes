@@ -10,3 +10,6 @@ evidence/complete_code_20261024/**/*.csv -text whitespace=cr-at-eol
 
 # Keep the exact byte stream executed and printed in the book.
 examples/book/*.py -text whitespace=cr-at-eol
+
+# Preserve CSV evidence emitted by the minimal examples.
+evidence/minimal_20261024/**/*.csv -text whitespace=cr-at-eol

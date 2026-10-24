@@ -1,0 +1,12 @@
+[
+  {
+    "source": "real",
+    "fake_score": 6.260655549539251e-09,
+    "predicted_fake": false
+  },
+  {
+    "source": "generated",
+    "fake_score": 9.412034160050098e-06,
+    "predicted_fake": false
+  }
+]

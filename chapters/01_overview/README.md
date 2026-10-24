@@ -1,6 +1,6 @@
-> 2026-10-24：书中代码已补成完整单文件，导入、必要函数和模型加载都已给出。
-> 运行 `python examples/book/01_governance.py`；[完整代码](../../examples/book/01_governance.py)。
-> 环境、明确的输入依赖和执行顺序见[书内完整示例说明](../../examples/book/README.md)。下方保留原审计实验入口，勿把局部摘录当成完整程序。
+> 2026-10-24最新：书内采用最小完整实现；导入、实际模型加载和核心运算保留，额外校验及完整函数在Git仓库中。
+> 运行 `python examples/minimal/01_governance.py`（[代码](../../examples/minimal/01_governance.py)）。
+> [最小示例运行准备](../../examples/minimal/README.md) · [完整函数与批量实现](../../examples/book/README.md)。下方大样本实测对应完整实验。
 
 # 第1章：风险与治理概述
 

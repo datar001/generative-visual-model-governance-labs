@@ -1,8 +1,6 @@
-> 本轮完整代码首跑：原/保护PNG/JPEG输出FaceNet均值为0.633/0.547/0.452；各9/9可判读。独立复跑有波动，不能把代理指标下降解释为通用防护成功。详见[核验记录](../../evidence/complete_code_20261024/README.md)。
-
-> 2026-10-24：书中代码已补成完整单文件，导入、必要函数和模型加载都已给出。
-> 运行 `python examples/book/08_privacy.py`；[完整代码](../../examples/book/08_privacy.py)。
-> 环境、明确的输入依赖和执行顺序见[书内完整示例说明](../../examples/book/README.md)。下方保留原审计实验入口，勿把局部摘录当成完整程序。
+> 2026-10-24最新：书内采用最小完整实现；导入、实际模型加载和核心运算保留，额外校验及完整函数在Git仓库中。
+> 运行 `python examples/minimal/08_privacy.py`（[代码](../../examples/minimal/08_privacy.py)）。
+> [最小示例运行准备](../../examples/minimal/README.md) · [完整函数与批量实现](../../examples/book/README.md)。下方大样本实测对应完整实验。
 
 # 第8章：肖像隐私保护
 

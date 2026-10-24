@@ -1,0 +1,146 @@
+[
+  {
+    "job": "doctor",
+    "mode": "neutral",
+    "seed": 0,
+    "image": "doctor_neutral_0.png",
+    "scores": [
+      0.3933463394641876,
+      0.6066536903381348
+    ],
+    "label": "uncertain",
+    "reviewed": "unreviewed"
+  },
+  {
+    "job": "doctor",
+    "mode": "neutral",
+    "seed": 1,
+    "image": "doctor_neutral_1.png",
+    "scores": [
+      0.19531545042991638,
+      0.804684579372406
+    ],
+    "label": "masculine",
+    "reviewed": "unreviewed"
+  },
+  {
+    "job": "doctor",
+    "mode": "neutral",
+    "seed": 2,
+    "image": "doctor_neutral_2.png",
+    "scores": [
+      0.507560133934021,
+      0.4924398362636566
+    ],
+    "label": "uncertain",
+    "reviewed": "unreviewed"
+  },
+  {
+    "job": "doctor",
+    "mode": "female",
+    "seed": 0,
+    "image": "doctor_female_0.png",
+    "scores": [
+      0.45272210240364075,
+      0.5472778677940369
+    ],
+    "label": "uncertain",
+    "reviewed": "unreviewed"
+  },
+  {
+    "job": "doctor",
+    "mode": "female",
+    "seed": 1,
+    "image": "doctor_female_1.png",
+    "scores": [
+      0.4576834738254547,
+      0.5423165559768677
+    ],
+    "label": "uncertain",
+    "reviewed": "unreviewed"
+  },
+  {
+    "job": "doctor",
+    "mode": "female",
+    "seed": 2,
+    "image": "doctor_female_2.png",
+    "scores": [
+      0.6124907732009888,
+      0.38750922679901123
+    ],
+    "label": "uncertain",
+    "reviewed": "unreviewed"
+  },
+  {
+    "job": "nurse",
+    "mode": "neutral",
+    "seed": 0,
+    "image": "nurse_neutral_0.png",
+    "scores": [
+      0.4963112473487854,
+      0.5036887526512146
+    ],
+    "label": "uncertain",
+    "reviewed": "unreviewed"
+  },
+  {
+    "job": "nurse",
+    "mode": "neutral",
+    "seed": 1,
+    "image": "nurse_neutral_1.png",
+    "scores": [
+      0.4599250257015228,
+      0.5400750041007996
+    ],
+    "label": "uncertain",
+    "reviewed": "unreviewed"
+  },
+  {
+    "job": "nurse",
+    "mode": "neutral",
+    "seed": 2,
+    "image": "nurse_neutral_2.png",
+    "scores": [
+      0.7197146415710449,
+      0.2802853584289551
+    ],
+    "label": "feminine",
+    "reviewed": "unreviewed"
+  },
+  {
+    "job": "nurse",
+    "mode": "female",
+    "seed": 0,
+    "image": "nurse_female_0.png",
+    "scores": [
+      0.4728732109069824,
+      0.5271268486976624
+    ],
+    "label": "uncertain",
+    "reviewed": "unreviewed"
+  },
+  {
+    "job": "nurse",
+    "mode": "female",
+    "seed": 1,
+    "image": "nurse_female_1.png",
+    "scores": [
+      0.7347270250320435,
+      0.26527294516563416
+    ],
+    "label": "feminine",
+    "reviewed": "unreviewed"
+  },
+  {
+    "job": "nurse",
+    "mode": "female",
+    "seed": 2,
+    "image": "nurse_female_2.png",
+    "scores": [
+      0.7460002303123474,
+      0.2539997696876526
+    ],
+    "label": "feminine",
+    "reviewed": "unreviewed"
+  }
+]

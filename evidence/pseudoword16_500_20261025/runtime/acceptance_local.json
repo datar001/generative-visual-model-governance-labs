@@ -1,0 +1,350 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "actual_run_returned_zero",
+      "passed": true
+    },
+    {
+      "name": "actual_gpu0",
+      "passed": true
+    },
+    {
+      "name": "source_sha",
+      "passed": true
+    },
+    {
+      "name": "source_identity_editor_revision_20261018\\book\\practice\\minimal\\03_pseudoword.py",
+      "passed": true
+    },
+    {
+      "name": "source_identity_visual-model-governance-labs\\examples\\minimal\\03_pseudoword.py",
+      "passed": true
+    },
+    {
+      "name": "source_identity_visual-model-governance-labs\\evidence\\pseudoword16_500_20261025\\code\\03_pseudoword.py",
+      "passed": true
+    },
+    {
+      "name": "500_updates_501_states",
+      "passed": true
+    },
+    {
+      "name": "all16_id_roundtrips",
+      "passed": true
+    },
+    {
+      "name": "native_eager_feature_exact",
+      "passed": true
+    },
+    {
+      "name": "excluded_explicit_terms",
+      "passed": true
+    },
+    {
+      "name": "historical_best",
+      "passed": true
+    },
+    {
+      "name": "three_generation_controls",
+      "passed": true
+    },
+    {
+      "name": "source_redcup_unchanged",
+      "passed": true
+    },
+    {
+      "name": "table_metrics_initial",
+      "passed": true
+    },
+    {
+      "name": "table_metrics_best",
+      "passed": true
+    },
+    {
+      "name": "table_metrics_natural",
+      "passed": true
+    },
+    {
+      "name": "table_best_and_final",
+      "passed": true
+    },
+    {
+      "name": "actual_five_figures",
+      "passed": true
+    },
+    {
+      "name": "raw_book_image_target.png",
+      "passed": true
+    },
+    {
+      "name": "raw_repo_image_target.png",
+      "passed": true
+    },
+    {
+      "name": "raw_book_image_initial.png",
+      "passed": true
+    },
+    {
+      "name": "raw_repo_image_initial.png",
+      "passed": true
+    },
+    {
+      "name": "raw_book_image_best.png",
+      "passed": true
+    },
+    {
+      "name": "raw_repo_image_best.png",
+      "passed": true
+    },
+    {
+      "name": "raw_book_image_natural.png",
+      "passed": true
+    },
+    {
+      "name": "raw_repo_image_natural.png",
+      "passed": true
+    },
+    {
+      "name": "chapter_outside_practice_unchanged",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_copyright.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_mainbook.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_math_commands.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_ch/ch1.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_ch/ch2.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_ch/ch3.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_ch/ch4.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_ch/fengmian.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_ch/notation.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_ch/preface.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_ch/tuijianxu.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_ch/tuijianyu.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_practice/teaching_links.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_sections/临时借用写本子--研究内容和技术路线.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_sections/临时借用写本子--立项依据和研究意义.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_sections/水印--张晨宇--0329.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_sections/生成式视觉大模型公平性去偏--睿东.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_sections/生成式视觉大模型公平性去偏--睿东_v2.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_sections/生成式视觉大模型公平性去偏--睿东_v3.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_sections/生成式视觉大模型基础--张晨宇.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_sections/生成式视觉大模型基础--王津.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_sections/生成式视觉大模型安全防御--睿东.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_sections/生成式视觉大模型安全防御--睿东_v2.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_sections/生成式视觉大模型安全防御--睿东_v3.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_sections/生成式视觉大模型生成图像鉴伪--跃洋.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_sections/生成式视觉大模型越狱攻击--晨宇.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_sections/生成式视觉大模型越狱攻击--晨宇_0328.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_sections/生成式视觉大模型隐私保护--明望.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_sections/生成式视觉大模型风险与治理概述.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_sections/视觉生成图像水印嵌入--国畅.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_sections/鉴伪--陈宇.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_sections/隐私保护--陈宇.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_section_0802/水印--张晨宇--0329.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_section_0802/生成式视觉大模型公平性去偏--睿东_v3.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_section_0802/生成式视觉大模型基础--张晨宇.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_section_0802/生成式视觉大模型安全防御--睿东_v3.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_section_0802/生成式视觉大模型风险与治理概述.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_section_0802/鉴伪--陈宇.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_section_0802/隐私保护--陈宇.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_practice/results_a800/01_governance.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_practice/results_a800/02_generation.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_practice/results_a800/03_filters.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_practice/results_a800/04_detection.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_practice/results_a800/05_watermark.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_practice/results_a800/06_esd.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_practice/results_a800/06_sld.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_practice/results_a800/07_fairness.tex",
+      "passed": true
+    },
+    {
+      "name": "other_tex_unchanged_practice/results_a800/08_privacy.tex",
+      "passed": true
+    },
+    {
+      "name": "whole_file_listing",
+      "passed": true
+    },
+    {
+      "name": "print_manifest_complete",
+      "passed": true
+    },
+    {
+      "name": "other_curriculum_unchanged_ch1",
+      "passed": true
+    },
+    {
+      "name": "other_curriculum_unchanged_ch2",
+      "passed": true
+    },
+    {
+      "name": "other_curriculum_unchanged_ch3",
+      "passed": true
+    },
+    {
+      "name": "other_curriculum_unchanged_ch4",
+      "passed": true
+    },
+    {
+      "name": "other_curriculum_unchanged_ch5",
+      "passed": true
+    },
+    {
+      "name": "other_curriculum_unchanged_ch6",
+      "passed": true
+    },
+    {
+      "name": "other_curriculum_unchanged_ch7",
+      "passed": true
+    },
+    {
+      "name": "other_curriculum_unchanged_ch8",
+      "passed": true
+    },
+    {
+      "name": "all_editor_416_tracked",
+      "passed": true
+    }
+  ],
+  "check_count": 86
+}

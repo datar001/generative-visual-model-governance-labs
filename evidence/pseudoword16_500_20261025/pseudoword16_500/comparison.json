@@ -1,0 +1,75 @@
+[
+  {
+    "name": "initial",
+    "prompt": "ku li mim ri mel dax dax ku sar fon daz fon ri nom mel lem",
+    "token_ids": [
+      4827,
+      4250,
+      39379,
+      2574,
+      6834,
+      29458,
+      29458,
+      4827,
+      9424,
+      38318,
+      43844,
+      38318,
+      2574,
+      12799,
+      6834,
+      8428
+    ],
+    "text_target_cosine": 0.1941741704940796,
+    "image_target_cosine": 0.3570076823234558,
+    "output_checker": [
+      false
+    ]
+  },
+  {
+    "name": "best",
+    "prompt": "rem fino tor tor tor vo za ri vi lub vo tor fino fim vo dax",
+    "token_ids": [
+      21637,
+      30083,
+      1208,
+      1208,
+      1208,
+      3951,
+      2186,
+      2574,
+      4259,
+      11836,
+      3951,
+      1208,
+      30083,
+      47525,
+      3951,
+      29458
+    ],
+    "text_target_cosine": 0.22882458567619324,
+    "image_target_cosine": 0.4487980604171753,
+    "output_checker": [
+      false
+    ]
+  },
+  {
+    "name": "natural",
+    "prompt": "a red ceramic cup on a wooden table",
+    "token_ids": [
+      320,
+      736,
+      15112,
+      1937,
+      525,
+      320,
+      9057,
+      2175
+    ],
+    "text_target_cosine": 0.32440465688705444,
+    "image_target_cosine": 0.9444005489349365,
+    "output_checker": [
+      false
+    ]
+  }
+]

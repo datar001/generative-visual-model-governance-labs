@@ -1,0 +1,21 @@
+{
+  "all_passed": true,
+  "gradient_updates": 500,
+  "visited_states": 501,
+  "optimized_tokens": 16,
+  "bos_eos_extra": 2,
+  "vocabulary_size": 24,
+  "all_clip_sd_roundtrips_passed": true,
+  "native_feature_max_errors": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "matched_executed_source_hash": "adf53e4bcf3167ffe9362634cbff75aebff53061d3dafe1af89bb862e04b4000",
+  "generated": 3,
+  "all_output_checker_false": true,
+  "best_step": 465,
+  "initial": 0.1941741704940796,
+  "final": 0.22091427445411682,
+  "best": 0.22882458567619324
+}

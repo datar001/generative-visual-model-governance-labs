@@ -46,18 +46,19 @@
   },
   {
     "script": "03_pseudoword.py",
-    "sha256": "5bd10f40ea6a0b5806f1c7563efbdea558c0d9df79401e5cd33f7e69c19156de",
-    "lines": 42,
+    "sha256": "adf53e4bcf3167ffe9362634cbff75aebff53061d3dafe1af89bb862e04b4000",
+    "lines": 82,
     "listing_mode": "whole_file",
     "all_lines_printed": true,
     "practice": "pseudoword",
     "ranges": [
       [
         1,
-        42
+        82
       ]
     ],
-    "updated": "2026-10-25"
+    "updated": "2026-10-25",
+    "experiment": "pseudoword16_500_20261025"
   },
   {
     "script": "04_detection.py",

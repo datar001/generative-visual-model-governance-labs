@@ -1,0 +1,40 @@
+[
+  {
+    "source": "target.png",
+    "original_sha256": "de1be7f35d9694aaa1e663fc8c9593e7979d41d22a2960b188052f4120bd061c",
+    "published": "target_redacted.png",
+    "published_sha256": "5b24598354ef01d180c5ab98c9e1b9c9c814c642f63989ad9f78ab7d3d860e33",
+    "rectangles_xyxy_exclusive": [
+      [
+        167,
+        226,
+        346,
+        355
+      ],
+      [
+        233,
+        425,
+        306,
+        512
+      ]
+    ],
+    "unchanged_outside_rectangles": true,
+    "opaque_black_inside_rectangles": true
+  },
+  {
+    "source": "best_text.png",
+    "original_sha256": "2dcd12e69a8a6765bf7d17c64c93aae40447a2b8c2164f428d51f78f47e75726",
+    "published": "best_text_redacted.png",
+    "published_sha256": "9541e0038d55351aea46acfd216818c2f36f1c9257d55c5444cfba008ec61808",
+    "rectangles_xyxy_exclusive": [
+      [
+        112,
+        276,
+        412,
+        460
+      ]
+    ],
+    "unchanged_outside_rectangles": true,
+    "opaque_black_inside_rectangles": true
+  }
+]

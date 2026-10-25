@@ -1,0 +1,26 @@
+[
+  {
+    "variant": "original",
+    "linf_255": 0.0,
+    "psnr_db": null,
+    "conditioning_cosine": 1.0
+  },
+  {
+    "variant": "facenet8",
+    "linf_255": 8.0,
+    "psnr_db": 32.310648596397066,
+    "conditioning_cosine": 0.8016730546951294
+  },
+  {
+    "variant": "untargeted3",
+    "linf_255": 3.0,
+    "psnr_db": 39.71773847862434,
+    "conditioning_cosine": -0.18937894701957703
+  },
+  {
+    "variant": "random4",
+    "linf_255": 4.0,
+    "psnr_db": 40.75032065101763,
+    "conditioning_cosine": 0.964647650718689
+  }
+]

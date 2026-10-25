@@ -1,4 +1,6 @@
-> 当前书内伪词已改为[原投影嵌入核心最小实现](../../examples/minimal/03_pseudoword.py)，[新实测](../../evidence/pseudoword_projected_l14_20261025/README.md)。本目录pseudoword.py和以下480查询/7图属于保留的历史扩展。
+> 当前书内运行入口见[最小实现](../../examples/minimal/README.md)，统一运行器已直接调用这些文件。本页下方为2026-10-22批量实验及后续历史扩展，保留各自原参数与分母。当前第3章人像/短黑名单、第6章检查器关闭五档、第7章30张人工记录均不能套用下方历史结果。
+
+> 第8章 `privacy.py` 调用当前3/255条件优化最小代码；`privacy_facenet_baseline.py` 保留旧27图FaceNet基线。关闭检查器的配对对照另见[独立入口](../../examples/controls/README.md)。
 
 # 全章实测与配套运行
 
@@ -28,7 +30,7 @@ python experiments/a800/detection.py
 python experiments/a800/watermark.py
 python experiments/a800/filters.py
 python experiments/a800/pseudoword.py
-python experiments/a800/privacy.py
+python experiments/a800/privacy_facenet_baseline.py
 python experiments/a800/measure_clip.py
 python experiments/a800/analyse.py
 python experiments/a800/validate_evidence.py
@@ -55,8 +57,12 @@ python experiments/a800/validate_evidence.py
 
 使用Python 3.10。先安装PyTorch 2.4.1+cu118与TorchVision 0.19.1+cu118，再安装仓库 `requirements-a800.txt`。最后单独安装 `facenet-pytorch==2.6.0 --no-deps`：上游元数据限定较早的Torch/Pillow版本，本轮采用Torch 2.4.1、Pillow 10.4的实际运行验证路径，完整版本和逐样本证据随记录保存。原有两个环境方案仍可作为拓展；不要把未运行的版本组合写成已验证。
 
-书稿 `practice/00`—`10` 与各章入口统一调用此目录的实现。核心代码框摘录实际脚本，完整输入校验、输出哈希与参数记录在辅助文件中。
+上述批量命令调用本目录历史实现；当前书稿完整引用 examples/minimal 下的独立文件。
 
 ## 完整性与结果解释
 
 本轮全部主实验已经实际完成。第8章先保留一轮构图不适合比较的预实验，再用正常参考图进行六组诊断，固定特写、CFG5、适配器强度0.3后重跑27个正式条件，全部单脸可判读。两个版本都归档，正式统计与预实验分开。第7章400条自动标签全部保留独立的未人工复核状态。
+
+## 当前Git工作区
+
+A800教学Git工作区为 `/home/zcy/book_revision_labs_20261022/github_repository`，origin对应本仓库。`src/repository`保留此前运行副本，不能当作Git工作区。实验输入、模型及各轮输出仍在实验根目录下；运行前设置 `LAB_ROOT=/home/zcy/book_revision_labs_20261022`。同步流程见[维护说明](../../docs/maintenance.md)。

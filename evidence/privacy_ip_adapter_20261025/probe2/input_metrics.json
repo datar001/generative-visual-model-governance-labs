@@ -1,0 +1,32 @@
+[
+  {
+    "variant": "original",
+    "linf_255": 0.0,
+    "psnr_db": null,
+    "conditioning_cosine": 1.0
+  },
+  {
+    "variant": "facenet8",
+    "linf_255": 8.0,
+    "psnr_db": 32.310648596397066,
+    "conditioning_cosine": 0.8016730546951294
+  },
+  {
+    "variant": "untargeted2",
+    "linf_255": 2.0,
+    "psnr_db": 42.89659085075379,
+    "conditioning_cosine": -0.00605959165841341
+  },
+  {
+    "variant": "facenet4",
+    "linf_255": 4.0,
+    "psnr_db": 36.52270772116601,
+    "conditioning_cosine": 0.8744375705718994
+  },
+  {
+    "variant": "random4",
+    "linf_255": 4.0,
+    "psnr_db": 40.75032065101763,
+    "conditioning_cosine": 0.964647650718689
+  }
+]

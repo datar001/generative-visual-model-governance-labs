@@ -1,0 +1,18 @@
+{
+  "generator": "ProGAN (PGAN)",
+  "implementation": "facebookresearch/pytorch_GAN_zoo",
+  "revision": "b75dee40918caabb4fe7ec561522717bf096a8cb",
+  "checkpoint": "celebAHQ-512",
+  "seed": 2026,
+  "image_sha256": "94f70b7ffaa2a6fe8f1641b47cc564346c858ba2b6e2b213a4d0ae1157dd4c00",
+  "detector_weight_sha256": "3533f3e58a3b82215f21197f2faf4e99b911ec42a4a6e2d7823e04d5f3fd245a",
+  "fake_score": 1.0,
+  "predicted_fake": true,
+  "torch": "2.4.1+cu118",
+  "cuda": "11.8",
+  "checkpoint_hashes": {
+    "celebaHQ16_december_s7_i96000-9c72988c.pth": "9c72988c2505bf71565d04f8302979a309ebb5dde149f119fa9f57cc71867a1e"
+  },
+  "normalization": "fixed [-1,1] to [0,1], PNG; no resize/crop; no image postprocessing",
+  "candidates_generated": 1
+}

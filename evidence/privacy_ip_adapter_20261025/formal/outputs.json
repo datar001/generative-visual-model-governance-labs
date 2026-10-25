@@ -1,0 +1,65 @@
+[
+  {
+    "condition": "original",
+    "seed": 2026,
+    "output_flag": false,
+    "detected_faces": 1,
+    "identity_cosine": 0.7461866140365601
+  },
+  {
+    "condition": "original",
+    "seed": 2027,
+    "output_flag": false,
+    "detected_faces": 1,
+    "identity_cosine": 0.3743741512298584
+  },
+  {
+    "condition": "original",
+    "seed": 2028,
+    "output_flag": false,
+    "detected_faces": 1,
+    "identity_cosine": 0.5052168965339661
+  },
+  {
+    "condition": "random",
+    "seed": 2026,
+    "output_flag": false,
+    "detected_faces": 1,
+    "identity_cosine": 0.7796261310577393
+  },
+  {
+    "condition": "random",
+    "seed": 2027,
+    "output_flag": false,
+    "detected_faces": 1,
+    "identity_cosine": 0.5160408616065979
+  },
+  {
+    "condition": "random",
+    "seed": 2028,
+    "output_flag": false,
+    "detected_faces": 1,
+    "identity_cosine": 0.5689767599105835
+  },
+  {
+    "condition": "protected",
+    "seed": 2026,
+    "output_flag": true,
+    "detected_faces": 0,
+    "identity_cosine": null
+  },
+  {
+    "condition": "protected",
+    "seed": 2027,
+    "output_flag": false,
+    "detected_faces": 1,
+    "identity_cosine": 0.18700186908245087
+  },
+  {
+    "condition": "protected",
+    "seed": 2028,
+    "output_flag": false,
+    "detected_faces": 1,
+    "identity_cosine": 0.02958296425640583
+  }
+]

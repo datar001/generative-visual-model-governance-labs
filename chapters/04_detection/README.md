@@ -4,13 +4,14 @@
 
 ## 目标与实际产物
 
-一真一假两次推理，2条分数；本例生成红杯被漏检。
+真实照片、ProGAN生成图和SD1.5红杯共3次推理，保存3条分数；本例ProGAN检出、SD1.5红杯漏检。
 
 ## 运行
 
 先按[固定环境与输入准备](../../examples/minimal/README.md)配置LAB_ROOT，再在仓库根目录运行：
 
 ```bash
+python experiments/a800/prepare_inputs.py
 python examples/minimal/04_detection.py
 ```
 
@@ -18,7 +19,7 @@ python examples/minimal/04_detection.py
 
 ## 实测与逐项核对
 
-[当前十份代码的原始结果与核验](../../evidence/all_practice_alignment_20261025/README.md)。书中主表与图片均对应本次最小输出；扩大提示、种子、条件和评价器后，应另存并重跑。
+[本节三图实测与核验](../../evidence/cnnspot_gan_20261025/README.md)。本书提供ProGAN生成图，读者直接加载即可。书中主表与图片均对应这次三图输出；扩大提示、种子、条件和评价器后，应另存并重跑。
 
 ## 习题与答案
 

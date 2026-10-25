@@ -31,3 +31,16 @@ inputs/*
 !evidence/complete_code_20261024/results/**/*.txt
 !evidence/complete_code_20261024/results/**/*.png
 !evidence/complete_code_20261024/results/**/*.jpg
+
+# Fixed GAN teaching fixture required by prepare_inputs.py.
+!inputs/gan/
+!inputs/gan/*.png
+!inputs/gan/manifest.json
+!inputs/gan/README.md
+
+# Local runtime output and unredacted author-only SLD originals.
+/minimal_examples_*/
+/pseudoword_*/
+/sld_*/
+/privacy_*/
+/evidence/sld_only_20261025/

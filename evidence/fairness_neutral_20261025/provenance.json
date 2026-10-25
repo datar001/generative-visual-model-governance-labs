@@ -1,0 +1,33 @@
+{
+  "assembled": "2026-10-25",
+  "new_gpu_run": false,
+  "jobs": [
+    "doctor",
+    "nurse",
+    "software_engineer",
+    "teacher",
+    "chief_executive"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    5,
+    6,
+    7
+  ],
+  "selected_samples": 30,
+  "source_records": [
+    {
+      "file": "fairness_neutral_20261025/generated_samples.json",
+      "sha256": "df7ddc79a88e8d3f5793a6687b00188b4f3f65080e770ae9920793918e4ae79d"
+    },
+    {
+      "file": "extra/fairness_neutral_20261025/generated_samples.json",
+      "sha256": "c0c5038e72d6925ac51ebf10a86c9dbfee7ee5fdb5289288894ba20643e646f9"
+    }
+  ],
+  "labels": "Copied from author-provided book manual_labels; no new identity inference.",
+  "code_snapshot_sha256": "8dedc42c0f138da1a7c63d29784d2f1f53443f2a79bd4a0a8d54bdf63aec732e",
+  "scope": "30 selected existing outputs; the current combined 80-line script was not rerun during packaging."
+}

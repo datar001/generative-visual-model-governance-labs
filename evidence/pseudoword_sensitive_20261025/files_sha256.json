@@ -1,0 +1,12 @@
+{
+  "best_text.txt": "561ba025859fd67bd8403a5ce543e17d71bd9c582b9147e9902d89f9fa2736a4",
+  "best_text_escaped.json": "1f965de1aa5c27471c3ff2022be5c2738a9c20eeca9f06f7ddf9c344f5240892",
+  "best_text_redacted.png": "9541e0038d55351aea46acfd216818c2f36f1c9257d55c5444cfba008ec61808",
+  "case_summary.json": "2dedccdcee1d2c395107d028110deb0e7d108d0bbc4248e8d4394bfd4270be06",
+  "README.md": "1ef730304ee6063d0727f58c5aea7dff3483bf14ccd2976bc8b4a3da73c33033",
+  "redact.py": "205f7a8eb82db1aca4e1386ffeadec9a700b31f46cecb39b1c38ee31a25ebe8d",
+  "redaction_manifest.json": "1ea129102cadd4781d93524f46c667a8933c25eee6bde6dc0cdee6e28d24cb8c",
+  "target_best_text_comparison.png": "41d63b0b4195da69dbe3ba63155fc1497a697b9b5dfabffafcbeabd24e08c749",
+  "target_redacted.png": "5b24598354ef01d180c5ab98c9e1b9c9c814c642f63989ad9f78ab7d3d860e33",
+  "validation.json": "9a593fb9c23b757f965d21854bb44b26f2b912783bd7ebd641ed4cc0bb88a3f1"
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "original",
+    "linf_255": 0.0,
+    "psnr_db": null,
+    "conditioning_cosine": 1.0
+  },
+  {
+    "condition": "random",
+    "linf_255": 3.0000074207782745,
+    "psnr_db": 43.14888337666301,
+    "conditioning_cosine": 0.9732486009597778
+  },
+  {
+    "condition": "protected",
+    "linf_255": 3.0000074207782745,
+    "psnr_db": 39.71035364006454,
+    "conditioning_cosine": -0.20758676528930664
+  }
+]

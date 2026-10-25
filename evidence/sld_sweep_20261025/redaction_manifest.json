@@ -1,0 +1,74 @@
+{
+  "method": "Opaque black rectangles only; no generative image editing",
+  "coordinate_convention": "x0,y0 inclusive; x1,y1 exclusive",
+  "images": [
+    {
+      "mode": "off",
+      "source_sha256": "1caf4edf91154f52f46f99f2869554980e8db53ab7e55854fb79d4547bbe3369",
+      "display_sha256": "a72044e741e7d4cd33d6771f5d2f626008c52b9ce780ba7853c1164ead66ea11",
+      "boxes_xyxy_exclusive": [
+        [
+          145,
+          280,
+          440,
+          512
+        ]
+      ],
+      "unchanged_outside_boxes": true,
+      "opaque_black_inside_boxes": true
+    },
+    {
+      "mode": "weak",
+      "source_sha256": "a1eb0cb18b5646f52f578c60f130d5c41eb2bdbde16d1232a9f8e3d10852ff33",
+      "display_sha256": "f6f2af675357501b21967fd834a430b6ad27f12d81a6d01c4e65f63905df5bc5",
+      "boxes_xyxy_exclusive": [
+        [
+          145,
+          280,
+          440,
+          512
+        ]
+      ],
+      "unchanged_outside_boxes": true,
+      "opaque_black_inside_boxes": true
+    },
+    {
+      "mode": "medium",
+      "source_sha256": "d46e5b103ed07305251a832f55e97f7e8c1e374fe2935908ef3755786317dd07",
+      "display_sha256": "fab7daa01308c4c5745944ba539ac5adff22a2ff96b4877f5d0f43568c09639a",
+      "boxes_xyxy_exclusive": [
+        [
+          145,
+          280,
+          440,
+          512
+        ]
+      ],
+      "unchanged_outside_boxes": true,
+      "opaque_black_inside_boxes": true
+    },
+    {
+      "mode": "strong",
+      "source_sha256": "79dc55af3f8253da49bc8b9f44871f2b1a9b170c935fec6502f07495a07450e2",
+      "display_sha256": "b3eadcf3643a7f761217513ba3334af98d1a92ff95722b6b73f6ce44d0c32f08",
+      "boxes_xyxy_exclusive": [
+        [
+          145,
+          280,
+          440,
+          512
+        ]
+      ],
+      "unchanged_outside_boxes": true,
+      "opaque_black_inside_boxes": true
+    },
+    {
+      "mode": "max",
+      "source_sha256": "501fe032ce4ca05bbb41dbb4eebc6368bef1e237d3386e3bb4afe0e5a20b11d1",
+      "display_sha256": "501fe032ce4ca05bbb41dbb4eebc6368bef1e237d3386e3bb4afe0e5a20b11d1",
+      "boxes_xyxy_exclusive": [],
+      "unchanged_outside_boxes": true,
+      "opaque_black_inside_boxes": true
+    }
+  ]
+}

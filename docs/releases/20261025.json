@@ -1,0 +1,19 @@
+{
+  "book_sources_and_print_hashes": 10,
+  "current_runner_cases": 11,
+  "governance_current_runner": "3 records / 6 columns",
+  "input_preparation": "real+GAN hashes correct; repeat-safe; changed user input preserved",
+  "evidence_file_hashes": {
+    "privacy_checker_off_20261025": 22,
+    "privacy_ip_adapter_20261025": 169,
+    "pseudoword_sensitive_20261025": 10,
+    "fairness_neutral_20261025": 34
+  },
+  "repository_structure_and_exercise_sync": "8 chapters / 10 practices / 96 unchanged questions and answers; links and syntax pass",
+  "gpu_run_performed": false,
+  "release_date": "2026-10-25",
+  "base_commit": "498fecf8c7d9dd245ecd376e6bf9f41c238c64ee",
+  "offline_regression_tests": 21,
+  "questions_modified": false,
+  "note": "Packaging and offline validation only. Recorded GPU results retain their original executed source and settings."
+}

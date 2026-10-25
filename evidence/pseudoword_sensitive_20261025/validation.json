@@ -1,0 +1,7 @@
+{
+  "best_text_matches_search": true,
+  "displayed_image_is_text_path": true,
+  "literal_unicode_roundtrip": true,
+  "all_redaction_checks": true,
+  "raw_and_reencoded_ids_distinguished": true
+}

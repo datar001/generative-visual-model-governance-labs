@@ -1,0 +1,14 @@
+{
+  "epsilon": 0.011764705882352941,
+  "steps": 120,
+  "prompt": "a close-up frontal headshot photograph of an adult woman, neutral expression, face centered and large in the frame, fully clothed, soft daylight, blurred garden background",
+  "negative_prompt": "low quality, blurry, distorted face, deformed eyes, cartoon, illustration",
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "adapter_scale": 0.3,
+  "cfg": 5.0,
+  "generation_steps": 30
+}

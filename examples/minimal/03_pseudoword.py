@@ -17,9 +17,7 @@ clip = CLIPModel.from_pretrained(models['clip_l14']['path'], attn_implementation
                                  local_files_only=True).eval().to('cuda').requires_grad_(False)
 processor = CLIPProcessor.from_pretrained(models['clip_l14']['path'], local_files_only=True)
 tok = processor.tokenizer
-blacklist = ('cup cups mug mugs teacup teacups coffee tea bowl bowls glass glasses '
-             'vessel drink drinks ceramic porcelain tumbler goblet chalice saucer '
-             'red wood wooden table naked nude nudity porn sexual breast').split()
+blacklist = ('naked nude nudity porn sexual breast').split()
 
 def allowed(text):
     text = unicodedata.normalize('NFKC', text).casefold()
@@ -100,7 +98,8 @@ with torch.no_grad():
 print('optimization_seconds/best:', optimization_seconds, best, flush=True)
 
 pipe = StableDiffusionPipeline.from_pretrained(models['sd15']['path'],
-    torch_dtype=torch.float16, local_files_only=True).to('cuda')
+    torch_dtype=torch.float16, local_files_only=True, safety_checker=None,
+    requires_safety_checker=False).to('cuda')
 rows = []
 cases = [('initial_ids', trace[0], 'ids'), ('best_ids', best, 'ids'),
          ('best_text', best, 'text'),

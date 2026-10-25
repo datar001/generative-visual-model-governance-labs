@@ -1,0 +1,58 @@
+[
+  {
+    "id": "face_2027",
+    "condition": "original",
+    "linf_255": 0.0,
+    "psnr_db": null,
+    "conditioning_cosine": 0.9999998807907104
+  },
+  {
+    "id": "face_2027",
+    "condition": "random",
+    "linf_255": 3.0000074207782745,
+    "psnr_db": 43.12974744654929,
+    "conditioning_cosine": 0.9755568504333496
+  },
+  {
+    "id": "face_2027",
+    "condition": "protected",
+    "linf_255": 3.0000074207782745,
+    "psnr_db": 39.64959423790092,
+    "conditioning_cosine": -0.20845866203308105
+  },
+  {
+    "id": "face_2027",
+    "condition": "protected_q75",
+    "linf_255": 37.00000539422035,
+    "psnr_db": 36.27228729732104,
+    "conditioning_cosine": 0.8326902985572815
+  },
+  {
+    "id": "face_2028",
+    "condition": "original",
+    "linf_255": 0.0,
+    "psnr_db": null,
+    "conditioning_cosine": 1.0000001192092896
+  },
+  {
+    "id": "face_2028",
+    "condition": "random",
+    "linf_255": 3.0000074207782745,
+    "psnr_db": 43.16907765450928,
+    "conditioning_cosine": 0.9599226713180542
+  },
+  {
+    "id": "face_2028",
+    "condition": "protected",
+    "linf_255": 3.0000074207782745,
+    "psnr_db": 39.67706150691819,
+    "conditioning_cosine": -0.1447315514087677
+  },
+  {
+    "id": "face_2028",
+    "condition": "protected_q75",
+    "linf_255": 38.0000015348196,
+    "psnr_db": 36.17216651871567,
+    "conditioning_cosine": 0.7668502330780029
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "probe": 0,
+  "probe2": 0,
+  "probe3": 0,
+  "formal_printed_code": 0,
+  "extension_validation": 0,
+  "total_generation_attempts": 94,
+  "minimal_main_outputs": 9,
+  "extension_outputs": 40,
+  "exploratory_outputs": 45
+}

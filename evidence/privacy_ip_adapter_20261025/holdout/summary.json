@@ -1,0 +1,50 @@
+[
+  {
+    "scale": 0.3,
+    "condition": "original",
+    "total": 8,
+    "scorable": 8,
+    "flags": 0,
+    "mean": 0.659822091460228
+  },
+  {
+    "scale": 0.3,
+    "condition": "random",
+    "total": 8,
+    "scorable": 8,
+    "flags": 0,
+    "mean": 0.6716538555920124
+  },
+  {
+    "scale": 0.3,
+    "condition": "protected",
+    "total": 8,
+    "scorable": 8,
+    "flags": 0,
+    "mean": 0.16920358315110207
+  },
+  {
+    "scale": 0.3,
+    "condition": "protected_q75",
+    "total": 8,
+    "scorable": 8,
+    "flags": 0,
+    "mean": 0.6175163052976131
+  },
+  {
+    "scale": 0.5,
+    "condition": "original",
+    "total": 4,
+    "scorable": 4,
+    "flags": 0,
+    "mean": 0.7090424299240112
+  },
+  {
+    "scale": 0.5,
+    "condition": "protected",
+    "total": 4,
+    "scorable": 4,
+    "flags": 0,
+    "mean": -0.029079914093017578
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "prompts": {
+    "studio": "a close-up frontal headshot photograph of an adult woman, neutral expression, face centered and large in the frame, fully clothed, studio lighting, plain blue background",
+    "watercolor": "a watercolor portrait of an adult woman, face centered, fully clothed, simple pale background"
+  },
+  "negative_prompt": "low quality, blurry, distorted face, deformed eyes, cartoon, illustration",
+  "seeds": [
+    2030,
+    2031
+  ],
+  "steps": 30,
+  "cfg": 5.0,
+  "source_sha256": "39a70ba79945c740d72022dd1b710e695249fb7a75fc6d5e518d2b4712808385",
+  "optimization_budget": 0.011764705882352941,
+  "optimization_steps": 120,
+  "selection": "held-out from configuration choice"
+}

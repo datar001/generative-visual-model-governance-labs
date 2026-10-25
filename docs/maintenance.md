@@ -22,3 +22,16 @@
 维护者可附加 `--book-root <整书book目录>` 同步章末习题与答案；工具保留“习题”标记之前的字节，并在检测到额外章节结构时中止。运行前仍须备份。整书审计目录的旧版全量教学生成器包含实践重写逻辑及固定类别假设，不适合本轮格式，不应用于日常习题同步。
 
 2026-10-25修订覆盖8章96题，取消三类分组，补齐问题条件、推理与计算。用户已经修订的动手实践不属于本次生成范围。
+
+## 当前本地与A800位置
+
+- 本地Git工作区：`E:\ondrive_clone\paper\book_revision\visual-model-governance-labs`。
+- GitHub origin：`https://github.com/datar001/generative-visual-model-governance-labs.git`，分支 `main`。
+- A800 Git工作区：`/home/zcy/book_revision_labs_20261022/github_repository`。
+- A800实验数据根目录：`/home/zcy/book_revision_labs_20261022`。其中 `src/repository` 是先前运行副本，不是Git工作区，保留用于核对历史执行。
+
+从A800 Git目录运行当前示例时，设置 `LAB_ROOT=/home/zcy/book_revision_labs_20261022`，复用已有模型与输入，输出仍按各程序的独立目录保存。不要用Git操作覆盖实验结果。
+
+2026-10-25整理时A800无法解析GitHub域名，因此先从本地提交并推送，再将同一Git历史通过bundle离线克隆到上述独立目录，origin仍设置为GitHub。后续网络恢复可正常fetch/pull；也可继续传递Git bundle并以快进方式同步，先检查工作区干净及提交关系。每次同步须核对本地、GitHub和A800的HEAD一致。
+
+发布前确认 `examples/minimal/print_manifest.json` 与源码一致；仅分发已遮挡的敏感展示资产。`evidence/sld_only_20261025/`为作者未遮挡历史实验，本地保留但被Git忽略；当前读者入口使用 `evidence/sld_sweep_20261025/`。

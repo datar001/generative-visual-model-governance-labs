@@ -21,3 +21,15 @@ evidence/pseudoword_fullvocab_20261025/runtime/run.log -text -diff
 evidence/pseudoword_l14_20261025/runtime/run.log -text -diff
 evidence/pseudoword_projected_l14_20261025/runtime/run.log -text -diff
 evidence/pseudoword_projected_l14_20261025/code/original_source/** -text -whitespace
+
+# Preserve book source and recorded 2026-10-25 evidence hashes across platforms.
+examples/minimal/*.py -text whitespace=cr-at-eol
+evidence/cnnspot_gan_20261025/** -text whitespace=cr-at-eol
+evidence/privacy_checker_off_20261025/** -text whitespace=cr-at-eol
+evidence/privacy_ip_adapter_20261025/** -text whitespace=cr-at-eol
+evidence/pseudoword_sensitive_20261025/** -text whitespace=cr-at-eol
+evidence/sld_sweep_20261025/** -text whitespace=cr-at-eol
+evidence/fairness_neutral_20261025/** -text whitespace=cr-at-eol
+
+# Original executed evidence includes its recorded final blank line.
+evidence/privacy_ip_adapter_20261025/executed_08_privacy.py.txt -text whitespace=cr-at-eol,-blank-at-eof

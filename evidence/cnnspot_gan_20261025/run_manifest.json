@@ -1,0 +1,46 @@
+{
+  "code_sha256": "5014f3259b55fd735b2326d27c03610095e0512fa561bb9c7afef3dd210a285c",
+  "returncode": 0,
+  "torch": "2.4.1+cu118",
+  "torchvision": "0.19.1+cu118",
+  "pillow": "10.4.0",
+  "python": "3.10.6 | packaged by conda-forge | (main, Aug 22 2022, 20:36:39) [GCC 10.4.0]",
+  "device": "A800 physical GPU 0",
+  "threshold": 0.5,
+  "preprocessing": "RGB, ToTensor, ImageNet normalize; no crop/resize/re-encoding",
+  "weight_sha256": "3533f3e58a3b82215f21197f2faf4e99b911ec42a4a6e2d7823e04d5f3fd245a",
+  "inputs": [
+    {
+      "file": "coffee.png",
+      "sha256": "1b334876bab6bccddc821520b67fad5bceaaf3c454885b75cdc126b7ebfe9576"
+    },
+    {
+      "file": "progan_2026.png",
+      "sha256": "94f70b7ffaa2a6fe8f1641b47cc564346c858ba2b6e2b213a4d0ae1157dd4c00"
+    },
+    {
+      "file": "red_2026.png",
+      "sha256": "b1eb33a1aa04741365c97951e58d7643081a7862c033836ebd56988dbca58dfa"
+    }
+  ],
+  "outputs": [
+    {
+      "source": "real",
+      "file": "coffee.png",
+      "fake_score": 6.260655549539251e-09,
+      "predicted_fake": false
+    },
+    {
+      "source": "progan",
+      "file": "progan_2026.png",
+      "fake_score": 1.0,
+      "predicted_fake": true
+    },
+    {
+      "source": "sd15",
+      "file": "red_2026.png",
+      "fake_score": 9.412034160050098e-06,
+      "predicted_fake": false
+    }
+  ]
+}

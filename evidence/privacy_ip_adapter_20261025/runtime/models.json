@@ -1,0 +1,132 @@
+{
+  "clip": {
+    "repo": "openai/clip-vit-base-patch32",
+    "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+    "path": "/home/zcy/.cache/huggingface/hub/models--openai--clip-vit-base-patch32/snapshots/3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+    "cache": "read-only immutable snapshot"
+  },
+  "sd14": {
+    "repo": "CompVis/stable-diffusion-v1-4",
+    "revision": "133a221b8aa7292a167afc5127cb63fb5005638b",
+    "path": "/home/zcy/book_revision_labs_20261022/models/sd14",
+    "safety_checker_revision": "2880f2ca379f41b0226444936bb7a6766a227587",
+    "safety_checker_sha256": "1d37ca6e57ace94e4c2f03ed0f67b6dc83e1ef1160892074917aa68b28e2afc1",
+    "note": "Base model uses pinned full-precision official snapshot; independent safety checker is loaded from its complete older official fp16 snapshot. Both retained at inference."
+  },
+  "text_filter": {
+    "repo": "michelleli99/NSFW_text_classifier",
+    "revision": "652bad24f49ec5b7dd218f5d273c7bbe815242ee",
+    "path": "/home/zcy/book_revision_labs_20261022/models/text_filter",
+    "files": [
+      {
+        "file": "config.json",
+        "bytes": 728,
+        "sha256": "1bc8a7338633e0d721490f0ffbb9937cc04d3b0d25e54911910df9a05f7a7a45"
+      },
+      {
+        "file": "pytorch_model.bin",
+        "bytes": 267855533,
+        "sha256": "80d26f8d631ca24eac50200b5b4e06fe970d5228f395f323cd9265b550a8621a"
+      },
+      {
+        "file": "special_tokens_map.json",
+        "bytes": 125,
+        "sha256": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3"
+      },
+      {
+        "file": "tokenizer.json",
+        "bytes": 711649,
+        "sha256": "91f1def9b9391fdabe028cd3f3fcc4efd34e5d1f08c3bf2de513ebb5911a1854"
+      },
+      {
+        "file": "tokenizer_config.json",
+        "bytes": 360,
+        "sha256": "1a6acd3261769a08abd6fa132a83c8b8a2f3ae30f15fe5c0154dbb2a2bc9e4b3"
+      },
+      {
+        "file": "vocab.txt",
+        "bytes": 231508,
+        "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      }
+    ]
+  },
+  "image_filter": {
+    "repo": "Falconsai/nsfw_image_detection",
+    "revision": "96cb0d0342c7afb80cab76ecc58b265fa44da256",
+    "path": "/home/zcy/book_revision_labs_20261022/models/image_filter",
+    "files": [
+      {
+        "file": "config.json",
+        "bytes": 724,
+        "sha256": "cd8c0a19566f199b5c64da402f1d6a9daf80d094fe6536befb060a2cc59449c2"
+      },
+      {
+        "file": "labels.json",
+        "bytes": 38,
+        "sha256": "e5bd2d7de311ff9c564b075f52cf7c15c5d21068b0e9e74dd8c1bee5b77a034f"
+      },
+      {
+        "file": "model.safetensors",
+        "bytes": 343223968,
+        "sha256": "97b2ce64ec146884b37f98ee7944ca4891aa72f6827dc0cb10684a1cbecd5830"
+      },
+      {
+        "file": "preprocessor_config.json",
+        "bytes": 325,
+        "sha256": "a34861a24e781942424ad790b82bc99348404a2e64ea882de88c40905851698d"
+      }
+    ]
+  },
+  "ip_adapter": {
+    "repo": "h94/IP-Adapter",
+    "revision": "018e402774aeeddd60609b4ecdb7e298259dc729",
+    "path": "/home/zcy/book_revision_labs_20261022/models/ip_adapter",
+    "files": [
+      {
+        "file": "models/image_encoder/config.json",
+        "bytes": 560,
+        "sha256": "625d37b31afbf2f0792a87846b3654ee23f20568409e35b78a1f795b04e1a7a1"
+      },
+      {
+        "file": "models/image_encoder/model.safetensors",
+        "bytes": 2528373448,
+        "sha256": "6ca9667da1ca9e0b0f75e46bb030f7e011f44f86cbfb8d5a36590fcd7507b030"
+      },
+      {
+        "file": "models/ip-adapter-plus-face_sd15.bin",
+        "bytes": 98183381,
+        "sha256": "aa09c22b49ef63474dcde12f26a35b8b8e9b755b716a553aa29e8dbe8d21e0c9"
+      }
+    ]
+  },
+  "sd15": {
+    "repo": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+    "path": "/home/zcy/book_revision_labs_20261022/models/sd15_reused",
+    "unet_source": "unet/diffusion_pytorch_model.fp16.safetensors",
+    "unet_sha256": "c83908253f9a64d08c25fc90874c9c8aef9a329ce1ca5fb909d73b0c83d1ea21",
+    "shared_component_official_bin_hashes": {
+      "text_encoder/pytorch_model.bin": "770a47a9ffdcfda0b05506a7888ed714d06131d60267e6cf52765d61cf59fd67",
+      "vae/diffusion_pytorch_model.bin": "1b134cded8eb78b184aefb8805b6b572f36fa77b255c483665dda931fa0130c5"
+    },
+    "safety_checker": "1d37ca6e57ace94e4c2f03ed0f67b6dc83e1ef1160892074917aa68b28e2afc1",
+    "note": "FP16 official SD1.5 UNet; common VAE/text components reused from official SD1.4 cache with identical upstream binary hashes."
+  },
+  "sld": {
+    "repo": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+    "path": "/home/zcy/book_revision_labs_20261022/models/sd15_reused",
+    "unet_source": "unet/diffusion_pytorch_model.fp16.safetensors",
+    "unet_sha256": "c83908253f9a64d08c25fc90874c9c8aef9a329ce1ca5fb909d73b0c83d1ea21",
+    "shared_component_official_bin_hashes": {
+      "text_encoder/pytorch_model.bin": "770a47a9ffdcfda0b05506a7888ed714d06131d60267e6cf52765d61cf59fd67",
+      "vae/diffusion_pytorch_model.bin": "1b134cded8eb78b184aefb8805b6b572f36fa77b255c483665dda931fa0130c5"
+    },
+    "safety_checker": "1d37ca6e57ace94e4c2f03ed0f67b6dc83e1ef1160892074917aa68b28e2afc1",
+    "note": "FP16 official SD1.5 UNet; common VAE/text components reused from official SD1.4 cache with identical upstream binary hashes.",
+    "method": "Diffusers 0.32.2 StableDiffusionPipelineSafe / SLD",
+    "checker": "Directly imported SafeStableDiffusionSafetyChecker with strictly copied original output-checker state",
+    "safety_checker_retained": true,
+    "checkpoint_note": "Public SD1.5 base; public SLD implementation. No restricted checkpoint required."
+  }
+}

@@ -1,0 +1,131 @@
+import os
+os.environ.setdefault('CUDA_VISIBLE_DEVICES', '0')
+from pathlib import Path
+import json, sys, math
+import torch
+import torch.nn.functional as F
+from PIL import Image
+from torchvision.transforms.functional import to_tensor, to_pil_image
+from transformers import CLIPVisionModelWithProjection
+from diffusers import StableDiffusionPipeline
+from facenet_pytorch import InceptionResnetV1, MTCNN
+
+root = Path(os.environ['LAB_ROOT'])
+os.environ['TORCH_HOME'] = str(root / 'models/torch')
+models = json.loads((root / 'manifests/models.json').read_text())
+out = root / 'minimal_examples_20261025/08_privacy'
+out.mkdir(parents=True, exist_ok=True)
+image = Image.open(root / 'inputs/face_reference.png').convert('RGB')
+x = to_tensor(image).unsqueeze(0).to('cuda')
+assert image.size == (160, 160), '使用配套已裁剪的方形合成成人头像'
+encoder = CLIPVisionModelWithProjection.from_pretrained(
+    models['ip_adapter']['path'], subfolder='models/image_encoder',
+    torch_dtype=torch.float32, local_files_only=True)
+pipe = StableDiffusionPipeline.from_pretrained(
+    models['sd15']['path'], image_encoder=encoder,
+    torch_dtype=torch.float16, local_files_only=True).to('cuda')
+pipe.load_ip_adapter(models['ip_adapter']['path'], subfolder='models',
+    weight_name='ip-adapter-plus-face_sd15.bin',
+    image_encoder_folder=None, local_files_only=True)
+pipe.image_encoder.float().eval().requires_grad_(False)
+pipe.unet.requires_grad_(False)
+projection = pipe.unet.encoder_hid_proj.image_projection_layers[0].float()
+processor = pipe.feature_extractor
+mean = x.new_tensor(processor.image_mean).view(1, 3, 1, 1)
+std = x.new_tensor(processor.image_std).view(1, 3, 1, 1)
+
+def png_image(pixels):
+    return to_pil_image((pixels.detach().cpu()[0] * 255).round().clamp(0, 255).byte())
+
+def condition(pixels, gradient=False):
+    # 前向使用真实PIL/CLIP预处理；反向用可微双三次缩放传递梯度。
+    exact = processor(images=png_image(pixels), return_tensors='pt').pixel_values.cuda()
+    if gradient:
+        resized = F.interpolate(pixels, (224, 224), mode='bicubic',
+                                align_corners=False, antialias=True)
+        surrogate = (resized - mean) / std
+        exact = exact + (surrogate - surrogate.detach())
+    hidden = pipe.image_encoder(exact, output_hidden_states=True).hidden_states[-2]
+    return projection(hidden).flatten(1)
+
+with torch.no_grad():
+    reference = condition(x).detach()
+torch.manual_seed(2026)
+epsilon = 3 / 255
+delta = torch.empty_like(x).uniform_(-epsilon, epsilon)
+momentum = torch.zeros_like(x)
+trajectory = []
+for step in range(120):
+    adv = (x + delta).clamp(0, 1).detach().requires_grad_(True)
+    loss = F.cosine_similarity(condition(adv, True), reference).mean()
+    gradient, = torch.autograd.grad(loss, adv)
+    momentum = .9 * momentum + gradient / gradient.abs().mean().clamp_min(1e-12)
+    alpha = (.5 if step < 90 else .25) / 255
+    delta = (delta - alpha * momentum.sign()).clamp(-epsilon, epsilon)
+    delta = (x + delta).clamp(0, 1) - x
+    trajectory.append(float(loss.detach()))
+png_image(x + delta).save(out / 'protected.png')
+# 同预算随机噪声用于区分“优化目标有效”和“只要加噪就有效”。
+torch.manual_seed(2026)
+png_image((x + torch.empty_like(x).uniform_(-epsilon, epsilon)).clamp(0, 1)).save(out / 'random.png')
+image.save(out / 'original.png')
+(out / 'trajectory.json').write_text(json.dumps(trajectory))
+
+# 正式测量和定制从已保存PNG重新读取，回到真实fp16生成路径。
+pipe.image_encoder.half()
+projection.half()
+pipe.set_ip_adapter_scale(.3)
+inputs = {name: Image.open(out / f'{name}.png').convert('RGB')
+          for name in ['original', 'random', 'protected']}
+with torch.no_grad():
+    h, _ = pipe.encode_image(inputs['original'], 'cuda', 1, True)
+    actual_reference = projection(h).float().flatten(1)
+    quality = []
+    for name, im in inputs.items():
+        t = to_tensor(im).unsqueeze(0).cuda()
+        h, _ = pipe.encode_image(im, 'cuda', 1, True)
+        mse = (t - x).square().mean().item()
+        quality.append(dict(condition=name, linf_255=(t - x).abs().max().item() * 255,
+            psnr_db=None if mse == 0 else -10 * math.log10(mse),
+            conditioning_cosine=F.cosine_similarity(projection(h).float().flatten(1), actual_reference).item()))
+(out / 'input_metrics.json').write_text(json.dumps(quality, indent=2))
+if '--features-only' in sys.argv:
+    raise SystemExit(0)
+
+# FaceNet不参与新保护优化，仅评价生成输出；漏检与检查器替换单独记录。
+net = InceptionResnetV1(pretrained='vggface2').eval().cuda().requires_grad_(False)
+detector = MTCNN(keep_all=True, device='cuda')
+with torch.no_grad():
+    identity = net((x * 255 - 127.5) / 128)
+prompt = ('a close-up frontal headshot photograph of an adult woman, neutral expression, '
+          'face centered and large in the frame, fully clothed, soft daylight, blurred garden background')
+negative = 'low quality, blurry, distorted face, deformed eyes, cartoon, illustration'
+rows = []
+for name, im in inputs.items():
+    for seed in [2026, 2027, 2028]:
+        result = pipe(prompt, ip_adapter_image=im, negative_prompt=negative,
+            generator=torch.Generator('cpu').manual_seed(seed), num_inference_steps=30,
+            guidance_scale=5., height=512, width=512)
+        generated = result.images[0]
+        generated.save(out / f'custom_{name}_{seed}.png')
+        flag = bool(result.nsfw_content_detected[0])
+        boxes, probabilities = detector.detect(generated)
+        valid = [] if boxes is None else [b for b, p in zip(boxes, probabilities) if p >= .95]
+        score = None
+        if len(valid) == 1 and not flag:
+            b = valid[0]
+            m = .15 * max(b[2] - b[0], b[3] - b[1])
+            box = (max(0, int(b[0] - m)), max(0, int(b[1] - m)),
+                   min(512, int(b[2] + m)), min(512, int(b[3] + m)))
+            crop = generated.crop(box).resize((160, 160), Image.Resampling.BILINEAR)
+            t = to_tensor(crop).unsqueeze(0).cuda()
+            with torch.no_grad():
+                score = F.cosine_similarity(net((t * 255 - 127.5) / 128), identity).item()
+        rows.append(dict(condition=name, seed=seed, output_flag=flag,
+                         detected_faces=len(valid), identity_cosine=score))
+        (out / 'outputs.json').write_text(json.dumps(rows, indent=2))
+        print(rows[-1], flush=True)
+(out / 'settings.json').write_text(json.dumps(dict(epsilon=epsilon, steps=120,
+    prompt=prompt, negative_prompt=negative, seeds=[2026, 2027, 2028],
+    adapter_scale=.3, cfg=5., generation_steps=30), indent=2))
+

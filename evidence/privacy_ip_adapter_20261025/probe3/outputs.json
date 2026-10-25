@@ -1,0 +1,98 @@
+[
+  {
+    "variant": "original",
+    "seed": 2026,
+    "output_flag": false,
+    "detected_faces": 1,
+    "output_identity_cosine": 0.7461866140365601,
+    "image": "custom_original_2026.png"
+  },
+  {
+    "variant": "original",
+    "seed": 2027,
+    "output_flag": false,
+    "detected_faces": 1,
+    "output_identity_cosine": 0.3743741512298584,
+    "image": "custom_original_2027.png"
+  },
+  {
+    "variant": "original",
+    "seed": 2028,
+    "output_flag": false,
+    "detected_faces": 1,
+    "output_identity_cosine": 0.5052168965339661,
+    "image": "custom_original_2028.png"
+  },
+  {
+    "variant": "facenet8",
+    "seed": 2026,
+    "output_flag": false,
+    "detected_faces": 1,
+    "output_identity_cosine": 0.6631300449371338,
+    "image": "custom_facenet8_2026.png"
+  },
+  {
+    "variant": "facenet8",
+    "seed": 2027,
+    "output_flag": false,
+    "detected_faces": 1,
+    "output_identity_cosine": 0.38932400941848755,
+    "image": "custom_facenet8_2027.png"
+  },
+  {
+    "variant": "facenet8",
+    "seed": 2028,
+    "output_flag": false,
+    "detected_faces": 1,
+    "output_identity_cosine": 0.504695475101471,
+    "image": "custom_facenet8_2028.png"
+  },
+  {
+    "variant": "untargeted3",
+    "seed": 2026,
+    "output_flag": false,
+    "detected_faces": 1,
+    "output_identity_cosine": -0.08721014857292175,
+    "image": "custom_untargeted3_2026.png"
+  },
+  {
+    "variant": "untargeted3",
+    "seed": 2027,
+    "output_flag": false,
+    "detected_faces": 1,
+    "output_identity_cosine": 0.17122015357017517,
+    "image": "custom_untargeted3_2027.png"
+  },
+  {
+    "variant": "untargeted3",
+    "seed": 2028,
+    "output_flag": false,
+    "detected_faces": 1,
+    "output_identity_cosine": 0.030866721644997597,
+    "image": "custom_untargeted3_2028.png"
+  },
+  {
+    "variant": "random4",
+    "seed": 2026,
+    "output_flag": false,
+    "detected_faces": 1,
+    "output_identity_cosine": 0.7930407524108887,
+    "image": "custom_random4_2026.png"
+  },
+  {
+    "variant": "random4",
+    "seed": 2027,
+    "output_flag": false,
+    "detected_faces": 1,
+    "output_identity_cosine": 0.4755902588367462,
+    "image": "custom_random4_2027.png"
+  },
+  {
+    "variant": "random4",
+    "seed": 2028,
+    "output_flag": false,
+    "detected_faces": 1,
+    "output_identity_cosine": 0.6242469549179077,
+    "image": "custom_random4_2028.png"
+  }
+]

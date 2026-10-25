@@ -20,12 +20,13 @@ preprocess = transforms.Compose([
 photos = root / 'inputs/real_photos'
 real = json.loads((photos / 'manifest.json').read_text())[0]['file']
 inputs = [('real', photos / real),
-          ('generated', root / 'minimal_examples_20261024/02_generation/red_2026.png')]
+          ('progan', root / 'inputs/gan/progan_2026.png'),
+          ('sd15', root / 'minimal_examples_20261024/02_generation/red_2026.png')]
 rows = []
 for source, path in inputs:
     image = Image.open(path).convert('RGB')
     with torch.inference_mode():
         score = net(preprocess(image).unsqueeze(0).to('cuda')).sigmoid().item()
-    rows.append(dict(source=source, fake_score=score, predicted_fake=score >= 0.5))
+    rows.append(dict(source=source, file=path.name, fake_score=score, predicted_fake=score >= 0.5))
 (out / 'scores.json').write_text(json.dumps(rows, indent=2))
 print(rows)

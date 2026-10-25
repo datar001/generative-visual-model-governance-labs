@@ -46,31 +46,30 @@
   },
   {
     "script": "03_pseudoword.py",
-    "sha256": "6995ba0e0df47bd51020c28fcd03c5f99edf5399ce59256111cd47856e8098da",
-    "lines": 136,
+    "sha256": "047e60ecf189a13868efda1ee6e722bebe04d3bc683e80535e253dda70cd47ca",
+    "lines": 135,
     "listing_mode": "whole_file",
     "all_lines_printed": true,
     "practice": "pseudoword",
     "ranges": [
       [
         1,
-        136
+        135
       ]
     ],
-    "updated": "2026-10-25",
-    "experiment": "pseudoword_projected_l14_20261025"
+    "updated": "2026-10-25"
   },
   {
     "script": "04_detection.py",
-    "sha256": "72e5768ed9e0173b0104856fee0a4e6fd6481a54383d49e6cd4d15f961b06a32",
-    "lines": 31,
+    "sha256": "5014f3259b55fd735b2326d27c03610095e0512fa561bb9c7afef3dd210a285c",
+    "lines": 32,
     "listing_mode": "whole_file",
     "all_lines_printed": true,
     "practice": "detection",
     "ranges": [
       [
         1,
-        31
+        32
       ]
     ],
     "updated": "2026-10-25"
@@ -92,15 +91,15 @@
   },
   {
     "script": "06_sld.py",
-    "sha256": "2a3633946a18e26dda417dde8ca7f148e3bbca12964f4d8fd96df1b78cd5619f",
-    "lines": 30,
+    "sha256": "c3207cf32e08ef001ccaec2dc792b3af5fb70410f0cb0078d9b6bcc40b7b6c61",
+    "lines": 26,
     "listing_mode": "whole_file",
     "all_lines_printed": true,
     "practice": "sld",
     "ranges": [
       [
         1,
-        30
+        26
       ]
     ],
     "updated": "2026-10-25"
@@ -122,30 +121,30 @@
   },
   {
     "script": "07_fairness.py",
-    "sha256": "18fd1e9588a9133c3de2fca16b945334e08e5a9e4e5f80fa5c281175c75e3399",
-    "lines": 44,
+    "sha256": "8dedc42c0f138da1a7c63d29784d2f1f53443f2a79bd4a0a8d54bdf63aec732e",
+    "lines": 80,
     "listing_mode": "whole_file",
     "all_lines_printed": true,
     "practice": "fairness",
     "ranges": [
       [
         1,
-        44
+        80
       ]
     ],
     "updated": "2026-10-25"
   },
   {
     "script": "08_privacy.py",
-    "sha256": "bf1c0d6193eda0d79ac754005db8379f8361939928cfb379f73ded034fd10bbf",
-    "lines": 65,
+    "sha256": "fd5cc05bbf08ca0d5d264c16b22eee5f4653397ddb0bac298db88958055dae84",
+    "lines": 130,
     "listing_mode": "whole_file",
     "all_lines_printed": true,
     "practice": "privacy",
     "ranges": [
       [
         1,
-        65
+        130
       ]
     ],
     "updated": "2026-10-25"

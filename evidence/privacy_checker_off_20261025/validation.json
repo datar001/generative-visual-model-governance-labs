@@ -1,0 +1,9 @@
+{
+  "checker_disabled": true,
+  "outputs": 9,
+  "all_single_faces": true,
+  "all_inputs_hash_match_previous": true,
+  "previous_unflagged_eight_outputs_pixel_identical": true,
+  "perturbation_not_regenerated": true,
+  "exit_code": 0
+}

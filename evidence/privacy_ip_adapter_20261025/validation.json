@@ -1,0 +1,15 @@
+{
+  "printed_equals_book_and_repo": true,
+  "executed_printed_ast_equal": true,
+  "formal_nine_outputs": true,
+  "holdout_forty_outputs": true,
+  "random_integer_pixel_budget": true,
+  "protected_integer_pixel_budget": true,
+  "formal_replacement_not_scored": true,
+  "all_checks_passed": true,
+  "old_baseline_original_pixels_match_current": true,
+  "paired_seed_sets_match": true,
+  "current_entry_and_historical_baseline_separated": true,
+  "manifest_hash_and_lines_match": true,
+  "book_pairing_explanation_not_duplicated": true
+}

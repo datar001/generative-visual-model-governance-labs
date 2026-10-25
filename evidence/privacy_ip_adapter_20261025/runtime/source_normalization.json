@@ -1,0 +1,6 @@
+{
+  "executed_sha256": "39a70ba79945c740d72022dd1b710e695249fb7a75fc6d5e518d2b4712808385",
+  "printed_sha256": "fd5cc05bbf08ca0d5d264c16b22eee5f4653397ddb0bac298db88958055dae84",
+  "difference": "UTF-8 BOM, line endings and trailing blank lines normalized; AST identical",
+  "ast_identical": true
+}

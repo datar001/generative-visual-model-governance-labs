@@ -1,0 +1,17 @@
+{
+  "original": {
+    "total": 3,
+    "scorable": 3,
+    "identity_cosine_mean": 0.5419258872667948
+  },
+  "random": {
+    "total": 3,
+    "scorable": 3,
+    "identity_cosine_mean": 0.6215479175249735
+  },
+  "protected": {
+    "total": 3,
+    "scorable": 3,
+    "identity_cosine_mean": 0.05808671625951926
+  }
+}

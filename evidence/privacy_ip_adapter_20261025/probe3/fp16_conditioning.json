@@ -1,0 +1,18 @@
+[
+  {
+    "variant": "original",
+    "conditioning_cosine": 1.0
+  },
+  {
+    "variant": "facenet8",
+    "conditioning_cosine": 0.8017118573188782
+  },
+  {
+    "variant": "untargeted3",
+    "conditioning_cosine": -0.18928959965705872
+  },
+  {
+    "variant": "random4",
+    "conditioning_cosine": 0.9647523164749146
+  }
+]

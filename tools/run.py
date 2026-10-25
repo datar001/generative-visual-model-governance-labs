@@ -2,28 +2,33 @@ import argparse, ast, datetime, hashlib, importlib.metadata as md
 import json, os, pathlib, subprocess, sys, uuid
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 CONFIG = {
- '01': ('01_overview', {'lab':'lab.py'}),
- '02': ('02_basics', {'lab':'lab.py'}),
- '03': ('03_compliance', {'lab':'lab.py','pseudoword':'pseudoword.py'}),
- '04': ('04_detection', {'lab':'lab.py'}),
- '05': ('05_watermark', {'lab':'lab.py'}),
- '06': ('06_defense', {'sld':'sld.py','esd':'esd.py'}),
- '07': ('07_fairness', {'lab':'lab.py'}),
- '08': ('08_privacy', {'features':'features.py','customize':'customize.py'})}
+ '01': {'lab': ('01_governance.py', [])},
+ '02': {'lab': ('02_generation.py', [])},
+ '03': {'lab': ('03_filters.py', []), 'pseudoword': ('03_pseudoword.py', [])},
+ '04': {'lab': ('04_detection.py', [])},
+ '05': {'lab': ('05_watermark.py', [])},
+ '06': {'sld': ('06_sld.py', []), 'esd': ('06_esd.py', [])},
+ '07': {'lab': ('07_fairness.py', [])},
+ '08': {'features': ('08_privacy.py', ['--features-only']),
+        'customize': ('08_privacy.py', [])}}
+
 def main():
  p=argparse.ArgumentParser(description='Run one chapter example from the repository root.')
  p.add_argument('chapter',choices=CONFIG);p.add_argument('--case')
  p.add_argument('--dry-run',action='store_true')
- args=p.parse_args();folder,cases=CONFIG[args.chapter]
+ args=p.parse_args();cases=CONFIG[args.chapter]
  case=args.case or next(iter(cases))
  if case not in cases:p.error('Cases for this chapter: '+', '.join(cases))
- target=ROOT/'chapters'/folder/cases[case]
+ filename,extra=cases[case]
+ target=ROOT/'examples/minimal'/filename
  ast.parse(target.read_text(encoding='utf8'))
- command=[sys.executable,str(target)]
+ command=[sys.executable,str(target),*extra]
  if args.dry_run:
   print(json.dumps({'chapter':args.chapter,'case':case,'script':str(target),
                     'working_directory':str(ROOT),'command':command},ensure_ascii=False,indent=2))
   return 0
+ if not os.environ.get('LAB_ROOT'):
+  p.error('Set LAB_ROOT to your experiment directory; see examples/minimal/README.md.')
  run_id=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'_'+uuid.uuid4().hex[:8]
  out=ROOT/'results/runs'/run_id;out.mkdir(parents=True)
  packages={}
@@ -34,7 +39,7 @@ def main():
  record={'run_id':run_id,'chapter':args.chapter,'case':case,'command':command,
   'python':sys.version,'packages':packages,'code_sha256':hashlib.sha256(target.read_bytes()).hexdigest(),
   'git_commit':commit.stdout.strip() if commit.returncode==0 else None,
-  'status':'running','outputs_root':'results/','validation':'Process success does not prove model or learning outcomes.'}
+  'status':'running','outputs_root':os.environ['LAB_ROOT'],'validation':'Process success does not prove model or learning outcomes.'}
  manifest=out/'run.json';manifest.write_text(json.dumps(record,ensure_ascii=False,indent=2),encoding='utf8')
  print('Run log:',out,flush=True)
  try:

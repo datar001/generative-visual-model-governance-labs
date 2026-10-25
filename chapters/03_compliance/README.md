@@ -1,3 +1,33 @@
+# 第3章 过滤器与伪词：当前书内最小实践（2026-10-25）
+
+逐条核对审核信号、代理匹配分数与实际生成效果。
+
+## 目标与实际产物
+
+过滤器3条文本+3张图；伪词一次64候选搜索及2张生成图。
+
+## 运行
+
+先按[固定环境与输入准备](../../examples/minimal/README.md)配置LAB_ROOT，再在仓库根目录运行：
+
+```bash
+python examples/minimal/03_filters.py
+python examples/minimal/03_pseudoword.py
+```
+
+第2章输出供图像审核、鉴伪与水印读取；第8章直接使用配套已裁剪合成人脸。各文件的结果目录由代码中的out定义。
+
+## 实测与逐项核对
+
+[当前十份代码的原始结果与核验](../../evidence/all_practice_alignment_20261025/README.md)。书中主表与图片均对应本次最小输出；扩大提示、种子、条件和评价器后，应另存并重跑。
+
+## 习题与答案
+
+[分类型习题](exercises.md) · [逐题参考答案](answers.md)
+
+<details>
+<summary>仓库完整实验扩展与此前说明</summary>
+
 # 第3章当前书内最小实践（2026-10-25）
 
 - 三类过滤器：`python examples/minimal/03_filters.py`，3条文本、3张普通图，结果保存在`decisions.json`。
@@ -68,3 +98,6 @@ python experiments/a800/pseudoword.py
 
 - [分类型习题](exercises.md)
 - [逐题参考答案](answers.md)
+
+
+</details>

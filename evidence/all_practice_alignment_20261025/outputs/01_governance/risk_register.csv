@@ -1,0 +1,4 @@
+﻿scenario,risks,evidence,control,owner,review_status
+产品广告图,authenticity;source,核对规格与来源,标明示意用途,产品审核人,pending
+新闻说明图,authenticity;compliance,核实事实与语境,合成标识与复核,编辑,pending
+授权肖像定制,privacy;fairness,核实授权与呈现,用途核验与复核,实验负责人,pending

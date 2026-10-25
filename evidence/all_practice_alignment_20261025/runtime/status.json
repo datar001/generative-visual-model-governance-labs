@@ -1,0 +1,62 @@
+[
+  {
+    "script": "01_governance.py",
+    "sha256": "7f6e1fcbe3a7ffe1af31f2fea99ce7edd0f1e8e864946b8ec9eca19377d0a1ce",
+    "returncode": 0,
+    "seconds": 0.03
+  },
+  {
+    "script": "02_generation.py",
+    "sha256": "7f9e5f4082336cb1680ee5eee7be86f1dd5ba12ed0a7512b86f5eb7b45c1c62f",
+    "returncode": 0,
+    "seconds": 44.83
+  },
+  {
+    "script": "03_filters.py",
+    "sha256": "19c896eecdf1f9b27535b2573a99f39eccb241bd65927e70e52e622db4044aa5",
+    "returncode": 0,
+    "seconds": 14.95
+  },
+  {
+    "script": "03_pseudoword.py",
+    "sha256": "5bd10f40ea6a0b5806f1c7563efbdea558c0d9df79401e5cd33f7e69c19156de",
+    "returncode": 0,
+    "seconds": 15.56
+  },
+  {
+    "script": "04_detection.py",
+    "sha256": "72e5768ed9e0173b0104856fee0a4e6fd6481a54383d49e6cd4d15f961b06a32",
+    "returncode": 0,
+    "seconds": 6.46
+  },
+  {
+    "script": "05_watermark.py",
+    "sha256": "a7213ca03517466d0bc3b039f1a4f9cf1f3f742a0575fded82f8c317a567494a",
+    "returncode": 0,
+    "seconds": 0.37
+  },
+  {
+    "script": "06_sld.py",
+    "sha256": "2a3633946a18e26dda417dde8ca7f148e3bbca12964f4d8fd96df1b78cd5619f",
+    "returncode": 0,
+    "seconds": 22.8
+  },
+  {
+    "script": "06_esd.py",
+    "sha256": "d5044f89988dc9d0928b1e5f6550a5c034ebed0d932a3984e7fb279791d53423",
+    "returncode": 0,
+    "seconds": 22.85
+  },
+  {
+    "script": "07_fairness.py",
+    "sha256": "18fd1e9588a9133c3de2fca16b945334e08e5a9e4e5f80fa5c281175c75e3399",
+    "returncode": 0,
+    "seconds": 45.76
+  },
+  {
+    "script": "08_privacy.py",
+    "sha256": "bf1c0d6193eda0d79ac754005db8379f8361939928cfb379f73ded034fd10bbf",
+    "returncode": 0,
+    "seconds": 22.19
+  }
+]

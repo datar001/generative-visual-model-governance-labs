@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "png",
+    "source_bits": "1001000010111110",
+    "decoded_bits": "1001000010111110",
+    "bit_accuracy": 1.0
+  },
+  {
+    "condition": "jpeg75",
+    "source_bits": "1001000010111110",
+    "decoded_bits": "1001000010111110",
+    "bit_accuracy": 1.0
+  },
+  {
+    "condition": "unmarked",
+    "source_bits": "1001000010111110",
+    "decoded_bits": "1111100001111111",
+    "bit_accuracy": 0.625
+  }
+]

@@ -1,0 +1,651 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "ten_sources_completed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same_source_01_governance.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "whole_file_printed_01_governance.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same_source_02_generation.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "whole_file_printed_02_generation.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same_source_03_filters.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "whole_file_printed_03_filters.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same_source_03_pseudoword.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "whole_file_printed_03_pseudoword.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same_source_04_detection.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "whole_file_printed_04_detection.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same_source_05_watermark.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "whole_file_printed_05_watermark.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same_source_06_sld.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "whole_file_printed_06_sld.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same_source_06_esd.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "whole_file_printed_06_esd.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same_source_07_fairness.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "whole_file_printed_07_fairness.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "same_source_08_privacy.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "whole_file_printed_08_privacy.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "outside_practice_unchanged_水印--张晨宇--0329.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "outside_practice_unchanged_生成式视觉大模型公平性去偏--睿东_v3.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "outside_practice_unchanged_生成式视觉大模型基础--张晨宇.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "outside_practice_unchanged_生成式视觉大模型安全防御--睿东_v3.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "outside_practice_unchanged_生成式视觉大模型越狱攻击--晨宇_0328.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "outside_practice_unchanged_生成式视觉大模型风险与治理概述.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "outside_practice_unchanged_鉴伪--陈宇.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "outside_practice_unchanged_隐私保护--陈宇.tex",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "main_entry_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "governance_3_rows_6_fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "governance_row_产品广告图",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "governance_row_新闻说明图",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "governance_row_授权肖像定制",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "governance_all_pending",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generation_12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "512_image_blue_2026.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "512_image_blue_2027.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "512_image_blue_2028.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "512_image_face_2026.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "512_image_face_2027.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "512_image_face_2028.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "512_image_landscape_2026.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "512_image_landscape_2027.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "512_image_landscape_2028.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "512_image_red_2026.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "512_image_red_2027.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "512_image_red_2028.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_flags_02_generation",
+      "passed": true,
+      "detail": [
+        "red 2026 output_checker: [False]",
+        "red 2027 output_checker: [False]",
+        "red 2028 output_checker: [False]",
+        "blue 2026 output_checker: [False]",
+        "blue 2027 output_checker: [False]",
+        "blue 2028 output_checker: [False]",
+        "landscape 2026 output_checker: [False]",
+        "landscape 2027 output_checker: [False]",
+        "landscape 2028 output_checker: [False]",
+        "face 2026 output_checker: [False]",
+        "face 2027 output_checker: [False]",
+        "face 2028 output_checker: [False]"
+      ]
+    },
+    {
+      "name": "native_flags_06_sld",
+      "passed": true,
+      "detail": [
+        "off output_checker: [False]",
+        "strong output_checker: [False]"
+      ]
+    },
+    {
+      "name": "native_flags_06_esd",
+      "passed": true,
+      "detail": [
+        "base 0 output_checker: [False]",
+        "base 1 output_checker: [False]",
+        "esd 0 output_checker: [False]",
+        "esd 1 output_checker: [False]"
+      ]
+    },
+    {
+      "name": "native_flags_08_privacy",
+      "passed": true,
+      "detail": [
+        "original output_checker: [False]",
+        "protected output_checker: [False]"
+      ]
+    },
+    {
+      "name": "filter_records_3_plus_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "filter_result_row_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "filter_result_row_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "filter_result_row_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "filter_result_row_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "filter_result_row_4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "filter_result_row_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pseudoword_64_unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pseudoword_result_values",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "two_detection_rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "detection_score_real",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "detection_score_generated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "watermark_three_conditions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "watermark_row_png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "watermark_row_jpeg75",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "watermark_row_unmarked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fairness_12_unreviewed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fairness_group_doctor_neutral",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fairness_group_doctor_female",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fairness_group_nurse_neutral",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fairness_group_nurse_female",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "privacy_one_saved_input_measure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "privacy_saved_budget",
+      "passed": true,
+      "detail": {
+        "max_integer_pixel_change": 8
+      }
+    },
+    {
+      "name": "book_figure_count_01_governance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "book_figure_count_02_generation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/02_generation/red_2026.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/02_generation/red_2027.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/02_generation/red_2028.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/02_generation/blue_2026.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/02_generation/blue_2027.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/02_generation/blue_2028.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "book_figure_count_03_filters",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "book_figure_count_03_pseudoword",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/03_pseudoword/candidate.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/03_pseudoword/natural.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "book_figure_count_04_detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/04_detection/coffee.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/02_generation/red_2026.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "book_figure_count_05_watermark",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/02_generation/red_2026.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/05_watermark/marked.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/05_watermark/marked_q75.jpg",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "book_figure_count_06_sld",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/06_sld/off.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/06_sld/strong.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "book_figure_count_06_esd",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/06_esd/base_0.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/06_esd/esd_0.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/06_esd/base_1.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/06_esd/esd_1.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "book_figure_count_07_fairness",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/07_fairness/doctor_neutral_0.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/07_fairness/doctor_female_0.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/07_fairness/nurse_neutral_0.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/07_fairness/nurse_female_0.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/07_fairness/doctor_neutral_1.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/07_fairness/doctor_female_1.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/07_fairness/nurse_neutral_1.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/07_fairness/nurse_female_1.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/07_fairness/doctor_neutral_2.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/07_fairness/doctor_female_2.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/07_fairness/nurse_neutral_2.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/07_fairness/nurse_female_2.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "book_figure_count_08_privacy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/08_privacy/original.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/08_privacy/protected.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/08_privacy/custom_original.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_figure_results/aligned_all_20261025/08_privacy/custom_protected.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sld_two_pngs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "esd_four_pngs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_416_editor_comments_tracked",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "date": "2026-10-25",
+  "gpu": "physical GPU 0 only",
+  "scripts": 10,
+  "generation_attempts": 34,
+  "strict_privacy_pixel_reproducibility_not_claimed": true
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "coffee",
+    "file": "coffee.png",
+    "source_function": "skimage.data.coffee",
+    "source_url": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.coffee",
+    "author": "Rachel Michetti / Pikolo Espresso Bar",
+    "license": "CC0",
+    "sha256": "1b334876bab6bccddc821520b67fad5bceaaf3c454885b75cdc126b7ebfe9576",
+    "use": "Detection/compliance examples only; real-person image is not used for identity customization."
+  },
+  {
+    "id": "astronaut",
+    "file": "astronaut.png",
+    "source_function": "skimage.data.astronaut",
+    "source_url": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.astronaut",
+    "author": "NASA",
+    "license": "Public domain",
+    "sha256": "2418889d0d83962d51facc3832b55cf1849690018a1e873d1c551146555cd02f",
+    "use": "Detection/compliance examples only; real-person image is not used for identity customization."
+  },
+  {
+    "id": "rocket",
+    "file": "rocket.png",
+    "source_function": "skimage.data.rocket",
+    "source_url": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.rocket",
+    "author": "SpaceX",
+    "license": "Public domain per scikit-image source documentation",
+    "sha256": "7a88c634b209f0edd7aa95dc8cd5a9f2cb8d09dd3fb176669dd389572846819c",
+    "use": "Detection/compliance examples only; real-person image is not used for identity customization."
+  }
+]

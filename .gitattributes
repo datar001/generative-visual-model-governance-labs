@@ -13,3 +13,6 @@ examples/book/*.py -text whitespace=cr-at-eol
 
 # Preserve CSV evidence emitted by the minimal examples.
 evidence/minimal_20261024/**/*.csv -text whitespace=cr-at-eol
+
+# Preserve current all-chapter raw CSV evidence.
+evidence/all_practice_alignment_20261025/**/*.csv -text whitespace=cr-at-eol

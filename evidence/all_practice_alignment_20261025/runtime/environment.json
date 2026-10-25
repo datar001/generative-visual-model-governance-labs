@@ -1,0 +1,12 @@
+{
+  "python": "3.10.6 | packaged by conda-forge | (main, Aug 22 2022, 20:36:39) [GCC 10.4.0]",
+  "torch": "2.4.1+cu118",
+  "diffusers": "0.32.2",
+  "transformers": "4.46.3",
+  "numpy": "1.26.4",
+  "pillow": "10.4.0",
+  "gpu": "NVIDIA A800 80GB PCIe",
+  "physical_gpu": "0",
+  "cuda_visible_devices": "0 at experiment execution",
+  "model_manifest_sha256": "1e3035fd53c893fd91ddccb13b0f88e73e732a49841076abbab2cf1d030e75df"
+}

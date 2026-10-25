@@ -1,3 +1,32 @@
+# 第4章 CNNSpot鉴伪：当前书内最小实践（2026-10-25）
+
+空间域ResNet-50监督二分类、sigmoid分数和固定0.5阈值；不做JPEG实验。
+
+## 目标与实际产物
+
+一真一假两次推理，2条分数；本例生成红杯被漏检。
+
+## 运行
+
+先按[固定环境与输入准备](../../examples/minimal/README.md)配置LAB_ROOT，再在仓库根目录运行：
+
+```bash
+python examples/minimal/04_detection.py
+```
+
+第2章输出供图像审核、鉴伪与水印读取；第8章直接使用配套已裁剪合成人脸。各文件的结果目录由代码中的out定义。
+
+## 实测与逐项核对
+
+[当前十份代码的原始结果与核验](../../evidence/all_practice_alignment_20261025/README.md)。书中主表与图片均对应本次最小输出；扩大提示、种子、条件和评价器后，应另存并重跑。
+
+## 习题与答案
+
+[分类型习题](exercises.md) · [逐题参考答案](answers.md)
+
+<details>
+<summary>仓库完整实验扩展与此前说明</summary>
+
 > 2026-10-24最新：书内采用最小完整实现；导入、实际模型加载和核心运算保留，额外校验及完整函数在Git仓库中。
 > 运行 `python examples/minimal/04_detection.py`（[代码](../../examples/minimal/04_detection.py)）。
 > [最小示例运行准备](../../examples/minimal/README.md) · [完整函数与批量实现](../../examples/book/README.md)。下方大样本实测对应完整实验。
@@ -36,3 +65,6 @@ python experiments/a800/detection.py
 - [逐题参考答案](answers.md)
 
 更多方法见 [拓展材料](extensions.md)。CNNSpot资源来源和许可说明保留在本章配套资料中。
+
+
+</details>

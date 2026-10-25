@@ -1,162 +1,152 @@
 [
   {
-    "practice": "watermark",
-    "script": "05_watermark.py",
-    "old_lines": 125,
-    "lines": 38,
-    "ranges": [
-      [
-        1,
-        23
-      ],
-      [
-        24,
-        38
-      ]
-    ],
-    "sha256": "a7213ca03517466d0bc3b039f1a4f9cf1f3f742a0575fded82f8c317a567494a",
-    "all_lines_printed": true
-  },
-  {
-    "practice": "fairness",
-    "script": "07_fairness.py",
-    "old_lines": 205,
-    "lines": 44,
-    "ranges": [
-      [
-        1,
-        20
-      ],
-      [
-        21,
-        44
-      ]
-    ],
-    "sha256": "18fd1e9588a9133c3de2fca16b945334e08e5a9e4e5f80fa5c281175c75e3399",
-    "all_lines_printed": true
-  },
-  {
-    "practice": "generation",
-    "script": "02_generation.py",
-    "old_lines": 126,
-    "lines": 32,
-    "ranges": [
-      [
-        1,
-        32
-      ]
-    ],
-    "sha256": "7f9e5f4082336cb1680ee5eee7be86f1dd5ba12ed0a7512b86f5eb7b45c1c62f",
-    "all_lines_printed": true
-  },
-  {
-    "practice": "sld",
-    "script": "06_sld.py",
-    "old_lines": 147,
-    "lines": 30,
-    "ranges": [
-      [
-        1,
-        30
-      ]
-    ],
-    "sha256": "2a3633946a18e26dda417dde8ca7f148e3bbca12964f4d8fd96df1b78cd5619f",
-    "all_lines_printed": true
-  },
-  {
-    "practice": "esd",
-    "script": "06_esd.py",
-    "old_lines": 157,
-    "lines": 28,
-    "ranges": [
-      [
-        1,
-        28
-      ]
-    ],
-    "sha256": "d5044f89988dc9d0928b1e5f6550a5c034ebed0d932a3984e7fb279791d53423",
-    "all_lines_printed": true
-  },
-  {
-    "practice": "filter",
-    "script": "03_filters.py",
-    "old_lines": 209,
-    "lines": 35,
-    "ranges": [
-      [
-        1,
-        35
-      ]
-    ],
-    "sha256": "19c896eecdf1f9b27535b2573a99f39eccb241bd65927e70e52e622db4044aa5",
-    "all_lines_printed": true,
-    "listing_mode": "whole_file",
-    "updated": "2026-10-25"
-  },
-  {
-    "practice": "pseudoword",
-    "script": "03_pseudoword.py",
-    "old_lines": 303,
-    "lines": 42,
-    "ranges": [
-      [
-        1,
-        42
-      ]
-    ],
-    "sha256": "5bd10f40ea6a0b5806f1c7563efbdea558c0d9df79401e5cd33f7e69c19156de",
-    "all_lines_printed": true,
-    "listing_mode": "whole_file",
-    "updated": "2026-10-25"
-  },
-  {
-    "practice": "overview",
     "script": "01_governance.py",
-    "old_lines": 81,
+    "sha256": "7f6e1fcbe3a7ffe1af31f2fea99ce7edd0f1e8e864946b8ec9eca19377d0a1ce",
     "lines": 19,
+    "listing_mode": "whole_file",
+    "all_lines_printed": true,
+    "practice": "overview",
     "ranges": [
       [
         1,
         19
       ]
     ],
-    "sha256": "7f6e1fcbe3a7ffe1af31f2fea99ce7edd0f1e8e864946b8ec9eca19377d0a1ce",
-    "all_lines_printed": true
+    "updated": "2026-10-25"
   },
   {
-    "practice": "detection",
+    "script": "02_generation.py",
+    "sha256": "7f9e5f4082336cb1680ee5eee7be86f1dd5ba12ed0a7512b86f5eb7b45c1c62f",
+    "lines": 32,
+    "listing_mode": "whole_file",
+    "all_lines_printed": true,
+    "practice": "generation",
+    "ranges": [
+      [
+        1,
+        32
+      ]
+    ],
+    "updated": "2026-10-25"
+  },
+  {
+    "script": "03_filters.py",
+    "sha256": "19c896eecdf1f9b27535b2573a99f39eccb241bd65927e70e52e622db4044aa5",
+    "lines": 35,
+    "listing_mode": "whole_file",
+    "all_lines_printed": true,
+    "practice": "filter",
+    "ranges": [
+      [
+        1,
+        35
+      ]
+    ],
+    "updated": "2026-10-25"
+  },
+  {
+    "script": "03_pseudoword.py",
+    "sha256": "5bd10f40ea6a0b5806f1c7563efbdea558c0d9df79401e5cd33f7e69c19156de",
+    "lines": 42,
+    "listing_mode": "whole_file",
+    "all_lines_printed": true,
+    "practice": "pseudoword",
+    "ranges": [
+      [
+        1,
+        42
+      ]
+    ],
+    "updated": "2026-10-25"
+  },
+  {
     "script": "04_detection.py",
-    "old_lines": 113,
+    "sha256": "72e5768ed9e0173b0104856fee0a4e6fd6481a54383d49e6cd4d15f961b06a32",
     "lines": 31,
+    "listing_mode": "whole_file",
+    "all_lines_printed": true,
+    "practice": "detection",
     "ranges": [
       [
         1,
         31
       ]
     ],
-    "sha256": "72e5768ed9e0173b0104856fee0a4e6fd6481a54383d49e6cd4d15f961b06a32",
-    "all_lines_printed": true
+    "updated": "2026-10-25"
   },
   {
-    "practice": "privacy",
-    "script": "08_privacy.py",
-    "old_lines": 320,
-    "lines": 65,
+    "script": "05_watermark.py",
+    "sha256": "a7213ca03517466d0bc3b039f1a4f9cf1f3f742a0575fded82f8c317a567494a",
+    "lines": 38,
+    "listing_mode": "whole_file",
+    "all_lines_printed": true,
+    "practice": "watermark",
     "ranges": [
       [
         1,
-        25
-      ],
+        38
+      ]
+    ],
+    "updated": "2026-10-25"
+  },
+  {
+    "script": "06_sld.py",
+    "sha256": "2a3633946a18e26dda417dde8ca7f148e3bbca12964f4d8fd96df1b78cd5619f",
+    "lines": 30,
+    "listing_mode": "whole_file",
+    "all_lines_printed": true,
+    "practice": "sld",
+    "ranges": [
       [
-        26,
-        43
-      ],
+        1,
+        30
+      ]
+    ],
+    "updated": "2026-10-25"
+  },
+  {
+    "script": "06_esd.py",
+    "sha256": "d5044f89988dc9d0928b1e5f6550a5c034ebed0d932a3984e7fb279791d53423",
+    "lines": 28,
+    "listing_mode": "whole_file",
+    "all_lines_printed": true,
+    "practice": "esd",
+    "ranges": [
       [
-        44,
+        1,
+        28
+      ]
+    ],
+    "updated": "2026-10-25"
+  },
+  {
+    "script": "07_fairness.py",
+    "sha256": "18fd1e9588a9133c3de2fca16b945334e08e5a9e4e5f80fa5c281175c75e3399",
+    "lines": 44,
+    "listing_mode": "whole_file",
+    "all_lines_printed": true,
+    "practice": "fairness",
+    "ranges": [
+      [
+        1,
+        44
+      ]
+    ],
+    "updated": "2026-10-25"
+  },
+  {
+    "script": "08_privacy.py",
+    "sha256": "bf1c0d6193eda0d79ac754005db8379f8361939928cfb379f73ded034fd10bbf",
+    "lines": 65,
+    "listing_mode": "whole_file",
+    "all_lines_printed": true,
+    "practice": "privacy",
+    "ranges": [
+      [
+        1,
         65
       ]
     ],
-    "sha256": "bf1c0d6193eda0d79ac754005db8379f8361939928cfb379f73ded034fd10bbf",
-    "all_lines_printed": true
+    "updated": "2026-10-25"
   }
 ]

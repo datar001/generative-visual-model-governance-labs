@@ -1,3 +1,32 @@
+# 第8章 肖像保护：当前书内最小实践（2026-10-25）
+
+PGD预算与参考输入的代理指标，区别于定制输出的身份保护结论。
+
+## 目标与实际产物
+
+1张已裁剪合成人脸，保存1个FaceNet输入分数，实际定制2张；不含JPEG和输出人脸评分。
+
+## 运行
+
+先按[固定环境与输入准备](../../examples/minimal/README.md)配置LAB_ROOT，再在仓库根目录运行：
+
+```bash
+python examples/minimal/08_privacy.py
+```
+
+第2章输出供图像审核、鉴伪与水印读取；第8章直接使用配套已裁剪合成人脸。各文件的结果目录由代码中的out定义。
+
+## 实测与逐项核对
+
+[当前十份代码的原始结果与核验](../../evidence/all_practice_alignment_20261025/README.md)。书中主表与图片均对应本次最小输出；扩大提示、种子、条件和评价器后，应另存并重跑。
+
+## 习题与答案
+
+[分类型习题](exercises.md) · [逐题参考答案](answers.md)
+
+<details>
+<summary>仓库完整实验扩展与此前说明</summary>
+
 > 2026-10-24最新：书内采用最小完整实现；导入、实际模型加载和核心运算保留，额外校验及完整函数在Git仓库中。
 > 运行 `python examples/minimal/08_privacy.py`（[代码](../../examples/minimal/08_privacy.py)）。
 > [最小示例运行准备](../../examples/minimal/README.md) · [完整函数与批量实现](../../examples/book/README.md)。下方大样本实测对应完整实验。
@@ -34,3 +63,6 @@ python experiments/a800/privacy.py
 
 - [分类型习题](exercises.md)
 - [逐题参考答案](answers.md)
+
+
+</details>

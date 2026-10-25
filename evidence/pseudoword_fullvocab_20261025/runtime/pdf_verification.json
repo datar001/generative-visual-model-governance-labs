@@ -1,0 +1,19 @@
+{
+  "pages": 236,
+  "findings": [],
+  "practice_start": 77,
+  "next_section": 84,
+  "rendered_pages": [
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84
+  ],
+  "pdf_sha256": "3131c79cdb077a6ed95765c2d3c15ca3de6be1cec15438b652b90a8ab2ecebfc",
+  "source_changes_during_compile": [],
+  "visual_review_accepted": true
+}

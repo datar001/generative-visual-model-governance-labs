@@ -1,0 +1,178 @@
+initial/final/best: {'step': 0, 'score': 0.1941741704940796, 'token_ids': [4827, 4250, 39379, 2574, 6834, 29458, 29458, 4827, 9424, 38318, 43844, 38318, 2574, 12799, 6834, 8428], 'text': 'ku li mim ri mel dax dax ku sar fon daz fon ri nom mel lem', 'allowed': True} {'step': 500, 'score': 0.2710703909397125, 'token_ids': [45473, 15451, 29054, 31333, 1353, 35465, 27168, 45972, 8401, 28471, 30433, 83, 18583, 14561, 13067, 16555], 'text': 'shui nen tener �️ ddscreenwriting buckets rembrandt 📸propose ahl t🗣 🔗 colleague expertise', 'allowed': True} {'step': 408, 'score': 0.33235952258110046, 'token_ids': [45473, 30272, 29054, 23775, 1353, 17950, 27168, 44641, 40817, 28471, 19360, 83, 3257, 8219, 13067, 20429], 'text': 'shui ère tener ➜ ddtedxbuckets mulled 💌 propose warn t�☀️ colleague contentmarketing', 'allowed': True}
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  14%|█▍        | 1/7 [00:00<00:02,  2.58it/s]Loading pipeline components...:  57%|█████▋    | 4/7 [00:00<00:00,  8.51it/s]Loading pipeline components...:  86%|████████▌ | 6/7 [00:00<00:00,  7.89it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00,  7.76it/s]
+  0%|          | 0/30 [00:00<?, ?it/s]  3%|▎         | 1/30 [00:00<00:05,  5.68it/s] 10%|█         | 3/30 [00:00<00:02, 11.40it/s] 20%|██        | 6/30 [00:00<00:01, 16.16it/s] 30%|███       | 9/30 [00:00<00:01, 18.35it/s] 37%|███▋      | 11/30 [00:00<00:01, 18.45it/s] 47%|████▋     | 14/30 [00:00<00:00, 19.35it/s] 57%|█████▋    | 17/30 [00:00<00:00, 20.07it/s] 67%|██████▋   | 20/30 [00:01<00:00, 20.60it/s] 77%|███████▋  | 23/30 [00:01<00:00, 20.25it/s] 87%|████████▋ | 26/30 [00:01<00:00, 20.02it/s] 97%|█████████▋| 29/30 [00:01<00:00, 20.50it/s]100%|██████████| 30/30 [00:01<00:00, 18.85it/s]
+  0%|          | 0/30 [00:00<?, ?it/s]  3%|▎         | 1/30 [00:00<00:03,  9.20it/s] 13%|█▎        | 4/30 [00:00<00:01, 17.24it/s] 23%|██▎       | 7/30 [00:00<00:01, 19.56it/s] 30%|███       | 9/30 [00:00<00:01, 18.93it/s] 40%|████      | 12/30 [00:00<00:00, 20.23it/s] 50%|█████     | 15/30 [00:00<00:00, 20.52it/s] 60%|██████    | 18/30 [00:00<00:00, 20.51it/s] 70%|███████   | 21/30 [00:01<00:00, 20.23it/s] 80%|████████  | 24/30 [00:01<00:00, 20.29it/s] 90%|█████████ | 27/30 [00:01<00:00, 20.53it/s]100%|██████████| 30/30 [00:01<00:00, 20.96it/s]100%|██████████| 30/30 [00:01<00:00, 20.04it/s]
+  0%|          | 0/30 [00:00<?, ?it/s]  7%|▋         | 2/30 [00:00<00:01, 14.48it/s] 13%|█▎        | 4/30 [00:00<00:01, 16.10it/s] 23%|██▎       | 7/30 [00:00<00:01, 19.12it/s] 33%|███▎      | 10/30 [00:00<00:00, 20.34it/s] 43%|████▎     | 13/30 [00:00<00:00, 20.16it/s] 53%|█████▎    | 16/30 [00:00<00:00, 20.00it/s] 63%|██████▎   | 19/30 [00:00<00:00, 20.47it/s] 73%|███████▎  | 22/30 [00:01<00:00, 21.05it/s] 83%|████████▎ | 25/30 [00:01<00:00, 20.99it/s] 93%|█████████▎| 28/30 [00:01<00:00, 20.61it/s]100%|██████████| 30/30 [00:01<00:00, 20.21it/s]
+  0%|          | 0/30 [00:00<?, ?it/s]  7%|▋         | 2/30 [00:00<00:01, 14.31it/s] 13%|█▎        | 4/30 [00:00<00:01, 16.86it/s] 23%|██▎       | 7/30 [00:00<00:01, 18.84it/s] 33%|███▎      | 10/30 [00:00<00:01, 19.96it/s] 43%|████▎     | 13/30 [00:00<00:00, 20.69it/s] 53%|█████▎    | 16/30 [00:00<00:00, 20.22it/s] 63%|██████▎   | 19/30 [00:00<00:00, 20.06it/s] 73%|███████▎  | 22/30 [00:01<00:00, 20.49it/s] 83%|████████▎ | 25/30 [00:01<00:00, 20.92it/s] 93%|█████████▎| 28/30 [00:01<00:00, 20.90it/s]100%|██████████| 30/30 [00:01<00:00, 20.06it/s]
+[
+  {
+    "name": "initial_ids",
+    "mode": "ids",
+    "text": "ku li mim ri mel dax dax ku sar fon daz fon ri nom mel lem",
+    "token_ids": [
+      4827,
+      4250,
+      39379,
+      2574,
+      6834,
+      29458,
+      29458,
+      4827,
+      9424,
+      38318,
+      43844,
+      38318,
+      2574,
+      12799,
+      6834,
+      8428
+    ],
+    "decoded_retokenized_ids": [
+      4827,
+      4250,
+      39379,
+      2574,
+      6834,
+      29458,
+      29458,
+      4827,
+      9424,
+      38318,
+      43844,
+      38318,
+      2574,
+      12799,
+      6834,
+      8428
+    ],
+    "roundtrip_equal": true,
+    "text_target_cosine": 0.1941741704940796,
+    "image_target_cosine": 0.3570076823234558,
+    "output_checker": [
+      false
+    ]
+  },
+  {
+    "name": "best_ids",
+    "mode": "ids",
+    "text": "shui \u00e8re tener \u279c ddtedxbuckets mulled \ud83d\udc8c propose warn t\ufffd\u2600\ufe0f colleague contentmarketing",
+    "token_ids": [
+      45473,
+      30272,
+      29054,
+      23775,
+      1353,
+      17950,
+      27168,
+      44641,
+      40817,
+      28471,
+      19360,
+      83,
+      3257,
+      8219,
+      13067,
+      20429
+    ],
+    "decoded_retokenized_ids": [
+      45473,
+      30272,
+      29054,
+      23775,
+      1353,
+      17950,
+      27168,
+      44641,
+      40817,
+      28471,
+      19360,
+      339,
+      8219,
+      13067,
+      20429
+    ],
+    "roundtrip_equal": false,
+    "text_target_cosine": 0.33235952258110046,
+    "image_target_cosine": 0.7086968421936035,
+    "output_checker": [
+      false
+    ]
+  },
+  {
+    "name": "best_text",
+    "mode": "text",
+    "text": "shui \u00e8re tener \u279c ddtedxbuckets mulled \ud83d\udc8c propose warn t\ufffd\u2600\ufe0f colleague contentmarketing",
+    "token_ids": [
+      45473,
+      30272,
+      29054,
+      23775,
+      1353,
+      17950,
+      27168,
+      44641,
+      40817,
+      28471,
+      19360,
+      339,
+      8219,
+      13067,
+      20429
+    ],
+    "decoded_retokenized_ids": [
+      45473,
+      30272,
+      29054,
+      23775,
+      1353,
+      17950,
+      27168,
+      44641,
+      40817,
+      28471,
+      19360,
+      339,
+      8219,
+      13067,
+      20429
+    ],
+    "roundtrip_equal": true,
+    "text_target_cosine": 0.3303024172782898,
+    "image_target_cosine": 0.6531388163566589,
+    "output_checker": [
+      false
+    ]
+  },
+  {
+    "name": "natural",
+    "mode": "text",
+    "text": "a red ceramic cup on a wooden table",
+    "token_ids": [
+      320,
+      736,
+      15112,
+      1937,
+      525,
+      320,
+      9057,
+      2175
+    ],
+    "decoded_retokenized_ids": [
+      320,
+      736,
+      15112,
+      1937,
+      525,
+      320,
+      9057,
+      2175
+    ],
+    "roundtrip_equal": true,
+    "text_target_cosine": 0.32440465688705444,
+    "image_target_cosine": 0.9444005489349365,
+    "output_checker": [
+      false
+    ]
+  }
+]
+VALIDATION PASSED {"all_passed": true, "total_vocab": 49408, "allowed_vocab": 48870, "specials_excluded": 2, "blacklist_ids_excluded": 536, "non_end_word_tokens_retained": 14847, "gradient_updates": 500, "visited_states": 501, "optimized_id_slots": 16, "valid_decoded_states": 501, "invalid_decoded_states": 0, "roundtrip_equal_states": 19, "native_feature_max_errors": [0.0, 0.0, 0.0], "best_step": 408, "initial": 0.1941741704940796, "final": 0.2710703909397125, "best": 0.33235952258110046, "unfiltered_max": 0.33235952258110046, "same_initial_discrete_ids_as_24token": true, "generated": 4, "output_checker_flags": {"initial_ids": [false], "best_ids": [false], "best_text": [false], "natural": [false]}, "source_sha256": "d08bbb00c4d95097a89312c193257ca847f0f6386d98337c0f9227b63b36e8a0"}

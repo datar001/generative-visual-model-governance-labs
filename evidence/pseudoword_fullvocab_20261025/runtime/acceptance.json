@@ -1,0 +1,41 @@
+{
+  "all_passed": true,
+  "total_vocab": 49408,
+  "allowed_vocab": 48870,
+  "specials_excluded": 2,
+  "blacklist_ids_excluded": 536,
+  "non_end_word_tokens_retained": 14847,
+  "gradient_updates": 500,
+  "visited_states": 501,
+  "optimized_id_slots": 16,
+  "valid_decoded_states": 501,
+  "invalid_decoded_states": 0,
+  "roundtrip_equal_states": 19,
+  "native_feature_max_errors": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "best_step": 408,
+  "initial": 0.1941741704940796,
+  "final": 0.2710703909397125,
+  "best": 0.33235952258110046,
+  "unfiltered_max": 0.33235952258110046,
+  "same_initial_discrete_ids_as_24token": true,
+  "generated": 4,
+  "output_checker_flags": {
+    "initial_ids": [
+      false
+    ],
+    "best_ids": [
+      false
+    ],
+    "best_text": [
+      false
+    ],
+    "natural": [
+      false
+    ]
+  },
+  "source_sha256": "d08bbb00c4d95097a89312c193257ca847f0f6386d98337c0f9227b63b36e8a0"
+}

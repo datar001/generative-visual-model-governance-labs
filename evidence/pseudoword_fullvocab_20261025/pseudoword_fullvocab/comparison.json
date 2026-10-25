@@ -1,0 +1,171 @@
+[
+  {
+    "name": "initial_ids",
+    "mode": "ids",
+    "text": "ku li mim ri mel dax dax ku sar fon daz fon ri nom mel lem",
+    "token_ids": [
+      4827,
+      4250,
+      39379,
+      2574,
+      6834,
+      29458,
+      29458,
+      4827,
+      9424,
+      38318,
+      43844,
+      38318,
+      2574,
+      12799,
+      6834,
+      8428
+    ],
+    "decoded_retokenized_ids": [
+      4827,
+      4250,
+      39379,
+      2574,
+      6834,
+      29458,
+      29458,
+      4827,
+      9424,
+      38318,
+      43844,
+      38318,
+      2574,
+      12799,
+      6834,
+      8428
+    ],
+    "roundtrip_equal": true,
+    "text_target_cosine": 0.1941741704940796,
+    "image_target_cosine": 0.3570076823234558,
+    "output_checker": [
+      false
+    ]
+  },
+  {
+    "name": "best_ids",
+    "mode": "ids",
+    "text": "shui \u00e8re tener \u279c ddtedxbuckets mulled \ud83d\udc8c propose warn t\ufffd\u2600\ufe0f colleague contentmarketing",
+    "token_ids": [
+      45473,
+      30272,
+      29054,
+      23775,
+      1353,
+      17950,
+      27168,
+      44641,
+      40817,
+      28471,
+      19360,
+      83,
+      3257,
+      8219,
+      13067,
+      20429
+    ],
+    "decoded_retokenized_ids": [
+      45473,
+      30272,
+      29054,
+      23775,
+      1353,
+      17950,
+      27168,
+      44641,
+      40817,
+      28471,
+      19360,
+      339,
+      8219,
+      13067,
+      20429
+    ],
+    "roundtrip_equal": false,
+    "text_target_cosine": 0.33235952258110046,
+    "image_target_cosine": 0.7086968421936035,
+    "output_checker": [
+      false
+    ]
+  },
+  {
+    "name": "best_text",
+    "mode": "text",
+    "text": "shui \u00e8re tener \u279c ddtedxbuckets mulled \ud83d\udc8c propose warn t\ufffd\u2600\ufe0f colleague contentmarketing",
+    "token_ids": [
+      45473,
+      30272,
+      29054,
+      23775,
+      1353,
+      17950,
+      27168,
+      44641,
+      40817,
+      28471,
+      19360,
+      339,
+      8219,
+      13067,
+      20429
+    ],
+    "decoded_retokenized_ids": [
+      45473,
+      30272,
+      29054,
+      23775,
+      1353,
+      17950,
+      27168,
+      44641,
+      40817,
+      28471,
+      19360,
+      339,
+      8219,
+      13067,
+      20429
+    ],
+    "roundtrip_equal": true,
+    "text_target_cosine": 0.3303024172782898,
+    "image_target_cosine": 0.6531388163566589,
+    "output_checker": [
+      false
+    ]
+  },
+  {
+    "name": "natural",
+    "mode": "text",
+    "text": "a red ceramic cup on a wooden table",
+    "token_ids": [
+      320,
+      736,
+      15112,
+      1937,
+      525,
+      320,
+      9057,
+      2175
+    ],
+    "decoded_retokenized_ids": [
+      320,
+      736,
+      15112,
+      1937,
+      525,
+      320,
+      9057,
+      2175
+    ],
+    "roundtrip_equal": true,
+    "text_target_cosine": 0.32440465688705444,
+    "image_target_cosine": 0.9444005489349365,
+    "output_checker": [
+      false
+    ]
+  }
+]

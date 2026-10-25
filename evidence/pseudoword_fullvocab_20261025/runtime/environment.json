@@ -1,0 +1,12 @@
+{
+  "python": "3.10.6",
+  "packages": {
+    "torch": "2.4.1+cu118",
+    "diffusers": "0.32.2",
+    "transformers": "4.46.3",
+    "Pillow": "10.4.0",
+    "numpy": "1.26.4"
+  },
+  "cuda": "11.8",
+  "cuda_visible_devices": "0"
+}

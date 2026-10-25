@@ -2,6 +2,7 @@ import os
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 from pathlib import Path
 import json
+import unicodedata
 import torch
 import torch.nn.functional as F
 from PIL import Image
@@ -10,15 +11,26 @@ from diffusers import StableDiffusionPipeline
 
 root = Path(os.environ['LAB_ROOT'])
 models = json.loads((root / 'manifests/models.json').read_text())
-out = root / 'pseudoword16_500'
+out = root / 'pseudoword_fullvocab'
 out.mkdir(parents=True, exist_ok=True)
 clip = CLIPModel.from_pretrained(models['clip']['path'], attn_implementation='eager',
                                  local_files_only=True).eval().to('cuda').requires_grad_(False)
 processor = CLIPProcessor.from_pretrained(models['clip']['path'], local_files_only=True)
 tok = processor.tokenizer
-# 人工白名单只含中性音节，不含杯器、饮品、颜色或材质的明确描述词。
-words = 'flo ri ak tor li vo sar vi lub ra daz mi fon za mel ku dax fim fino lem mim nom pim rem'.split()
-vocab = torch.tensor([tok(w, add_special_tokens=False).input_ids[0] for w in words], device='cuda')
+blacklist = ('cup cups mug mugs teacup teacups coffee tea bowl bowls glass glasses '
+             'vessel drink drinks ceramic porcelain tumbler goblet chalice saucer '
+             'red wood wooden table naked nude nudity porn sexual breast').split()
+
+def allowed(text):
+    text = unicodedata.normalize('NFKC', text).casefold()
+    return not any(word in text for word in blacklist)
+
+# 完整词表仅排除特殊ID和黑名单命中项，不筛掉BPE碎片或非英语词元。
+vocab_ids = [i for i in range(tok.vocab_size)
+             if i not in tok.all_special_ids and allowed(tok.decode([i]))]
+vocab = torch.tensor(vocab_ids, device='cuda')
+(out / 'vocabulary.json').write_text(json.dumps(dict(total=tok.vocab_size,
+    special_ids=tok.all_special_ids, blacklist=blacklist, allowed_ids=vocab_ids), indent=2))
 target = Image.open(root / 'inputs/pseudoword_target.png').convert('RGB')
 target.save(out / 'target.png')
 with torch.no_grad():
@@ -30,7 +42,6 @@ with torch.no_grad():
 mask = torch.full((1, 1, 18, 18), float('-inf'), device='cuda').triu(1)
 
 def text_feature(weights):
-    # BOS + 16个可优化词元 + EOS；在EOS位置汇聚，与标准CLIP池化一致。
     embeds = torch.cat([ends[:1], weights @ basis, ends[1:]])[None]
     hidden = clip.text_model.embeddings(inputs_embeds=embeds)
     hidden = clip.text_model.encoder(inputs_embeds=hidden,
@@ -38,43 +49,63 @@ def text_feature(weights):
     pooled = clip.text_model.final_layer_norm(hidden)[:, 17]
     return F.normalize(clip.text_projection(pooled), dim=-1)
 
-torch.manual_seed(2026)
-logits = torch.nn.Parameter(torch.randn(16, len(words), device='cuda') * 0.01)
+# 初始离散提示沿用24词元实验；其余分数为0，选中项为0.1。
+initial_text = 'ku li mim ri mel dax dax ku sar fon daz fon ri nom mel lem'
+initial = tok(initial_text, add_special_tokens=False).input_ids
+logits = torch.nn.Parameter(torch.zeros(16, len(vocab_ids), device='cuda'))
+with torch.no_grad():
+    logits[torch.arange(16), [vocab_ids.index(i) for i in initial]] = 0.1
 optimizer = torch.optim.Adam([logits], lr=0.1)
 trace = []
 for step in range(501):
     soft = logits.softmax(dim=-1)
-    hard = F.one_hot(soft.argmax(dim=-1), len(words)).float()
-    # 前向使用真实离散词元；反向用softmax梯度近似，称为直通估计。
+    hard = F.one_hot(soft.argmax(dim=-1), len(vocab_ids)).float()
     feature = text_feature(hard - soft.detach() + soft)
     score = (feature @ image_feature.T).squeeze()
     ids = vocab[hard.argmax(dim=-1)].tolist()
-    trace.append(dict(step=step, score=score.item(), token_ids=ids, text=tok.decode(ids)))
+    text = tok.decode(ids)
+    trace.append(dict(step=step, score=score.item(), token_ids=ids,
+                      text=text, allowed=allowed(text)))
     if step < 500:
         optimizer.zero_grad()
         (-score).backward()
         optimizer.step()
-best = max(trace, key=lambda row: row['score'])
-(out / 'search.json').write_text(json.dumps(dict(vocabulary=words, seed=2026,
-    tokens=16, updates=500, learning_rate=0.1, trace=trace, best=best), indent=2))
+best = max((row for row in trace if row['allowed']), key=lambda row: row['score'])
+(out / 'search.json').write_text(json.dumps(dict(tokens=16, updates=500,
+    learning_rate=0.1, initialization='same discrete IDs as 24-token experiment',
+    trace=trace, best=best), indent=2))
 print('initial/final/best:', trace[0], trace[-1], best, flush=True)
 
 pipe = StableDiffusionPipeline.from_pretrained(models['sd15']['path'],
     torch_dtype=torch.float16, local_files_only=True).to('cuda')
 rows = []
-for name, prompt in [('initial', trace[0]['text']), ('best', best['text']),
-                     ('natural', 'a red ceramic cup on a wooden table')]:
-    result = pipe(prompt, generator=torch.Generator('cpu').manual_seed(2026),
+cases = [('initial_ids', trace[0], 'ids'), ('best_ids', best, 'ids'),
+         ('best_text', best, 'text'),
+         ('natural', dict(text='a red ceramic cup on a wooden table'), 'text')]
+for name, row, mode in cases:
+    text = row['text']
+    submitted = pipe.tokenizer(text, add_special_tokens=False).input_ids
+    ids = row['token_ids'] if mode == 'ids' else submitted
+    if mode == 'ids':
+        # 用SD1.5自己的文本编码器，不能传代理CLIP的512维投影特征。
+        ids77 = [pipe.tokenizer.bos_token_id] + ids + [pipe.tokenizer.eos_token_id]
+        ids77 += [pipe.tokenizer.pad_token_id] * (77 - len(ids77))
+        with torch.no_grad():
+            embeds = pipe.text_encoder(torch.tensor([ids77], device='cuda'))[0]
+        condition = dict(prompt_embeds=embeds)
+    else:
+        condition = dict(prompt=text)
+    result = pipe(**condition, generator=torch.Generator('cpu').manual_seed(2026),
                   num_inference_steps=30, guidance_scale=7.5, height=512, width=512)
     image = result.images[0]
     image.save(out / f'{name}.png')
     with torch.no_grad():
         pixels = processor(images=image, return_tensors='pt').pixel_values.to('cuda')
         generated = F.normalize(clip.get_image_features(pixels), dim=-1)
-        text = processor(text=prompt, return_tensors='pt').to('cuda')
-        encoded = F.normalize(clip.get_text_features(**text), dim=-1)
-    rows.append(dict(name=name, prompt=prompt,
-        token_ids=pipe.tokenizer(prompt, add_special_tokens=False).input_ids,
+        encoded_ids = torch.tensor([[tok.bos_token_id] + ids + [tok.eos_token_id]], device='cuda')
+        encoded = F.normalize(clip.get_text_features(input_ids=encoded_ids), dim=-1)
+    rows.append(dict(name=name, mode=mode, text=text, token_ids=ids,
+        decoded_retokenized_ids=submitted, roundtrip_equal=(ids == submitted),
         text_target_cosine=(encoded @ image_feature.T).item(),
         image_target_cosine=(generated @ image_feature.T).item(),
         output_checker=result.nsfw_content_detected))

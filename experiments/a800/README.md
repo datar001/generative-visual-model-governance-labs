@@ -1,4 +1,4 @@
-> 当前书内伪词已改为[16-token/500步最小实现](../../examples/minimal/03_pseudoword.py)，[新实测](../../evidence/pseudoword16_500_20261025/README.md)。本目录pseudoword.py和以下480查询/7图属于保留的历史扩展。
+> 当前书内伪词已改为[全词表/500步最小实现](../../examples/minimal/03_pseudoword.py)，[新实测](../../evidence/pseudoword_fullvocab_20261025/README.md)。本目录pseudoword.py和以下480查询/7图属于保留的历史扩展。
 
 # 全章实测与配套运行
 

@@ -1,4 +1,5 @@
-import ast, collections, json, pathlib, re
+import ast, json, pathlib, re
+from render_exercises import render_markdown
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 data=json.loads((ROOT/'content/curriculum.json').read_text(encoding='utf8'))
 assert len(data)==8
@@ -6,10 +7,13 @@ questions=answers=0
 for c in data:
  folder=ROOT/'chapters'/c['slug']
  assert len(c['questions'])==12
- assert collections.Counter(q[0] for q in c['questions'])=={'基础知识':4,'原理分析':4,'实践设计':4}
+ assert len({q[0] for q in c['questions']})==12
+ assert all(q[0] not in {'基础知识','原理分析','实践设计'} for q in c['questions'])
  qtext=(folder/'exercises.md').read_text(encoding='utf8')
  atext=(folder/'answers.md').read_text(encoding='utf8')
- for i,(cat,q,a) in enumerate(c['questions'],1):
+ assert qtext==render_markdown(c)
+ assert atext==render_markdown(c,True)
+ for i,(title,q,a) in enumerate(c['questions'],1):
   ident=f"{c['chapter']}-{i:02}"
   assert f'## {ident} ' in qtext and f'## {ident} ' in atext
   assert q in qtext and a in atext and len(a)>25

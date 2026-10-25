@@ -22,7 +22,7 @@ python examples/minimal/04_detection.py
 
 ## 习题与答案
 
-[分类型习题](exercises.md) · [逐题参考答案](answers.md)
+[本章习题](exercises.md) · [逐题参考答案](answers.md)
 
 <details>
 <summary>仓库完整实验扩展与此前说明</summary>
@@ -61,7 +61,7 @@ python experiments/a800/detection.py
 
 ## 习题和参考答案
 
-- [分类型习题](exercises.md)
+- [本章习题](exercises.md)
 - [逐题参考答案](answers.md)
 
 更多方法见 [拓展材料](extensions.md)。CNNSpot资源来源和许可说明保留在本章配套资料中。

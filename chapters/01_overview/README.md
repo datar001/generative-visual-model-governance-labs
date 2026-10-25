@@ -22,7 +22,7 @@ python examples/minimal/01_governance.py
 
 ## 习题与答案
 
-[分类型习题](exercises.md) · [逐题参考答案](answers.md)
+[本章习题](exercises.md) · [逐题参考答案](answers.md)
 
 <details>
 <summary>仓库完整实验扩展与此前说明</summary>
@@ -61,7 +61,7 @@ python chapters/01_overview/lab.py
 
 ## 习题和参考答案
 
-- [分类型习题](exercises.md)
+- [本章习题](exercises.md)
 - [逐题参考答案](answers.md)
 
 

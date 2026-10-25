@@ -32,7 +32,7 @@ python tools/plot_pseudoword_projected_l14.py
 
 ## 习题与答案
 
-[分类型习题](exercises.md) · [逐题参考答案](answers.md)。旧ST-L14/B32、小词表和完整多预算扩展按日期保留，不并入本次分母。
+[本章习题](exercises.md) · [逐题参考答案](answers.md)。旧ST-L14/B32、小词表和完整多预算扩展按日期保留，不并入本次分母。
 
 <details>
 <summary>此前ST-softmax CLIP-L/14实验（历史记录）</summary>
@@ -65,7 +65,7 @@ python tools/plot_pseudoword_l14.py
 
 ## 习题与答案
 
-[分类型习题](exercises.md) · [逐题参考答案](answers.md)。此前B/32完整词表、24词元、64候选和多预算搜索按日期保留，不并入本次分母。
+[本章习题](exercises.md) · [逐题参考答案](answers.md)。此前B/32完整词表、24词元、64候选和多预算搜索按日期保留，不并入本次分母。
 
 
 </details>
@@ -98,7 +98,7 @@ python tools/plot_pseudoword_fullvocab.py
 
 ## 习题与答案
 
-[分类型习题](exercises.md) · [逐题参考答案](answers.md)。旧24词元、64候选和多预算搜索保留为历史扩展，不并入本次分母。
+[本章习题](exercises.md) · [逐题参考答案](answers.md)。旧24词元、64候选和多预算搜索保留为历史扩展，不并入本次分母。
 
 
 </details>
@@ -174,7 +174,7 @@ python experiments/a800/pseudoword.py
 
 ## 习题和参考答案
 
-- [分类型习题](exercises.md)
+- [本章习题](exercises.md)
 - [逐题参考答案](answers.md)
 
 

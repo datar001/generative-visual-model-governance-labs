@@ -81,15 +81,17 @@
     "practice": "filter",
     "script": "03_filters.py",
     "old_lines": 209,
-    "lines": 33,
+    "lines": 35,
     "ranges": [
       [
         1,
-        33
+        35
       ]
     ],
-    "sha256": "af2e4dec7e7b28ae5c015099c898a47ea97c6f7593dbea0dfbe18a1d26397ba0",
-    "all_lines_printed": true
+    "sha256": "19c896eecdf1f9b27535b2573a99f39eccb241bd65927e70e52e622db4044aa5",
+    "all_lines_printed": true,
+    "listing_mode": "whole_file",
+    "updated": "2026-10-25"
   },
   {
     "practice": "pseudoword",
@@ -99,15 +101,13 @@
     "ranges": [
       [
         1,
-        34
-      ],
-      [
-        35,
         42
       ]
     ],
     "sha256": "5bd10f40ea6a0b5806f1c7563efbdea558c0d9df79401e5cd33f7e69c19156de",
-    "all_lines_printed": true
+    "all_lines_printed": true,
+    "listing_mode": "whole_file",
+    "updated": "2026-10-25"
   },
   {
     "practice": "overview",

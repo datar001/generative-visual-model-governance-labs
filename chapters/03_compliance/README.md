@@ -1,3 +1,13 @@
+# 第3章当前书内最小实践（2026-10-25）
+
+- 三类过滤器：`python examples/minimal/03_filters.py`，3条文本、3张普通图，结果保存在`decisions.json`。
+- 伪词类比：`python examples/minimal/03_pseudoword.py`，一次64候选随机搜索，实际生成候选与自然语言参照共2张图。
+- [逐条原始结果与运行证据](../../evidence/ch3_alignment_20261025/README.md)；书内表格和图片已按此结果改写。
+
+下面的18条文本、31张图、480次查询和7张生成图属于仓库完整扩展实验，运行入口仍保留，勿与书内最小实践的分母混用。
+
+---
+
 > 2026-10-24最新：书内采用最小完整实现；导入、实际模型加载和核心运算保留，额外校验及完整函数在Git仓库中。
 > 运行 `python examples/minimal/03_filters.py`（[代码](../../examples/minimal/03_filters.py)）；运行 `python examples/minimal/03_pseudoword.py`（[代码](../../examples/minimal/03_pseudoword.py)）。
 > [最小示例运行准备](../../examples/minimal/README.md) · [完整函数与批量实现](../../examples/book/README.md)。下方大样本实测对应完整实验。

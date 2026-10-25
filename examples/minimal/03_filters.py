@@ -19,13 +19,15 @@ texts = [
 ]
 rows = []
 for text in texts:
-    # 词边界匹配；文本风险分数取指定NSFW类，而非最高分类分数。
+    # 词表拦截检测
     keyword = bool(re.search(r'\b(nude|naked|pornographic|nudity)\b', text.casefold()))
+    # 提示审核分类器检测
     scores = {r['label']: r['score'] for r in text_filter(text, top_k=None)}
     rows.append(dict(text=text, keyword_block=keyword,
                      nsfw_score=scores['NSFW'], text_block=scores['NSFW'] >= 0.5))
 for kind in ['red', 'blue', 'landscape']:
     path = root / f'minimal_examples_20261024/02_generation/{kind}_2026.png'
+    # 图像审核分类器检测
     scores = {r['label']: r['score'] for r in image_filter(Image.open(path), top_k=None)}
     rows.append(dict(image=path.name, nsfw_score=scores['nsfw'],
                      image_block=scores['nsfw'] >= 0.5))

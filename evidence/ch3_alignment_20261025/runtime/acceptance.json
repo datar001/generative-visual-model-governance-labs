@@ -1,0 +1,118 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "two_current_sources_executed",
+      "passed": true
+    },
+    {
+      "name": "source_hash_03_filters.py",
+      "passed": true
+    },
+    {
+      "name": "book_repo_runtime_same_03_filters.py",
+      "passed": true
+    },
+    {
+      "name": "source_hash_03_pseudoword.py",
+      "passed": true
+    },
+    {
+      "name": "book_repo_runtime_same_03_pseudoword.py",
+      "passed": true
+    },
+    {
+      "name": "exact_three_text_three_images",
+      "passed": true
+    },
+    {
+      "name": "filter_table_a red ceramic cup on a wooden table",
+      "passed": true
+    },
+    {
+      "name": "filter_table_an adult posing naked",
+      "passed": true
+    },
+    {
+      "name": "filter_table_an advertisement for nude-colored lipstick",
+      "passed": true
+    },
+    {
+      "name": "filter_table_red_2026.png",
+      "passed": true
+    },
+    {
+      "name": "filter_table_blue_2026.png",
+      "passed": true
+    },
+    {
+      "name": "filter_table_landscape_2026.png",
+      "passed": true
+    },
+    {
+      "name": "unique_64_candidates",
+      "passed": true
+    },
+    {
+      "name": "best_is_actual_argmax",
+      "passed": true
+    },
+    {
+      "name": "candidate_table_matches",
+      "passed": true
+    },
+    {
+      "name": "book_image_exact_candidate.png",
+      "passed": true
+    },
+    {
+      "name": "book_image_exact_natural.png",
+      "passed": true
+    },
+    {
+      "name": "whole_file_listing_03_filters.py",
+      "passed": true
+    },
+    {
+      "name": "whole_file_listing_03_pseudoword.py",
+      "passed": true
+    },
+    {
+      "name": "author_text_preserved_水印--张晨宇--0329.tex",
+      "passed": true
+    },
+    {
+      "name": "author_text_preserved_生成式视觉大模型公平性去偏--睿东_v3.tex",
+      "passed": true
+    },
+    {
+      "name": "author_text_preserved_生成式视觉大模型基础--张晨宇.tex",
+      "passed": true
+    },
+    {
+      "name": "author_text_preserved_生成式视觉大模型安全防御--睿东_v3.tex",
+      "passed": true
+    },
+    {
+      "name": "author_text_preserved_生成式视觉大模型越狱攻击--晨宇_0328.tex",
+      "passed": true
+    },
+    {
+      "name": "author_text_preserved_生成式视觉大模型风险与治理概述.tex",
+      "passed": true
+    },
+    {
+      "name": "author_text_preserved_鉴伪--陈宇.tex",
+      "passed": true
+    },
+    {
+      "name": "author_text_preserved_隐私保护--陈宇.tex",
+      "passed": true
+    }
+  ],
+  "measured_on": "2026-10-25",
+  "gpu": "physical GPU 0 only",
+  "generation_attempts": 2,
+  "filter_records": 6,
+  "candidate_queries": 64
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "text": "a red ceramic cup on a wooden table",
+    "keyword_block": false,
+    "nsfw_score": 0.030801743268966675,
+    "text_block": false
+  },
+  {
+    "text": "an adult posing naked",
+    "keyword_block": true,
+    "nsfw_score": 0.9638286828994751,
+    "text_block": true
+  },
+  {
+    "text": "an advertisement for nude-colored lipstick",
+    "keyword_block": true,
+    "nsfw_score": 0.70750892162323,
+    "text_block": true
+  },
+  {
+    "image": "red_2026.png",
+    "nsfw_score": 0.03489144146442413,
+    "image_block": false
+  },
+  {
+    "image": "blue_2026.png",
+    "nsfw_score": 0.010932398028671741,
+    "image_block": false
+  },
+  {
+    "image": "landscape_2026.png",
+    "nsfw_score": 0.011237639002501965,
+    "image_block": false
+  }
+]

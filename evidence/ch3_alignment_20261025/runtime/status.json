@@ -1,0 +1,14 @@
+[
+  {
+    "script": "03_filters.py",
+    "sha256": "19c896eecdf1f9b27535b2573a99f39eccb241bd65927e70e52e622db4044aa5",
+    "returncode": 0,
+    "seconds": 9.339018821716309
+  },
+  {
+    "script": "03_pseudoword.py",
+    "sha256": "5bd10f40ea6a0b5806f1c7563efbdea558c0d9df79401e5cd33f7e69c19156de",
+    "returncode": 0,
+    "seconds": 12.144390344619751
+  }
+]

@@ -1,0 +1,214 @@
+{
+  "all_passed": true,
+  "check_count": 52,
+  "checks": [
+    {
+      "name": "gpu0_run_success",
+      "passed": true
+    },
+    {
+      "name": "executed_sha",
+      "passed": true
+    },
+    {
+      "name": "source_exact_book",
+      "passed": true
+    },
+    {
+      "name": "source_exact_repo",
+      "passed": true
+    },
+    {
+      "name": "source_exact_compiled",
+      "passed": true
+    },
+    {
+      "name": "source_exact_evidence",
+      "passed": true
+    },
+    {
+      "name": "136_lines",
+      "passed": true
+    },
+    {
+      "name": "original_core_five_steps",
+      "passed": true
+    },
+    {
+      "name": "original_core_all_errors_zero",
+      "passed": true
+    },
+    {
+      "name": "native_gradient_three_points_zero",
+      "passed": true
+    },
+    {
+      "name": "weights_196_exact",
+      "passed": true
+    },
+    {
+      "name": "continuous_parameters",
+      "passed": true
+    },
+    {
+      "name": "exact_500_projection_states",
+      "passed": true
+    },
+    {
+      "name": "separate_final500",
+      "passed": true
+    },
+    {
+      "name": "best_excludes_final",
+      "passed": true
+    },
+    {
+      "name": "candidate_pool_count",
+      "passed": true
+    },
+    {
+      "name": "old_blacklist_and_pool_retained",
+      "passed": true
+    },
+    {
+      "name": "all_16_in_pool",
+      "passed": true
+    },
+    {
+      "name": "all500_text_valid",
+      "passed": true
+    },
+    {
+      "name": "actual_lengths",
+      "passed": true
+    },
+    {
+      "name": "best_same_count_different_ids",
+      "passed": true
+    },
+    {
+      "name": "native_flags_retained",
+      "passed": true
+    },
+    {
+      "name": "initial_replacement_really_black",
+      "passed": true
+    },
+    {
+      "name": "slow129_fast138",
+      "passed": true
+    },
+    {
+      "name": "slow16_fast18",
+      "passed": true
+    },
+    {
+      "name": "cpu_matches_actual_submission",
+      "passed": true
+    },
+    {
+      "name": "timing_segment",
+      "passed": true
+    },
+    {
+      "name": "actual_table_initial_ids",
+      "passed": true
+    },
+    {
+      "name": "actual_table_best_ids",
+      "passed": true
+    },
+    {
+      "name": "actual_table_best_text",
+      "passed": true
+    },
+    {
+      "name": "actual_table_natural",
+      "passed": true
+    },
+    {
+      "name": "six_figures",
+      "passed": true
+    },
+    {
+      "name": "book_tokenizer_labels",
+      "passed": true
+    },
+    {
+      "name": "book_black_image_explanation",
+      "passed": true
+    },
+    {
+      "name": "book_asset_target.png",
+      "passed": true
+    },
+    {
+      "name": "repo_asset_target.png",
+      "passed": true
+    },
+    {
+      "name": "book_asset_initial_ids.png",
+      "passed": true
+    },
+    {
+      "name": "repo_asset_initial_ids.png",
+      "passed": true
+    },
+    {
+      "name": "book_asset_best_ids.png",
+      "passed": true
+    },
+    {
+      "name": "repo_asset_best_ids.png",
+      "passed": true
+    },
+    {
+      "name": "book_asset_best_text.png",
+      "passed": true
+    },
+    {
+      "name": "repo_asset_best_text.png",
+      "passed": true
+    },
+    {
+      "name": "book_asset_natural.png",
+      "passed": true
+    },
+    {
+      "name": "repo_asset_natural.png",
+      "passed": true
+    },
+    {
+      "name": "book_asset_optimization_curve.pdf",
+      "passed": true
+    },
+    {
+      "name": "repo_asset_optimization_curve.pdf",
+      "passed": true
+    },
+    {
+      "name": "outside_third_practice_unchanged",
+      "passed": true
+    },
+    {
+      "name": "compiled_section_exact",
+      "passed": true
+    },
+    {
+      "name": "compiled_result_exact",
+      "passed": true
+    },
+    {
+      "name": "print_manifest_exact",
+      "passed": true
+    },
+    {
+      "name": "independent44_passed",
+      "passed": true
+    },
+    {
+      "name": "editor416_preserved",
+      "passed": true
+    }
+  ]
+}

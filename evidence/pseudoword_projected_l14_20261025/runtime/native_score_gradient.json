@@ -1,0 +1,23 @@
+{
+  "initial": {
+    "score_max_abs_error": 0.0,
+    "gradient_max_abs_error": 0.0,
+    "score_close": true,
+    "gradient_close": true,
+    "all_passed": true
+  },
+  "best": {
+    "score_max_abs_error": 0.0,
+    "gradient_max_abs_error": 0.0,
+    "score_close": true,
+    "gradient_close": true,
+    "all_passed": true
+  },
+  "final": {
+    "score_max_abs_error": 0.0,
+    "gradient_max_abs_error": 0.0,
+    "score_close": true,
+    "gradient_close": true,
+    "all_passed": true
+  }
+}

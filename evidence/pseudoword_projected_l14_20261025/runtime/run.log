@@ -1,0 +1,191 @@
+WEIGHT ALIGNMENT PASSED: 196 tensors exactly equal
+step/score: 0 0.16202548146247864
+step/score: 100 0.25499391555786133
+step/score: 200 0.300923228263855
+step/score: 300 0.24710822105407715
+step/score: 400 0.3082084059715271
+step/score: 499 0.27811890840530396
+optimization_seconds/best: 15.072903842665255 {'step': 350, 'score': 0.3311510682106018, 'token_ids': [33544, 19234, 12874, 12874, 26336, 32274, 28457, 47505, 256, 14844, 16845, 33482, 7717, 36385, 17658, 41234], 'text': 'dipping pots sake sake scents motherhood mindful �! · \u2063 marketer craftvitality karma toxicity', 'allowed': True}
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  14%|█▍        | 1/7 [00:00<00:01,  3.15it/s]Loading pipeline components...:  29%|██▊       | 2/7 [00:00<00:01,  4.50it/s]Loading pipeline components...:  43%|████▎     | 3/7 [00:00<00:00,  6.01it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00, 10.19it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00,  8.13it/s]
+  0%|          | 0/30 [00:00<?, ?it/s]  3%|▎         | 1/30 [00:00<00:06,  4.37it/s] 13%|█▎        | 4/30 [00:00<00:02, 12.28it/s] 20%|██        | 6/30 [00:00<00:01, 14.39it/s] 30%|███       | 9/30 [00:00<00:01, 16.90it/s] 40%|████      | 12/30 [00:00<00:00, 18.47it/s] 47%|████▋     | 14/30 [00:00<00:00, 18.80it/s] 53%|█████▎    | 16/30 [00:00<00:00, 18.06it/s] 63%|██████▎   | 19/30 [00:01<00:00, 18.98it/s] 70%|███████   | 21/30 [00:01<00:00, 19.21it/s] 80%|████████  | 24/30 [00:01<00:00, 19.41it/s] 90%|█████████ | 27/30 [00:01<00:00, 20.17it/s]100%|██████████| 30/30 [00:01<00:00, 20.64it/s]100%|██████████| 30/30 [00:01<00:00, 18.08it/s]
+Potential NSFW content was detected in one or more images. A black image will be returned instead. Try again with a different prompt and/or seed.
+  0%|          | 0/30 [00:00<?, ?it/s]  7%|▋         | 2/30 [00:00<00:01, 14.23it/s] 13%|█▎        | 4/30 [00:00<00:01, 16.56it/s] 23%|██▎       | 7/30 [00:00<00:01, 18.67it/s] 33%|███▎      | 10/30 [00:00<00:01, 19.49it/s] 43%|████▎     | 13/30 [00:00<00:00, 20.36it/s] 53%|█████▎    | 16/30 [00:00<00:00, 20.06it/s] 63%|██████▎   | 19/30 [00:00<00:00, 19.78it/s] 73%|███████▎  | 22/30 [00:01<00:00, 19.87it/s] 83%|████████▎ | 25/30 [00:01<00:00, 20.19it/s] 93%|█████████▎| 28/30 [00:01<00:00, 20.66it/s]100%|██████████| 30/30 [00:01<00:00, 19.63it/s]
+  0%|          | 0/30 [00:00<?, ?it/s]  7%|▋         | 2/30 [00:00<00:01, 14.49it/s] 13%|█▎        | 4/30 [00:00<00:01, 16.08it/s] 23%|██▎       | 7/30 [00:00<00:01, 18.80it/s] 33%|███▎      | 10/30 [00:00<00:01, 19.82it/s] 40%|████      | 12/30 [00:00<00:00, 19.49it/s] 50%|█████     | 15/30 [00:00<00:00, 19.73it/s] 60%|██████    | 18/30 [00:00<00:00, 20.20it/s] 70%|███████   | 21/30 [00:01<00:00, 20.43it/s] 80%|████████  | 24/30 [00:01<00:00, 20.36it/s] 90%|█████████ | 27/30 [00:01<00:00, 20.17it/s]100%|██████████| 30/30 [00:01<00:00, 20.07it/s]100%|██████████| 30/30 [00:01<00:00, 19.67it/s]
+  0%|          | 0/30 [00:00<?, ?it/s]  3%|▎         | 1/30 [00:00<00:03,  9.42it/s] 13%|█▎        | 4/30 [00:00<00:01, 16.33it/s] 23%|██▎       | 7/30 [00:00<00:01, 18.56it/s] 33%|███▎      | 10/30 [00:00<00:01, 19.65it/s] 40%|████      | 12/30 [00:00<00:00, 19.32it/s] 50%|█████     | 15/30 [00:00<00:00, 20.10it/s] 60%|██████    | 18/30 [00:00<00:00, 20.78it/s] 70%|███████   | 21/30 [00:01<00:00, 20.55it/s] 80%|████████  | 24/30 [00:01<00:00, 20.14it/s] 90%|█████████ | 27/30 [00:01<00:00, 20.01it/s]100%|██████████| 30/30 [00:01<00:00, 20.66it/s]100%|██████████| 30/30 [00:01<00:00, 19.79it/s]
+[
+  {
+    "name": "initial_ids",
+    "mode": "ids",
+    "text": "connect turnout rhonsheppard timestorrent tonka pnp ernation satire slate sten professor flaws wildlife outra",
+    "token_ids": [
+      19969,
+      11654,
+      25882,
+      37304,
+      26445,
+      42317,
+      42781,
+      25972,
+      48796,
+      29875,
+      17919,
+      7877,
+      6092,
+      30492,
+      5250,
+      14262
+    ],
+    "decoded_retokenized_ids": [
+      19969,
+      11654,
+      25882,
+      37304,
+      3764,
+      809,
+      1609,
+      42781,
+      25972,
+      48796,
+      29875,
+      17919,
+      7877,
+      6092,
+      30492,
+      5250,
+      520,
+      2483
+    ],
+    "roundtrip_equal": false,
+    "text_target_cosine": 0.16202548146247864,
+    "image_target_cosine": 0.6651060581207275,
+    "output_checker": [
+      true
+    ]
+  },
+  {
+    "name": "best_ids",
+    "mode": "ids",
+    "text": "dipping pots sake sake scents motherhood mindful \ufffd! \u00b7 \u2063 marketer craftvitality karma toxicity",
+    "token_ids": [
+      33544,
+      19234,
+      12874,
+      12874,
+      26336,
+      32274,
+      28457,
+      47505,
+      256,
+      14844,
+      16845,
+      33482,
+      7717,
+      36385,
+      17658,
+      41234
+    ],
+    "decoded_retokenized_ids": [
+      33544,
+      19234,
+      12874,
+      12874,
+      26336,
+      32274,
+      28457,
+      256,
+      14844,
+      33482,
+      10873,
+      3197,
+      529,
+      1694,
+      17658,
+      41234
+    ],
+    "roundtrip_equal": false,
+    "text_target_cosine": 0.3311510682106018,
+    "image_target_cosine": 0.7612903118133545,
+    "output_checker": [
+      false
+    ]
+  },
+  {
+    "name": "best_text",
+    "mode": "text",
+    "text": "dipping pots sake sake scents motherhood mindful \ufffd! \u00b7 \u2063 marketer craftvitality karma toxicity",
+    "token_ids": [
+      33544,
+      19234,
+      12874,
+      12874,
+      26336,
+      32274,
+      28457,
+      256,
+      14844,
+      33482,
+      10873,
+      3197,
+      529,
+      1694,
+      17658,
+      41234
+    ],
+    "decoded_retokenized_ids": [
+      33544,
+      19234,
+      12874,
+      12874,
+      26336,
+      32274,
+      28457,
+      256,
+      14844,
+      33482,
+      10873,
+      3197,
+      529,
+      1694,
+      17658,
+      41234
+    ],
+    "roundtrip_equal": true,
+    "text_target_cosine": 0.30780476331710815,
+    "image_target_cosine": 0.7601433396339417,
+    "output_checker": [
+      false
+    ]
+  },
+  {
+    "name": "natural",
+    "mode": "text",
+    "text": "a red ceramic cup on a wooden table",
+    "token_ids": [
+      320,
+      736,
+      15112,
+      1937,
+      525,
+      320,
+      9057,
+      2175
+    ],
+    "decoded_retokenized_ids": [
+      320,
+      736,
+      15112,
+      1937,
+      525,
+      320,
+      9057,
+      2175
+    ],
+    "roundtrip_equal": true,
+    "text_target_cosine": 0.29947495460510254,
+    "image_target_cosine": 0.9379187822341919,
+    "output_checker": [
+      false
+    ]
+  }
+]
+VALIDATION PASSED {"all_passed": true, "source_sha256": "6995ba0e0df47bd51020c28fcd03c5f99edf5399ce59256111cd47856e8098da", "algorithm": "original continuous projected embedding AdamW core", "upstream_commit": "21eb35f16697529388a43bf1504089eccc6bc432", "original_nn_reference_steps": 5, "core_parity_passed": true, "text_weight_tensors": 196, "text_weights_equal": true, "encoder": "CLIP ViT-L/14", "total_vocab": 49408, "allowed_vocab": 48870, "specials_excluded": 2, "blacklist_excluded": 536, "optimized_id_slots": 16, "optimized_continuous_parameters": 12288, "updates": 500, "training_projection_states": 500, "final_after_update_separately_recorded": true, "valid_states": 500, "roundtrip_states": 138, "best_step": 350, "initial": 0.16202548146247864, "best": 0.3311510682106018, "final": 0.24315540492534637, "optimization_seconds": 15.072903842665255, "timing_note": "CUDA-synchronized 500-update loop; includes first-five-step verification snapshots, excludes SD loading/generation and post-run parity", "token_counts": [16, 16, 16, 8], "output_checker_flags": {"initial_ids": [true], "best_ids": [false], "best_text": [false], "natural": [false]}, "same_natural_baseline_pixels_as_previous_l14": true, "sd_generation": {"seed": 2026, "steps": 30, "guidance_scale": 7.5, "height": 512, "width": 512}}

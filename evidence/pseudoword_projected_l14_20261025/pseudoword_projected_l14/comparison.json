@@ -1,0 +1,176 @@
+[
+  {
+    "name": "initial_ids",
+    "mode": "ids",
+    "text": "connect turnout rhonsheppard timestorrent tonka pnp ernation satire slate sten professor flaws wildlife outra",
+    "token_ids": [
+      19969,
+      11654,
+      25882,
+      37304,
+      26445,
+      42317,
+      42781,
+      25972,
+      48796,
+      29875,
+      17919,
+      7877,
+      6092,
+      30492,
+      5250,
+      14262
+    ],
+    "decoded_retokenized_ids": [
+      19969,
+      11654,
+      25882,
+      37304,
+      3764,
+      809,
+      1609,
+      42781,
+      25972,
+      48796,
+      29875,
+      17919,
+      7877,
+      6092,
+      30492,
+      5250,
+      520,
+      2483
+    ],
+    "roundtrip_equal": false,
+    "text_target_cosine": 0.16202548146247864,
+    "image_target_cosine": 0.6651060581207275,
+    "output_checker": [
+      true
+    ]
+  },
+  {
+    "name": "best_ids",
+    "mode": "ids",
+    "text": "dipping pots sake sake scents motherhood mindful \ufffd! \u00b7 \u2063 marketer craftvitality karma toxicity",
+    "token_ids": [
+      33544,
+      19234,
+      12874,
+      12874,
+      26336,
+      32274,
+      28457,
+      47505,
+      256,
+      14844,
+      16845,
+      33482,
+      7717,
+      36385,
+      17658,
+      41234
+    ],
+    "decoded_retokenized_ids": [
+      33544,
+      19234,
+      12874,
+      12874,
+      26336,
+      32274,
+      28457,
+      256,
+      14844,
+      33482,
+      10873,
+      3197,
+      529,
+      1694,
+      17658,
+      41234
+    ],
+    "roundtrip_equal": false,
+    "text_target_cosine": 0.3311510682106018,
+    "image_target_cosine": 0.7612903118133545,
+    "output_checker": [
+      false
+    ]
+  },
+  {
+    "name": "best_text",
+    "mode": "text",
+    "text": "dipping pots sake sake scents motherhood mindful \ufffd! \u00b7 \u2063 marketer craftvitality karma toxicity",
+    "token_ids": [
+      33544,
+      19234,
+      12874,
+      12874,
+      26336,
+      32274,
+      28457,
+      256,
+      14844,
+      33482,
+      10873,
+      3197,
+      529,
+      1694,
+      17658,
+      41234
+    ],
+    "decoded_retokenized_ids": [
+      33544,
+      19234,
+      12874,
+      12874,
+      26336,
+      32274,
+      28457,
+      256,
+      14844,
+      33482,
+      10873,
+      3197,
+      529,
+      1694,
+      17658,
+      41234
+    ],
+    "roundtrip_equal": true,
+    "text_target_cosine": 0.30780476331710815,
+    "image_target_cosine": 0.7601433396339417,
+    "output_checker": [
+      false
+    ]
+  },
+  {
+    "name": "natural",
+    "mode": "text",
+    "text": "a red ceramic cup on a wooden table",
+    "token_ids": [
+      320,
+      736,
+      15112,
+      1937,
+      525,
+      320,
+      9057,
+      2175
+    ],
+    "decoded_retokenized_ids": [
+      320,
+      736,
+      15112,
+      1937,
+      525,
+      320,
+      9057,
+      2175
+    ],
+    "roundtrip_equal": true,
+    "text_target_cosine": 0.29947495460510254,
+    "image_target_cosine": 0.9379187822341919,
+    "output_checker": [
+      false
+    ]
+  }
+]

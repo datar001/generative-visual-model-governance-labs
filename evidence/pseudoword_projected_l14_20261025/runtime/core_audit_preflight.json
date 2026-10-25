@@ -1,0 +1,21 @@
+{
+  "source_commit": "21eb35f16697529388a43bf1504089eccc6bc432",
+  "scope": "original object-branch optimization core with explicit user-requested model/template/candidate-mask adaptations",
+  "critical_checks": [
+    "L2-normalize query and token rows only for nearest-neighbor lookup; use raw projected token embeddings for text encoder",
+    "continuous parameter remains separate from nearest-neighbor projection; do not overwrite parameter.data with projected embeddings",
+    "take gradient at detached projected embedding temporary; assign it directly to continuous parameter.grad",
+    "AdamW learning_rate=0.1 weight_decay=0.1, default betas/eps, one update per iteration",
+    "loss object branch=1-mean CLIP cosine; no logit_scale; no object-MSE term unless object_mask is non-null",
+    "best candidate in original selected from pre-update projections at iteration0..499; final post-update state unscored by original",
+    "no SD/VAE/UNet forward/backward in optimization loop; target CLIP image features precomputed once",
+    "original masks constrain projection, not continuous initialization; fix and record a seed for independent repeatability"
+  ],
+  "explicit_adaptations": [
+    "CLIP-L14 plus SD1.5 replace original default H14 plus SD2.1",
+    "16 all-optimized positions and no fixed natural-language prefix replace original default natural prompt+5 suffix",
+    "full BPE vocabulary minus existing explicit substring blacklist and specials replaces original English-mask/Word2Vec synonym preprocessing",
+    "single original red-cup image instead of original target-class reference image directory"
+  ],
+  "helper": "E:\\ondrive_clone\\paper\\book_revision\\editor_revision_20261018\\audit\\pseudoword_projected_l14_20261025\\reference_parity.py"
+}

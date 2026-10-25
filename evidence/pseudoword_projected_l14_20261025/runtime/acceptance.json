@@ -1,0 +1,56 @@
+{
+  "all_passed": true,
+  "source_sha256": "6995ba0e0df47bd51020c28fcd03c5f99edf5399ce59256111cd47856e8098da",
+  "algorithm": "original continuous projected embedding AdamW core",
+  "upstream_commit": "21eb35f16697529388a43bf1504089eccc6bc432",
+  "original_nn_reference_steps": 5,
+  "core_parity_passed": true,
+  "text_weight_tensors": 196,
+  "text_weights_equal": true,
+  "encoder": "CLIP ViT-L/14",
+  "total_vocab": 49408,
+  "allowed_vocab": 48870,
+  "specials_excluded": 2,
+  "blacklist_excluded": 536,
+  "optimized_id_slots": 16,
+  "optimized_continuous_parameters": 12288,
+  "updates": 500,
+  "training_projection_states": 500,
+  "final_after_update_separately_recorded": true,
+  "valid_states": 500,
+  "roundtrip_states": 138,
+  "best_step": 350,
+  "initial": 0.16202548146247864,
+  "best": 0.3311510682106018,
+  "final": 0.24315540492534637,
+  "optimization_seconds": 15.072903842665255,
+  "timing_note": "CUDA-synchronized 500-update loop; includes first-five-step verification snapshots, excludes SD loading/generation and post-run parity",
+  "token_counts": [
+    16,
+    16,
+    16,
+    8
+  ],
+  "output_checker_flags": {
+    "initial_ids": [
+      true
+    ],
+    "best_ids": [
+      false
+    ],
+    "best_text": [
+      false
+    ],
+    "natural": [
+      false
+    ]
+  },
+  "same_natural_baseline_pixels_as_previous_l14": true,
+  "sd_generation": {
+    "seed": 2026,
+    "steps": 30,
+    "guidance_scale": 7.5,
+    "height": 512,
+    "width": 512
+  }
+}

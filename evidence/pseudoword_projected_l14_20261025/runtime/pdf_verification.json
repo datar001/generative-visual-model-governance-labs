@@ -1,0 +1,21 @@
+{
+  "pages": 242,
+  "findings": [],
+  "practice_start": 77,
+  "next_section": 85,
+  "rendered_pages": [
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85
+  ],
+  "pdf_sha256": "ff63795392df25decbcdab734ddf35846d35d698be7f2514cb490b07afcf1c47",
+  "source_changes_during_compile": [],
+  "visual_review_accepted": true,
+  "visual_review_note": "Reviewed all practice pages 77-85; final table has black replacement note attached below it; code, curve, metrics, tokenizer definitions and actual five-image panel readable."
+}

@@ -1,0 +1,26 @@
+{
+  "static_review_passed": true,
+  "runtime_parity_pending": true,
+  "source_sha256": "6995ba0e0df47bd51020c28fcd03c5f99edf5399ce59256111cd47856e8098da",
+  "lines": 136,
+  "checks": {
+    "continuous_embedding_parameter": true,
+    "original_adamw_lr_weight_decay": true,
+    "cosine_nearest_neighbor": true,
+    "raw_token_embedding_returned": true,
+    "separate_projected_point_gradient": true,
+    "continuous_parameter_not_overwritten": true,
+    "object_cosine_loss_no_logit_scale": true,
+    "500_preupdate_records": true,
+    "final500_separate": true,
+    "timing_cuda_synchronized": true,
+    "sd_generation_after_optimization": true,
+    "gpu0_only": true,
+    "blacklist_retained": true
+  },
+  "notes": [
+    "Masked global argmax is semantically the original cosine NN when the maximum is unique; verify first five steps against unchanged upstream topk projector.",
+    "Full decoded-string validity filtering is an explicit user-constraint adaptation, beyond upstream token-only forbidden mask.",
+    "Template/model/candidate-mask changes are experiment adaptations; do not call full default-paper experiment replication."
+  ]
+}

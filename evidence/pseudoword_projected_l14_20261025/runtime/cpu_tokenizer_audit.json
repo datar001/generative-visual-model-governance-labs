@@ -1,0 +1,65 @@
+{
+  "cpu_only": true,
+  "cuda_visible_devices": "",
+  "vocabulary_mapping_equal": true,
+  "blacklist_valid_states": 500,
+  "same_decoded_text_states": 500,
+  "tokenizers": {
+    "clip_processor": {
+      "tokenizer_class": "CLIPTokenizerFast",
+      "roundtrip_states": 138,
+      "best_retokenized_count": 18,
+      "best_retokenized_ids": [
+        33544,
+        19234,
+        12874,
+        12874,
+        26336,
+        32274,
+        28457,
+        47356,
+        256,
+        14844,
+        16845,
+        33482,
+        10873,
+        3197,
+        529,
+        1694,
+        17658,
+        41234
+      ],
+      "best_retokenized_equals_original": false,
+      "matches_actual_best_text_submission": false,
+      "allowed_vocab": 48870,
+      "candidate_pool_equal": true
+    },
+    "sd_pipeline": {
+      "tokenizer_class": "CLIPTokenizer",
+      "roundtrip_states": 129,
+      "best_retokenized_count": 16,
+      "best_retokenized_ids": [
+        33544,
+        19234,
+        12874,
+        12874,
+        26336,
+        32274,
+        28457,
+        256,
+        14844,
+        33482,
+        10873,
+        3197,
+        529,
+        1694,
+        17658,
+        41234
+      ],
+      "best_retokenized_equals_original": false,
+      "matches_actual_best_text_submission": true,
+      "allowed_vocab": 48870,
+      "candidate_pool_equal": true
+    }
+  }
+}

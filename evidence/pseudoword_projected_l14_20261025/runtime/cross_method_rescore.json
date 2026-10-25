@@ -1,0 +1,50 @@
+[
+  {
+    "origin": "historical logits ST-softmax",
+    "case": "initial_ids",
+    "text_target_cosine": 0.14373056590557098,
+    "image_target_cosine": 0.39215782284736633
+  },
+  {
+    "origin": "historical logits ST-softmax",
+    "case": "best_ids",
+    "text_target_cosine": 0.31624069809913635,
+    "image_target_cosine": 0.4519512951374054
+  },
+  {
+    "origin": "historical logits ST-softmax",
+    "case": "best_text",
+    "text_target_cosine": 0.27052491903305054,
+    "image_target_cosine": 0.45803964138031006
+  },
+  {
+    "origin": "historical logits ST-softmax",
+    "case": "natural",
+    "text_target_cosine": 0.29947495460510254,
+    "image_target_cosine": 0.9379187822341919
+  },
+  {
+    "origin": "original projected embedding core",
+    "case": "initial_ids",
+    "text_target_cosine": 0.16202548146247864,
+    "image_target_cosine": 0.6651060581207275
+  },
+  {
+    "origin": "original projected embedding core",
+    "case": "best_ids",
+    "text_target_cosine": 0.3311510682106018,
+    "image_target_cosine": 0.7612903118133545
+  },
+  {
+    "origin": "original projected embedding core",
+    "case": "best_text",
+    "text_target_cosine": 0.30780476331710815,
+    "image_target_cosine": 0.7601433396339417
+  },
+  {
+    "origin": "original projected embedding core",
+    "case": "natural",
+    "text_target_cosine": 0.29947495460510254,
+    "image_target_cosine": 0.9379187822341919
+  }
+]

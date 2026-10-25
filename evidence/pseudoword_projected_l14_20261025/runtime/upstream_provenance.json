@@ -1,0 +1,30 @@
+{
+  "repo": "datar001/Revealing-Vulnerabilities-in-Stable-Diffusion-via-Targeted-Attacks",
+  "commit": "21eb35f16697529388a43bf1504089eccc6bc432",
+  "files": [
+    {
+      "file": "optim_utils.py",
+      "sha256": "5b262f09d6bbd34b62baab8fd166247e8b58def36e1d14d96ddf98b27a3eba97"
+    },
+    {
+      "file": "modified_clip.py",
+      "sha256": "0fdc239c5cdff75a154c377823ee776fff367b624461707588da6092c5bd760b"
+    },
+    {
+      "file": "run.py",
+      "sha256": "51d01ee058ada55e8972da64a869a12af66240672a3f85f949312a605398b7ed"
+    },
+    {
+      "file": "object_config.json",
+      "sha256": "acd8031f82b4e8d7b69e4d38d801cd87f42dcaea069bca048c4857fa45e4a40d"
+    },
+    {
+      "file": "style_config.json",
+      "sha256": "5d52571b8e793445725ebd2000fc3c163fae1a8f0e186dce7d0105abc442a3a0"
+    },
+    {
+      "file": "README.md",
+      "sha256": "3026acddc098ea95a704f99aeb5f0becfd0af19c9e20d080bb9285079766cd9c"
+    }
+  ]
+}

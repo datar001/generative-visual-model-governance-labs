@@ -1,0 +1,29 @@
+{
+  "commit": "21eb35f16697529388a43bf1504089eccc6bc432",
+  "files": [
+    {
+      "file": "optim_utils.py",
+      "bytes": 12512,
+      "sha256": "5b262f09d6bbd34b62baab8fd166247e8b58def36e1d14d96ddf98b27a3eba97",
+      "url": "https://raw.githubusercontent.com/datar001/Revealing-Vulnerabilities-in-Stable-Diffusion-via-Targeted-Attacks/21eb35f16697529388a43bf1504089eccc6bc432/optim_utils.py"
+    },
+    {
+      "file": "modified_clip.py",
+      "bytes": 4183,
+      "sha256": "0fdc239c5cdff75a154c377823ee776fff367b624461707588da6092c5bd760b",
+      "url": "https://raw.githubusercontent.com/datar001/Revealing-Vulnerabilities-in-Stable-Diffusion-via-Targeted-Attacks/21eb35f16697529388a43bf1504089eccc6bc432/modified_clip.py"
+    },
+    {
+      "file": "run.py",
+      "bytes": 7954,
+      "sha256": "51d01ee058ada55e8972da64a869a12af66240672a3f85f949312a605398b7ed",
+      "url": "https://raw.githubusercontent.com/datar001/Revealing-Vulnerabilities-in-Stable-Diffusion-via-Targeted-Attacks/21eb35f16697529388a43bf1504089eccc6bc432/run.py"
+    },
+    {
+      "file": "object_config.json",
+      "bytes": 533,
+      "sha256": "acd8031f82b4e8d7b69e4d38d801cd87f42dcaea069bca048c4857fa45e4a40d",
+      "url": "https://raw.githubusercontent.com/datar001/Revealing-Vulnerabilities-in-Stable-Diffusion-via-Targeted-Attacks/21eb35f16697529388a43bf1504089eccc6bc432/object_config.json"
+    }
+  ]
+}

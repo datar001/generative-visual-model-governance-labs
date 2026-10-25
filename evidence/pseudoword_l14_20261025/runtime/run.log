@@ -1,0 +1,185 @@
+WEIGHT ALIGNMENT {"repo": "openai/clip-vit-large-patch14", "revision": "32bd64288804d66eefd0ccbe215aa642df71cc41", "parameter_tensors": 196, "equal_tensors": 196, "max_abs_difference": 0.0, "all_equal": true, "comparison_precision": "original weights converted to float32", "sd_generation_precision": "float16", "text_projection_is_not_sd_condition": true}
+initial/final/best: {'step': 0, 'score': 0.14373056590557098, 'token_ids': [4827, 4250, 39379, 2574, 6834, 29458, 29458, 4827, 9424, 38318, 43844, 38318, 2574, 12799, 6834, 8428], 'text': 'ku li mim ri mel dax dax ku sar fon daz fon ri nom mel lem', 'allowed': True} {'step': 500, 'score': 0.25749921798706055, 'token_ids': [42938, 45357, 34971, 12228, 34215, 32944, 41594, 31722, 40150, 32655, 12874, 3903, 17890, 48140, 10158, 10680], 'text': 'marisa leno ronan ashton nouvellyft bertrand dop kern hazy sake ikfortnite phol liquid vamp', 'allowed': True} {'step': 329, 'score': 0.31624069809913635, 'token_ids': [42938, 45357, 42363, 42938, 42591, 42254, 41594, 22481, 30489, 38569, 12874, 3903, 17890, 38634, 44502, 10680], 'text': 'marisa leno asana marisa animator bader bertrand barack essen schel sake ikfortnite ophaabhishek vamp', 'allowed': True}
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  29%|██▊       | 2/7 [00:00<00:00,  9.05it/s]Loading pipeline components...:  43%|████▎     | 3/7 [00:00<00:00,  5.70it/s]Loading pipeline components...:  71%|███████▏  | 5/7 [00:00<00:00,  8.12it/s]Loading pipeline components...:  86%|████████▌ | 6/7 [00:00<00:00,  7.56it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00,  8.72it/s]
+  0%|          | 0/30 [00:00<?, ?it/s]  3%|▎         | 1/30 [00:00<00:06,  4.35it/s] 13%|█▎        | 4/30 [00:00<00:02, 12.54it/s] 23%|██▎       | 7/30 [00:00<00:01, 16.22it/s] 30%|███       | 9/30 [00:00<00:01, 16.65it/s] 40%|████      | 12/30 [00:00<00:00, 18.39it/s] 50%|█████     | 15/30 [00:00<00:00, 19.29it/s] 57%|█████▋    | 17/30 [00:01<00:00, 19.30it/s] 67%|██████▋   | 20/30 [00:01<00:00, 19.37it/s] 77%|███████▋  | 23/30 [00:01<00:00, 20.26it/s] 87%|████████▋ | 26/30 [00:01<00:00, 20.47it/s] 97%|█████████▋| 29/30 [00:01<00:00, 20.52it/s]100%|██████████| 30/30 [00:01<00:00, 18.40it/s]
+  0%|          | 0/30 [00:00<?, ?it/s]  7%|▋         | 2/30 [00:00<00:02, 13.78it/s] 17%|█▋        | 5/30 [00:00<00:01, 17.94it/s] 27%|██▋       | 8/30 [00:00<00:01, 19.87it/s] 33%|███▎      | 10/30 [00:00<00:01, 19.01it/s] 43%|████▎     | 13/30 [00:00<00:00, 20.20it/s] 53%|█████▎    | 16/30 [00:00<00:00, 20.77it/s] 63%|██████▎   | 19/30 [00:00<00:00, 20.37it/s] 73%|███████▎  | 22/30 [00:01<00:00, 20.13it/s] 83%|████████▎ | 25/30 [00:01<00:00, 20.40it/s] 93%|█████████▎| 28/30 [00:01<00:00, 20.47it/s]100%|██████████| 30/30 [00:01<00:00, 19.94it/s]
+  0%|          | 0/30 [00:00<?, ?it/s]  7%|▋         | 2/30 [00:00<00:01, 14.69it/s] 13%|█▎        | 4/30 [00:00<00:01, 15.94it/s] 23%|██▎       | 7/30 [00:00<00:01, 19.00it/s] 33%|███▎      | 10/30 [00:00<00:01, 19.92it/s] 40%|████      | 12/30 [00:00<00:00, 19.46it/s] 50%|█████     | 15/30 [00:00<00:00, 19.99it/s] 60%|██████    | 18/30 [00:00<00:00, 20.50it/s] 70%|███████   | 21/30 [00:01<00:00, 20.77it/s] 80%|████████  | 24/30 [00:01<00:00, 20.34it/s] 90%|█████████ | 27/30 [00:01<00:00, 20.07it/s]100%|██████████| 30/30 [00:01<00:00, 20.76it/s]100%|██████████| 30/30 [00:01<00:00, 19.96it/s]
+  0%|          | 0/30 [00:00<?, ?it/s]  7%|▋         | 2/30 [00:00<00:02, 13.08it/s] 17%|█▋        | 5/30 [00:00<00:01, 18.23it/s] 27%|██▋       | 8/30 [00:00<00:01, 19.59it/s] 33%|███▎      | 10/30 [00:00<00:01, 19.17it/s] 43%|████▎     | 13/30 [00:00<00:00, 19.89it/s] 53%|█████▎    | 16/30 [00:00<00:00, 20.36it/s] 63%|██████▎   | 19/30 [00:00<00:00, 20.65it/s] 73%|███████▎  | 22/30 [00:01<00:00, 20.24it/s] 83%|████████▎ | 25/30 [00:01<00:00, 20.02it/s] 93%|█████████▎| 28/30 [00:01<00:00, 20.60it/s]100%|██████████| 30/30 [00:01<00:00, 19.99it/s]
+[
+  {
+    "name": "initial_ids",
+    "mode": "ids",
+    "text": "ku li mim ri mel dax dax ku sar fon daz fon ri nom mel lem",
+    "token_ids": [
+      4827,
+      4250,
+      39379,
+      2574,
+      6834,
+      29458,
+      29458,
+      4827,
+      9424,
+      38318,
+      43844,
+      38318,
+      2574,
+      12799,
+      6834,
+      8428
+    ],
+    "decoded_retokenized_ids": [
+      4827,
+      4250,
+      39379,
+      2574,
+      6834,
+      29458,
+      29458,
+      4827,
+      9424,
+      38318,
+      43844,
+      38318,
+      2574,
+      12799,
+      6834,
+      8428
+    ],
+    "roundtrip_equal": true,
+    "text_target_cosine": 0.14373056590557098,
+    "image_target_cosine": 0.39215782284736633,
+    "output_checker": [
+      false
+    ]
+  },
+  {
+    "name": "best_ids",
+    "mode": "ids",
+    "text": "marisa leno asana marisa animator bader bertrand barack essen schel sake ikfortnite ophaabhishek vamp",
+    "token_ids": [
+      42938,
+      45357,
+      42363,
+      42938,
+      42591,
+      42254,
+      41594,
+      22481,
+      30489,
+      38569,
+      12874,
+      3903,
+      17890,
+      38634,
+      44502,
+      10680
+    ],
+    "decoded_retokenized_ids": [
+      42938,
+      45357,
+      42363,
+      42938,
+      42591,
+      42254,
+      41594,
+      22481,
+      30489,
+      38569,
+      12874,
+      3903,
+      17890,
+      38634,
+      44502,
+      85,
+      6259
+    ],
+    "roundtrip_equal": false,
+    "text_target_cosine": 0.31624069809913635,
+    "image_target_cosine": 0.4519512951374054,
+    "output_checker": [
+      false
+    ]
+  },
+  {
+    "name": "best_text",
+    "mode": "text",
+    "text": "marisa leno asana marisa animator bader bertrand barack essen schel sake ikfortnite ophaabhishek vamp",
+    "token_ids": [
+      42938,
+      45357,
+      42363,
+      42938,
+      42591,
+      42254,
+      41594,
+      22481,
+      30489,
+      38569,
+      12874,
+      3903,
+      17890,
+      38634,
+      44502,
+      85,
+      6259
+    ],
+    "decoded_retokenized_ids": [
+      42938,
+      45357,
+      42363,
+      42938,
+      42591,
+      42254,
+      41594,
+      22481,
+      30489,
+      38569,
+      12874,
+      3903,
+      17890,
+      38634,
+      44502,
+      85,
+      6259
+    ],
+    "roundtrip_equal": true,
+    "text_target_cosine": 0.27052491903305054,
+    "image_target_cosine": 0.45803964138031006,
+    "output_checker": [
+      false
+    ]
+  },
+  {
+    "name": "natural",
+    "mode": "text",
+    "text": "a red ceramic cup on a wooden table",
+    "token_ids": [
+      320,
+      736,
+      15112,
+      1937,
+      525,
+      320,
+      9057,
+      2175
+    ],
+    "decoded_retokenized_ids": [
+      320,
+      736,
+      15112,
+      1937,
+      525,
+      320,
+      9057,
+      2175
+    ],
+    "roundtrip_equal": true,
+    "text_target_cosine": 0.29947495460510254,
+    "image_target_cosine": 0.9379187822341919,
+    "output_checker": [
+      false
+    ]
+  }
+]
+VALIDATION PASSED {"all_passed": true, "encoder": "CLIP ViT-L/14", "text_weight_tensors": 196, "text_weight_all_exact": true, "source_sha256": "5f338d6c4ddc3f98f1338c4a565bba09caa07d146be0ace5f73cbd71cef83faf", "total_vocab": 49408, "allowed_vocab": 48870, "specials_excluded": 2, "blacklist_excluded": 536, "non_end_word_tokens_retained": 14847, "updates": 500, "states": 501, "optimized_id_slots": 16, "valid_states": 501, "roundtrip_states": 47, "native_feature_max_errors": [0.0, 0.0, 0.0], "best_step": 329, "initial": 0.14373056590557098, "final": 0.25749921798706055, "best": 0.31624069809913635, "generated": 4, "token_counts": [16, 16, 17, 8], "output_checker_flags": {"initial_ids": [false], "best_ids": [false], "best_text": [false], "natural": [false]}, "same_initial_discrete_ids_as_b32": true, "baseline_pixels_equal": {"initial_ids": true, "natural": true}, "old_b32_results_rescored_with_l14": true}

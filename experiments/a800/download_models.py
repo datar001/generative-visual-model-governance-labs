@@ -21,6 +21,11 @@ SPECS = {
         "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
         None,
     ),
+    "clip_l14": (
+        "openai/clip-vit-large-patch14",
+        "32bd64288804d66eefd0ccbe215aa642df71cc41",
+        None,
+    ),
     "text_filter": (
         "michelleli99/NSFW_text_classifier",
         "652bad24f49ec5b7dd218f5d273c7bbe815242ee",

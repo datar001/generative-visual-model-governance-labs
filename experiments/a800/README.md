@@ -1,4 +1,4 @@
-> 当前书内伪词已改为[全词表/500步最小实现](../../examples/minimal/03_pseudoword.py)，[新实测](../../evidence/pseudoword_fullvocab_20261025/README.md)。本目录pseudoword.py和以下480查询/7图属于保留的历史扩展。
+> 当前书内伪词已改为[L14全词表/500步最小实现](../../examples/minimal/03_pseudoword.py)，[新实测](../../evidence/pseudoword_l14_20261025/README.md)。本目录pseudoword.py和以下480查询/7图属于保留的历史扩展。
 
 # 全章实测与配套运行
 
@@ -15,7 +15,7 @@ export LAB_ROOT=/path/to/your/lab_run
 export CUDA_VISIBLE_DEVICES=0
 export OMP_NUM_THREADS=8 OPENBLAS_NUM_THREADS=8 MKL_NUM_THREADS=8
 export TORCH_HOME="$LAB_ROOT/models/torch"
-python experiments/a800/download_models.py sd15 clip sd14 text_filter image_filter ip_adapter
+python experiments/a800/download_models.py sd15 clip clip_l14 sd14 text_filter image_filter ip_adapter
 python experiments/a800/prepare_sld.py
 python experiments/a800/prepare_inputs.py
 python experiments/a800/prepare_weights.py cnnspot esd
@@ -42,7 +42,7 @@ python experiments/a800/validate_evidence.py
 
 - 生成分辨率512×512、30步；除第8章正式定制使用CFG5、适配器强度0.3外，其余生成使用CFG7.5；每个条件重新创建同种子CPU生成器。A800采用FP16整模GPU推理，不沿用本机低显存卸载。
 - 第一章标准库入口仍为 `chapters/01_overview/lab.py`，无显卡也能运行；`governance.py` 为本次服务器证据包装。
-- 第三章伪词为无害红杯目标与课堂词表类比。搜索完成后追加实际文生图，不以CLIP高分声称真实风险绕过。
+- 第三章当前最小伪词实践为无害红杯目标与CLIP-L/14全词表黑名单优化，历史扩展仍用原入口。搜索完成后追加实际文生图，不以CLIP高分声称真实风险绕过。
 - 第四章是CNNSpot/ResNet-50空间域监督二分类，固定阈值0.5。压缩副本与原图不能当作相互独立的来源样本。
 - 第五章是教学DCT重复16位水印。裁剪/缩放暴露同步局限；未嵌水印图必须保留。解码恢复消息，不恢复无水印原图。
 - 第六章ESD使用官方完整UNet，不训练。SLD用非露骨成人泳装及普通提示，输出检查器保留；不报告色情抑制率。

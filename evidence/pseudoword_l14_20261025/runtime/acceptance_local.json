@@ -1,0 +1,174 @@
+{
+  "all_passed": true,
+  "check_count": 42,
+  "checks": [
+    {
+      "name": "successful_gpu0_run",
+      "passed": true
+    },
+    {
+      "name": "L14_196_weights_exact",
+      "passed": true
+    },
+    {
+      "name": "executed_hash",
+      "passed": true
+    },
+    {
+      "name": "source_bytes_book",
+      "passed": true
+    },
+    {
+      "name": "source_bytes_repository",
+      "passed": true
+    },
+    {
+      "name": "source_bytes_compiled",
+      "passed": true
+    },
+    {
+      "name": "source_bytes_evidence",
+      "passed": true
+    },
+    {
+      "name": "full_pool_counts",
+      "passed": true
+    },
+    {
+      "name": "kept_fragments",
+      "passed": true
+    },
+    {
+      "name": "updates_states",
+      "passed": true
+    },
+    {
+      "name": "all_16_in_pool",
+      "passed": true
+    },
+    {
+      "name": "all_fulltext_blacklist_passed",
+      "passed": true
+    },
+    {
+      "name": "actual_best",
+      "passed": true
+    },
+    {
+      "name": "native_clip_features_exact",
+      "passed": true
+    },
+    {
+      "name": "real_condition_lengths",
+      "passed": true
+    },
+    {
+      "name": "best_id_not_retokenization",
+      "passed": true
+    },
+    {
+      "name": "best_text_not_truncated",
+      "passed": true
+    },
+    {
+      "name": "roundtrip_states",
+      "passed": true
+    },
+    {
+      "name": "four_flags_retained",
+      "passed": true
+    },
+    {
+      "name": "baseline_id_path_pixels",
+      "passed": true
+    },
+    {
+      "name": "table_values_initial_ids",
+      "passed": true
+    },
+    {
+      "name": "table_values_best_ids",
+      "passed": true
+    },
+    {
+      "name": "table_values_best_text",
+      "passed": true
+    },
+    {
+      "name": "table_values_natural",
+      "passed": true
+    },
+    {
+      "name": "six_figure_assets",
+      "passed": true
+    },
+    {
+      "name": "book_raw_target.png",
+      "passed": true
+    },
+    {
+      "name": "repo_raw_target.png",
+      "passed": true
+    },
+    {
+      "name": "book_raw_initial_ids.png",
+      "passed": true
+    },
+    {
+      "name": "repo_raw_initial_ids.png",
+      "passed": true
+    },
+    {
+      "name": "book_raw_best_ids.png",
+      "passed": true
+    },
+    {
+      "name": "repo_raw_best_ids.png",
+      "passed": true
+    },
+    {
+      "name": "book_raw_best_text.png",
+      "passed": true
+    },
+    {
+      "name": "repo_raw_best_text.png",
+      "passed": true
+    },
+    {
+      "name": "book_raw_natural.png",
+      "passed": true
+    },
+    {
+      "name": "repo_raw_natural.png",
+      "passed": true
+    },
+    {
+      "name": "outside_third_practice_unchanged",
+      "passed": true
+    },
+    {
+      "name": "compiled_third_source",
+      "passed": true
+    },
+    {
+      "name": "whole_code_printed",
+      "passed": true
+    },
+    {
+      "name": "113_line_manifest",
+      "passed": true
+    },
+    {
+      "name": "vocabulary_blacklist_unchanged",
+      "passed": true
+    },
+    {
+      "name": "independent_review",
+      "passed": true
+    },
+    {
+      "name": "416_editor_items_preserved",
+      "passed": true
+    }
+  ]
+}

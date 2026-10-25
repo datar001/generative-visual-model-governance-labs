@@ -1,0 +1,53 @@
+{
+  "all_passed": true,
+  "encoder": "CLIP ViT-L/14",
+  "text_weight_tensors": 196,
+  "text_weight_all_exact": true,
+  "source_sha256": "5f338d6c4ddc3f98f1338c4a565bba09caa07d146be0ace5f73cbd71cef83faf",
+  "total_vocab": 49408,
+  "allowed_vocab": 48870,
+  "specials_excluded": 2,
+  "blacklist_excluded": 536,
+  "non_end_word_tokens_retained": 14847,
+  "updates": 500,
+  "states": 501,
+  "optimized_id_slots": 16,
+  "valid_states": 501,
+  "roundtrip_states": 47,
+  "native_feature_max_errors": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "best_step": 329,
+  "initial": 0.14373056590557098,
+  "final": 0.25749921798706055,
+  "best": 0.31624069809913635,
+  "generated": 4,
+  "token_counts": [
+    16,
+    16,
+    17,
+    8
+  ],
+  "output_checker_flags": {
+    "initial_ids": [
+      false
+    ],
+    "best_ids": [
+      false
+    ],
+    "best_text": [
+      false
+    ],
+    "natural": [
+      false
+    ]
+  },
+  "same_initial_discrete_ids_as_b32": true,
+  "baseline_pixels_equal": {
+    "initial_ids": true,
+    "natural": true
+  },
+  "old_b32_results_rescored_with_l14": true
+}

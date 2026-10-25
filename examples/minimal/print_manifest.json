@@ -46,7 +46,7 @@
   },
   {
     "script": "03_pseudoword.py",
-    "sha256": "d08bbb00c4d95097a89312c193257ca847f0f6386d98337c0f9227b63b36e8a0",
+    "sha256": "5f338d6c4ddc3f98f1338c4a565bba09caa07d146be0ace5f73cbd71cef83faf",
     "lines": 113,
     "listing_mode": "whole_file",
     "all_lines_printed": true,
@@ -58,7 +58,7 @@
       ]
     ],
     "updated": "2026-10-25",
-    "experiment": "pseudoword_fullvocab_20261025"
+    "experiment": "pseudoword_l14_20261025"
   },
   {
     "script": "04_detection.py",

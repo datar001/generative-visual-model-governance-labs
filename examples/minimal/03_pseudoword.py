@@ -11,11 +11,11 @@ from diffusers import StableDiffusionPipeline
 
 root = Path(os.environ['LAB_ROOT'])
 models = json.loads((root / 'manifests/models.json').read_text())
-out = root / 'pseudoword_fullvocab'
+out = root / 'pseudoword_l14'
 out.mkdir(parents=True, exist_ok=True)
-clip = CLIPModel.from_pretrained(models['clip']['path'], attn_implementation='eager',
+clip = CLIPModel.from_pretrained(models['clip_l14']['path'], attn_implementation='eager',
                                  local_files_only=True).eval().to('cuda').requires_grad_(False)
-processor = CLIPProcessor.from_pretrained(models['clip']['path'], local_files_only=True)
+processor = CLIPProcessor.from_pretrained(models['clip_l14']['path'], local_files_only=True)
 tok = processor.tokenizer
 blacklist = ('cup cups mug mugs teacup teacups coffee tea bowl bowls glass glasses '
              'vessel drink drinks ceramic porcelain tumbler goblet chalice saucer '
@@ -87,7 +87,7 @@ for name, row, mode in cases:
     submitted = pipe.tokenizer(text, add_special_tokens=False).input_ids
     ids = row['token_ids'] if mode == 'ids' else submitted
     if mode == 'ids':
-        # 用SD1.5自己的文本编码器，不能传代理CLIP的512维投影特征。
+        # CLIP投影与SD条件均为768维，但条件须用SD自身的逐位置输出。
         ids77 = [pipe.tokenizer.bos_token_id] + ids + [pipe.tokenizer.eos_token_id]
         ids77 += [pipe.tokenizer.pad_token_id] * (77 - len(ids77))
         with torch.no_grad():

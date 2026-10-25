@@ -1,0 +1,201 @@
+{
+  "accepted": true,
+  "review_role": "independent read-only code/data review",
+  "gpu_used_for_review": false,
+  "review_checks": 28,
+  "checks": [
+    {
+      "name": "successful_execution",
+      "passed": true
+    },
+    {
+      "name": "executed_source_hash",
+      "passed": true
+    },
+    {
+      "name": "reviewed_code_equals_executed",
+      "passed": true
+    },
+    {
+      "name": "196_raw_text_tensor_hashes_equal",
+      "passed": true
+    },
+    {
+      "name": "196_runtime_text_tensor_values_equal",
+      "passed": true
+    },
+    {
+      "name": "full_l14_and_correct_revision",
+      "passed": true
+    },
+    {
+      "name": "full_vocabulary_minus_blacklist",
+      "passed": true
+    },
+    {
+      "name": "500_updates_501_states",
+      "passed": true
+    },
+    {
+      "name": "all_original_sequences_16_ids",
+      "passed": true
+    },
+    {
+      "name": "complete_text_blacklist_rechecked",
+      "passed": true
+    },
+    {
+      "name": "best_is_valid_history_max",
+      "passed": true
+    },
+    {
+      "name": "native_custom_feature_parity",
+      "passed": true
+    },
+    {
+      "name": "four_conditions_distinct",
+      "passed": true
+    },
+    {
+      "name": "actual_submitted_lengths",
+      "passed": true
+    },
+    {
+      "name": "original_vs_reencoded_differs",
+      "passed": true
+    },
+    {
+      "name": "text_not_truncated",
+      "passed": true
+    },
+    {
+      "name": "47_of_501_roundtrips_cpu_independently_rechecked",
+      "passed": true
+    },
+    {
+      "name": "initial_and_natural_generation_preserved",
+      "passed": true
+    },
+    {
+      "name": "all_rescore_metrics_l14",
+      "passed": true
+    },
+    {
+      "name": "rescore_matches_current_initial_ids",
+      "passed": true
+    },
+    {
+      "name": "rescore_matches_current_best_ids",
+      "passed": true
+    },
+    {
+      "name": "rescore_matches_current_best_text",
+      "passed": true
+    },
+    {
+      "name": "rescore_matches_current_natural",
+      "passed": true
+    },
+    {
+      "name": "initial_rescores_identical",
+      "passed": true
+    },
+    {
+      "name": "natural_rescores_identical",
+      "passed": true
+    },
+    {
+      "name": "matched_metric_old_best_image_higher",
+      "passed": true
+    },
+    {
+      "name": "matched_metric_new_best_text_higher",
+      "passed": true
+    },
+    {
+      "name": "two_metric_values_different",
+      "passed": true
+    }
+  ],
+  "weights": {
+    "matching_original_f32_tensors": 196,
+    "raw_sha256_alignment": true,
+    "aggregate_text_manifest_sha256": "540c0791dbae021664e8a52672e8deeff2cca621bfd9e1c29feaef1c93e668b4"
+  },
+  "tokenization": {
+    "optimized_ids": 16,
+    "best_reencoded_tokens": 17,
+    "precise_roundtrip_states": 47,
+    "total_states": 501,
+    "cpu_tokenizer_independently_rechecked": true
+  },
+  "metrics": {
+    "encoder": "CLIP ViT-L/14 for all compared values",
+    "old_b32_best_rescored": {
+      "origin": "B32 optimization",
+      "case": "best_ids",
+      "metric_encoder": "CLIP ViT-L/14",
+      "text_target_cosine": 0.21008926630020142,
+      "image_target_cosine": 0.6586300134658813,
+      "source_original_ids": [
+        45473,
+        30272,
+        29054,
+        23775,
+        1353,
+        17950,
+        27168,
+        44641,
+        40817,
+        28471,
+        19360,
+        83,
+        3257,
+        8219,
+        13067,
+        20429
+      ]
+    },
+    "new_l14_best": {
+      "origin": "L14 optimization",
+      "case": "best_ids",
+      "metric_encoder": "CLIP ViT-L/14",
+      "text_target_cosine": 0.31624069809913635,
+      "image_target_cosine": 0.4519512951374054,
+      "source_original_ids": [
+        42938,
+        45357,
+        42363,
+        42938,
+        42591,
+        42254,
+        41594,
+        22481,
+        30489,
+        38569,
+        12874,
+        3903,
+        17890,
+        38634,
+        44502,
+        10680
+      ]
+    }
+  },
+  "visual_review": {
+    "viewed": [
+      "target.png",
+      "best_ids.png",
+      "best_text.png",
+      "natural.png"
+    ],
+    "observed": "Both best ID and best text outputs are stylized character group scenes with no red cup; natural-language reference contains a red cup on a wooden table but differs in position, handle and wood texture from target."
+  },
+  "material_issues": [],
+  "interpretation_constraints": [
+    "Do not directly compare old B/32 cosine numbers to new L/14 cosine numbers.",
+    "Under matched L/14 evaluation, new L/14 optimized best has higher text-target cosine but lower image-target cosine than old B/32 best; weight alignment alone did not improve target generation.",
+    "best_text roundtrip_equal concerns its actual reencoded IDs and must not be interpreted as original 16-ID roundtrip.",
+    "Same CLIP participates in optimization and measurement; these are proxy metrics, not independent success probabilities."
+  ]
+}

@@ -1,0 +1,177 @@
+[
+  {
+    "name": "initial_ids",
+    "mode": "ids",
+    "text": "ku li mim ri mel dax dax ku sar fon daz fon ri nom mel lem",
+    "token_ids": [
+      4827,
+      4250,
+      39379,
+      2574,
+      6834,
+      29458,
+      29458,
+      4827,
+      9424,
+      38318,
+      43844,
+      38318,
+      2574,
+      12799,
+      6834,
+      8428
+    ],
+    "decoded_retokenized_ids": [
+      4827,
+      4250,
+      39379,
+      2574,
+      6834,
+      29458,
+      29458,
+      4827,
+      9424,
+      38318,
+      43844,
+      38318,
+      2574,
+      12799,
+      6834,
+      8428
+    ],
+    "roundtrip_equal": true,
+    "text_target_cosine": 0.14373056590557098,
+    "image_target_cosine": 0.39215782284736633,
+    "output_checker": [
+      false
+    ]
+  },
+  {
+    "name": "best_ids",
+    "mode": "ids",
+    "text": "marisa leno asana marisa animator bader bertrand barack essen schel sake ikfortnite ophaabhishek vamp",
+    "token_ids": [
+      42938,
+      45357,
+      42363,
+      42938,
+      42591,
+      42254,
+      41594,
+      22481,
+      30489,
+      38569,
+      12874,
+      3903,
+      17890,
+      38634,
+      44502,
+      10680
+    ],
+    "decoded_retokenized_ids": [
+      42938,
+      45357,
+      42363,
+      42938,
+      42591,
+      42254,
+      41594,
+      22481,
+      30489,
+      38569,
+      12874,
+      3903,
+      17890,
+      38634,
+      44502,
+      85,
+      6259
+    ],
+    "roundtrip_equal": false,
+    "text_target_cosine": 0.31624069809913635,
+    "image_target_cosine": 0.4519512951374054,
+    "output_checker": [
+      false
+    ]
+  },
+  {
+    "name": "best_text",
+    "mode": "text",
+    "text": "marisa leno asana marisa animator bader bertrand barack essen schel sake ikfortnite ophaabhishek vamp",
+    "token_ids": [
+      42938,
+      45357,
+      42363,
+      42938,
+      42591,
+      42254,
+      41594,
+      22481,
+      30489,
+      38569,
+      12874,
+      3903,
+      17890,
+      38634,
+      44502,
+      85,
+      6259
+    ],
+    "decoded_retokenized_ids": [
+      42938,
+      45357,
+      42363,
+      42938,
+      42591,
+      42254,
+      41594,
+      22481,
+      30489,
+      38569,
+      12874,
+      3903,
+      17890,
+      38634,
+      44502,
+      85,
+      6259
+    ],
+    "roundtrip_equal": true,
+    "text_target_cosine": 0.27052491903305054,
+    "image_target_cosine": 0.45803964138031006,
+    "output_checker": [
+      false
+    ]
+  },
+  {
+    "name": "natural",
+    "mode": "text",
+    "text": "a red ceramic cup on a wooden table",
+    "token_ids": [
+      320,
+      736,
+      15112,
+      1937,
+      525,
+      320,
+      9057,
+      2175
+    ],
+    "decoded_retokenized_ids": [
+      320,
+      736,
+      15112,
+      1937,
+      525,
+      320,
+      9057,
+      2175
+    ],
+    "roundtrip_equal": true,
+    "text_target_cosine": 0.29947495460510254,
+    "image_target_cosine": 0.9379187822341919,
+    "output_checker": [
+      false
+    ]
+  }
+]

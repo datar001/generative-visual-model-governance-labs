@@ -1,0 +1,20 @@
+{
+  "pages": 236,
+  "findings": [],
+  "practice_start": 77,
+  "next_section": 84,
+  "rendered_pages": [
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84
+  ],
+  "pdf_sha256": "dc380f0c22b1f82fa1247b3614abdf2eb61fb8396c0ada9e060e05b7519aa675",
+  "source_changes_during_compile": [],
+  "visual_review_accepted": true,
+  "visual_review_note": "Inspected all practice page contact sheets 77-84 and full-resolution pages 81-83; code, table, curve, five-case figure, transitions and margins readable."
+}

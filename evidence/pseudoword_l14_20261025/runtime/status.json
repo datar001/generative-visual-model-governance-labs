@@ -1,0 +1,8 @@
+{
+  "script": "03_pseudoword.py",
+  "sha256": "5f338d6c4ddc3f98f1338c4a565bba09caa07d146be0ace5f73cbd71cef83faf",
+  "gpu": "physical GPU 0",
+  "device": "NVIDIA A800 80GB PCIe",
+  "returncode": 0,
+  "seconds": 32.4
+}

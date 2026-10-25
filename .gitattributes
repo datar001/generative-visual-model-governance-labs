@@ -18,3 +18,4 @@ evidence/minimal_20261024/**/*.csv -text whitespace=cr-at-eol
 evidence/all_practice_alignment_20261025/**/*.csv -text whitespace=cr-at-eol
 evidence/pseudoword16_500_20261025/runtime/run.log -text -diff
 evidence/pseudoword_fullvocab_20261025/runtime/run.log -text -diff
+evidence/pseudoword_l14_20261025/runtime/run.log -text -diff

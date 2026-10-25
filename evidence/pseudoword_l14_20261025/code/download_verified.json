@@ -1,0 +1,55 @@
+{
+  "repo": "openai/clip-vit-large-patch14",
+  "revision": "32bd64288804d66eefd0ccbe215aa642df71cc41",
+  "path": "E:\\ondrive_clone\\paper\\book_revision\\editor_revision_20261018\\audit\\model_cache\\clip_l14_32bd642",
+  "files": [
+    {
+      "file": "config.json",
+      "bytes": 4519,
+      "digest": "2c19f6666e0e163c7954df66cb901353fcad088e",
+      "algorithm": "git-blob-sha1"
+    },
+    {
+      "file": "merges.txt",
+      "bytes": 524619,
+      "digest": "76e821f1b6f0a9709293c3b6b51ed90980b3166b",
+      "algorithm": "git-blob-sha1"
+    },
+    {
+      "file": "preprocessor_config.json",
+      "bytes": 316,
+      "digest": "5a12a1eb250987a4eee0e3e7d7338c4b22724be1",
+      "algorithm": "git-blob-sha1"
+    },
+    {
+      "file": "special_tokens_map.json",
+      "bytes": 389,
+      "digest": "9bfb42aa97dcd61e89f279ccaee988bccb4fabae",
+      "algorithm": "git-blob-sha1"
+    },
+    {
+      "file": "tokenizer.json",
+      "bytes": 2224003,
+      "digest": "580c79c6862f31d1f9bd08dd1a415ba0d0502cd9",
+      "algorithm": "git-blob-sha1"
+    },
+    {
+      "file": "tokenizer_config.json",
+      "bytes": 905,
+      "digest": "702bb12920b291cade3706cf215c1604d2255d93",
+      "algorithm": "git-blob-sha1"
+    },
+    {
+      "file": "vocab.json",
+      "bytes": 961143,
+      "digest": "4297ea6a8d2bae1fea8f48b45e257814dcb11f69",
+      "algorithm": "git-blob-sha1"
+    },
+    {
+      "file": "model.safetensors",
+      "bytes": 1710540580,
+      "digest": "a2bf730a0c7debf160f7a6b50b3aaf3703e7e88ac73de7a314903141db026dcb",
+      "algorithm": "sha256"
+    }
+  ]
+}
